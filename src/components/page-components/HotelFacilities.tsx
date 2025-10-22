@@ -1,10 +1,9 @@
 import { FacilitiesProps } from "@/@types/types";
 import React from "react";
 import LinkButton from "../buttons/LinkButton";
-import WhyChooseUsCard from "../cards/WhyChooseUsCard";
 import { Section } from "../sectionComponants";
-import { SectionHeading } from "../typography";
 import { CommonSlider } from "../sliders";
+import { SectionHeading } from "../typography";
 
 const Experiences: React.FC<FacilitiesProps> = ({
   title,

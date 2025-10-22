@@ -1,7 +1,9 @@
 "use client";
+import { hotelLandingPageData } from "@/app/(hotel)/hoteLandingPageData";
 import { getDateInputLimits } from "@/hooks/getDateInputLimits";
+import useClickOutside from "@/hooks/useClickOutside";
 import { contact, countries } from "@/utils/constent";
-import { FillMail, FillPhoneIcon, UserIcon } from "@/utils/icons";
+import { DropDownIcon, FillMail, FillPhoneIcon, UserIcon } from "@/utils/icons";
 import axios from "axios";
 import { ChangeEvent, useRef, useState } from "react";
 import DatePicker from "react-datepicker";
@@ -27,12 +29,15 @@ const Form1: React.FC<formProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
+  const villas = hotelLandingPageData.rooms.cards.map((card) => card.title);
+  const [isVillaDropdownOpen, setIsVillaDropdownOpen] = useState(false);
   const [formData, setFormData] = useState({
     checkIn: "",
     checkOut: "",
     fullName: "",
     PhoneNumber: "",
     EmailId: "",
+    villa: "",
   });
   const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([
     null,
@@ -47,6 +52,7 @@ const Form1: React.FC<formProps> = ({
     fullName: "",
     PhoneNumber: "",
     EmailId: "",
+    villa: "",
   });
 
   const validateEmail = (email: string) => {
@@ -99,6 +105,7 @@ const Form1: React.FC<formProps> = ({
       fullName: "",
       PhoneNumber: "",
       EmailId: "",
+      villa: "",
     };
 
     if (!formData.fullName.trim()) {
@@ -135,6 +142,11 @@ const Form1: React.FC<formProps> = ({
       isValid = false;
     }
 
+    if (!formData.villa.trim()) {
+      newErrors.villa = "Villa is required";
+      isValid = false;
+    }
+
     setError(newErrors);
     return isValid;
   };
@@ -156,10 +168,10 @@ const Form1: React.FC<formProps> = ({
           email: formData?.EmailId,
           Name: formData?.fullName,
           Contact: formData?.PhoneNumber,
-          Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut},`,
+          Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut}, Villa: ${formData?.villa}`,
           check_in: `${formData?.checkIn}`,
           check_out: `${formData?.checkOut}`,
-          created_from: "website",
+          created_from: "landing-page",
         },
         {
           headers: {
@@ -176,6 +188,7 @@ const Form1: React.FC<formProps> = ({
           fullName: "",
           PhoneNumber: "",
           EmailId: "",
+          villa: "",
         });
         setDateRange([null, null]);
         setError({
@@ -184,6 +197,7 @@ const Form1: React.FC<formProps> = ({
           fullName: "",
           PhoneNumber: "",
           EmailId: "",
+          villa: "",
         });
 
         setSubmitSuccess(true);
@@ -204,17 +218,24 @@ const Form1: React.FC<formProps> = ({
     }
   };
 
+  const villaDropDownRef = useRef<HTMLDivElement | null>(null);
+  useClickOutside(villaDropDownRef, () => {
+    if (isVillaDropdownOpen) {
+      setIsVillaDropdownOpen(false);
+    }
+  });
+
   return (
     <form
       onSubmit={handleFormSubmit}
       className={`grid ${
-        !gridView ? "md:grid-cols-10" : "gap-2 bg-transparent"
+        !gridView ? "md:grid-cols-12" : "gap-2 bg-transparent"
       } grid-cols-2 max-md:gap-2  divide-x divide-[#E0E0E0]`}
       ref={formRef}
     >
       {/* Full Name Field */}
       <div
-        className={`col-span-2 relative h-full flex flex-col px-4 ${
+        className={`col-span-2 relative flex flex-col px-4 gap-4 ${
           rounded && "lg:rounded-l-2xl"
         } bg-[#fff]  `}
       >
@@ -232,9 +253,9 @@ const Form1: React.FC<formProps> = ({
           placeholder="Type Here ..."
           onChange={handleInputChange}
           value={formData.fullName}
-          className="outline-none  w-full h-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
+          className="outline-none  w-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
         />
-        <span className="md:right-2 right-6 absolute bottom-1">
+        <span className="md:right-2 right-6 absolute bottom-3">
           <UserIcon />
         </span>
         {error.fullName && (
@@ -245,14 +266,14 @@ const Form1: React.FC<formProps> = ({
       </div>
 
       {/* Phone Number Field */}
-      <div className={`col-span-2 w-full flex flex-col px-4 bg-[#fff]`}>
+      <div className={`col-span-2 w-full flex flex-col px-4 gap-4 bg-[#fff]`}>
         <label
           htmlFor="PhoneNumber"
-          className="text-sm max-md:py-3 text-[#343434]"
+          className="text-sm max-md:py-3 uppercase text-[#343434]"
         >
-          Phone Number*
+          Phone Number
         </label>
-        <div className="flex relative items-center w-full h-full ">
+        <div className="flex relative items-center w-full">
           <select
             aria-label="Country Code"
             id="countryCode"
@@ -283,7 +304,7 @@ const Form1: React.FC<formProps> = ({
             value={formData.PhoneNumber}
             className=" ps-1 outline-none max-w-[90%] no-spinner appearance-auto  w-full h-full text-base text-[#343434] placeholder:text-[#343434] bg-transparent"
           />
-          <span className="absolute right-2 bottom-1">
+          <span className="absolute right-[-.5rem] bottom-0">
             <FillPhoneIcon />
           </span>
         </div>
@@ -296,10 +317,10 @@ const Form1: React.FC<formProps> = ({
 
       {/* Email Field */}
       <div
-        className={`col-span-2 relative   h-full px-4 flex flex-col bg-[#fff]`}
+        className={`col-span-2 relative px-4 flex flex-col gap-4 bg-[#fff]`}
       >
-        <label htmlFor="EmailId" className="text-sm max-md:py-3 text-[#343434]">
-          Email Id*
+        <label htmlFor="EmailId" className="text-sm uppercase max-md:py-3 text-[#343434]">
+          Email Id
         </label>
         <input
           type="text"
@@ -308,9 +329,9 @@ const Form1: React.FC<formProps> = ({
           placeholder="Type Here ..."
           onChange={handleInputChange}
           value={formData.EmailId}
-          className="outline-none  max-w-[90%] w-full h-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
+          className="outline-none  max-w-[90%] w-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
         />
-        <span className="absolute md:right-2 right-6 bottom-1">
+        <span className="absolute md:right-2 right-6 bottom-3">
           <FillMail />
         </span>
         {error.EmailId && (
@@ -319,7 +340,70 @@ const Form1: React.FC<formProps> = ({
           </span>
         )}
       </div>
-
+      {/* villa Field */}
+      <div
+        className={`relative col-span-2 w-full flex flex-col bg-white`}
+        ref={villaDropDownRef}
+      >
+        <label
+          htmlFor="villa"
+          className="text-sm max-md:py-3 text-[#343434] px-4"
+        >
+          VILLA
+        </label>
+        <button
+          type="button"
+          onClick={() => setIsVillaDropdownOpen(!isVillaDropdownOpen)}
+          className={`w-full h-full px-4 py-3.5 text-left bg-white flex items-center justify-between ${
+            !formData.villa ? "text-gray-400" : ""
+          }`}
+          aria-haspopup="listbox"
+          aria-expanded={isVillaDropdownOpen}
+        >
+          {formData.villa ? formData.villa : "Select Villa"}
+          <span
+            className={`${
+              isVillaDropdownOpen ? "rotate-180" : ""
+            } transition-all duration-300 ease-in-out`}
+          >
+            <DropDownIcon />
+          </span>
+        </button>
+        {isVillaDropdownOpen && (
+          <div
+            role="listbox"
+            className="absolute top-full z-10 w-full bg-white border border-light shadow-lg"
+          >
+            {villas.map((villa) => (
+              <button
+                key={villa}
+                type="button"
+                onClick={() => {
+                  setFormData((prev) => ({
+                    ...prev,
+                    villa: villa,
+                  }));
+                  setIsVillaDropdownOpen(false);
+                  setError((prev) => ({
+                    ...prev,
+                    wellnessOffer: "",
+                  }));
+                }}
+                className="block w-full px-4 py-2 text-left hover:bg-gray-100"
+                role="option"
+                aria-selected={formData.villa === villa}
+              >
+                {villa}
+              </button>
+            ))}
+          </div>
+        )}
+        {error.villa && (
+          <span className="text-red-500 text-xs px-1 w-full">
+            {error.villa}
+          </span>
+        )}
+      </div>
       {/* Date Picker Field */}
       <div className={`col-span-2 flex flex-col px-4 bg-[#fff] relative`}>
         <label htmlFor="checkIn" className="text-sm max-md:py-3 text-[#343434]">
@@ -337,7 +421,7 @@ const Form1: React.FC<formProps> = ({
           className="outline-none  w-full h-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
           wrapperClassName="w-full h-full !flex items-center"
         />
-        <div className="absolute md:right-2 right-6 bottom-1 pointer-events-none">
+        <div className="absolute md:right-2 right-6 bottom-4 pointer-events-none">
           <CalenderIcon />
         </div>
         {(error.checkIn || error.checkOut) && (

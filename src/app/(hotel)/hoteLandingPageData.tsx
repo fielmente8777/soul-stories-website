@@ -52,7 +52,7 @@ export const hotelLandingPageData = {
       },
       {
         title: "Amaraa",
-        noOfBadRooms: "1 Bedrooms Luxury Villa",
+        noOfBadRooms: "1 Bedroom Luxury Villa",
         description:
           "One-bedroom villas provide a luxurious and comfortable retreat for those seeking a private and intimate stay experience with all the essential amenities and more.",
         link: { label: "BOOK NOW", url: "" },
@@ -74,6 +74,50 @@ export const hotelLandingPageData = {
       },
       {
         title: "AURORA",
+        noOfBadRooms: "2 Bedrooms Luxury Villa",
+        description:
+          "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
+        link: { label: "BOOK NOW", url: "" },
+        images: ["/im15.webp"],
+        listOfIcons: [
+          {
+            icons: <HillStationICon />,
+            title: "hill station",
+          },
+          {
+            icons: <BadICon />,
+            title: "Bad",
+          },
+          {
+            icons: <WifiIcon />,
+            title: "Wifi",
+          },
+        ],
+      },
+      {
+        title: "AURA",
+        noOfBadRooms: "1 Bedroom Luxury Villa",
+        description:
+          "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
+        link: { label: "BOOK NOW", url: "" },
+        images: ["/im15.webp"],
+        listOfIcons: [
+          {
+            icons: <HillStationICon />,
+            title: "hill station",
+          },
+          {
+            icons: <BadICon />,
+            title: "Bad",
+          },
+          {
+            icons: <WifiIcon />,
+            title: "Wifi",
+          },
+        ],
+      },
+      {
+        title: "ATHENA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",

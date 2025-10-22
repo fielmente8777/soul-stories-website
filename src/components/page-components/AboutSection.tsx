@@ -1,8 +1,11 @@
+"use client";
 import { AboutSectionProps } from "@/@types/types";
 import { SectionWithContainer } from "../sectionComponants";
 import Image from "next/image";
 import LinkButton from "../buttons/LinkButton";
 import { SectionHeading } from "../typography";
+import SwiperCarousel from "../sliders/SwiperCarousel";
+import { Autoplay } from "swiper/modules";
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   title,
@@ -38,7 +41,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           />
         </div>
         <SectionHeading title={title} subTitle={subTitle} line />
-        <div className="grid grid-cols-4 grid-flow-row auto-rows-[6.5rem] gap-4">
+        <div className="lg:grid hidden grid-cols-4 grid-flow-row auto-rows-[6.5rem] gap-4">
           {images.map((image, index) => (
             <div
               className={`relative w-full h-full aspect-auto ${gridPattern[index]}`}
@@ -54,7 +57,33 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             </div>
           ))}
         </div>
-        <p className="text-center text-dark md:text-lg lg:max-w-[69rem] mx-auto">{description}</p>
+        <div className="lg:hidden block">
+          <SwiperCarousel
+            data={images}
+            slidesPerView={1}
+            spaceBetween={0}
+            loop
+            modules={[Autoplay]}
+            autoplay={{ delay: 2500 }}
+            className="w-full"
+            renderSlide={(src) => (
+              <div
+                className={`relative w-full aspect-[4/3]`}
+              >
+                <Image
+                  src={src}
+                  alt={title}
+                  fill
+                  sizes="100%"
+                  className="object-cover object-center rounded-[20px]"
+                />
+              </div>
+            )}
+          />
+        </div>
+        <p className="text-center text-dark md:text-lg lg:max-w-[69rem] mx-auto">
+          {description}
+        </p>
         <LinkButton
           href={link.url}
           label={link.label}

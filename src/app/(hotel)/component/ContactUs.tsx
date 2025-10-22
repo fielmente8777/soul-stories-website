@@ -23,9 +23,9 @@ const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
     <SectionWithContainer>
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="md:grid grid-cols-2 md:items-center flex flex-col-reverse gap-8 w-full mt-8">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 max-md:order-2">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-[90px] bg-secondary"/>
+              <div className="w-3 h-[130px] bg-secondary"/>
               <h2 className="text-3xl md:text-[2.5rem] text-primary lg:max-w-[500px] font-aboreto">{title}</h2>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
@@ -48,7 +48,7 @@ const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
               className="text-white bg-secondary text-nowrap border-secondary"
             />
           </div>
-          <div className="relative lg:aspect-[4/2.5] rounded-sm overflow-hidden aspect-[4/3]  w-full">
+          <div className="relative lg:aspect-[4/2.5] max-md:order-1 rounded-sm overflow-hidden aspect-[4/3]  w-full">
             <Image src={src} alt={title} fill className="" />
           </div>
         </div>

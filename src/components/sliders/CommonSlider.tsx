@@ -15,10 +15,12 @@ const CommonSlider: React.FC<ICommonSlider> = ({
   warperClass = "",
   paginationClassName = "",
 }) => {
+
+  const data = cards.length < 5 ? [...cards, ...cards, ...cards] : cards;
   return (
     <div className={`w-full ${warperClass}`}>
       <SwiperCarousel
-        data={cards || []}
+        data={data || []}
         slidesPerView={1}
         spaceBetween={8}
         loop
@@ -28,6 +30,7 @@ const CommonSlider: React.FC<ICommonSlider> = ({
           el: paginationClassName && `.${paginationClassName}`,
         }}
         autoplay={{ delay: 2500 }}
+        speed={1000}
         breakpoints={{
           768: {
             slidesPerView: 2,

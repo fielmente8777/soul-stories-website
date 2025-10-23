@@ -1,4 +1,5 @@
 import { contact } from "@/utils/constent";
+import Footer from './Footer';
 import {
   FillCallIcon,
   FillFaceBookIcon,
@@ -7,27 +8,48 @@ import {
   FillMailIcon,
 } from "@/utils/icons";
 
+interface FooterData {
+  logo: string;
+  description: string;
+  lists: {
+    title?: string;
+    links: {
+      title?: string;
+      icon: React.ReactNode;
+      label: string;
+      href: string;
+      label2?: string;
+      href2?: string;
+    }[];
+  }[];
+}
 
-export const footerData = {
+export const footerData: FooterData = {
   logo: "/logo.png",
-  description:"Escape to Soul Storries — elegant stays amidst Mussoorie’s misty hills and Garhwal’s serene beauty.",
+  description:
+    "Escape to Soul Storries — elegant stays amidst Mussoorie’s misty hills and Garhwal’s serene beauty.",
   lists: [
     {
       title: "Contact Us",
       links: [
         {
+          title: "Address: ",
           icon: <FillLocationIcon />,
-          label: "Address: " + contact.address,
+          label: contact.address,
           href: contact.addressLink,
         },
         {
+          title: "Phone: ",
           icon: <FillCallIcon />,
-          label: "Phone: " + contact.phone,
-          href: "tel:" + contact.phone,
+          label: contact.phone[0],
+          href: "tel:" + contact.phone[0],
+          label2: contact.phone[1],
+          href2: "tel:" + contact.phone[1],
         },
         {
+          title: "Email: ",
           icon: <FillMailIcon />,
-          label: "Email: " + contact.email,
+          label: contact.email,
           href: "mailto:" + contact.email,
         },
       ],

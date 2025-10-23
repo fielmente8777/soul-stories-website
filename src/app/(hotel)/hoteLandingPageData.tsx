@@ -20,8 +20,16 @@ export const hotelLandingPageData = {
     link: { label: "BOOK NOW", url: "" },
     src: "/logo-2.png",
     images: [
-      "/im1.webp", "/im8.webp", "/im24.webp", "/im17.webp", "/im5.webp",
-      "/im6.webp", "/im20.webp", "/im16.webp", "/im4.webp", "/im20.webp",
+      "/im1.webp",
+      "/im8.webp",
+      "/im24.webp",
+      "/im17.webp",
+      "/im5.webp",
+      "/im6.webp",
+      "/im20.webp",
+      "/im16.webp",
+      "/im4.webp",
+      "/im20.webp",
     ],
   },
   rooms: {
@@ -145,7 +153,18 @@ export const hotelLandingPageData = {
     subTitle: "by Soul Storries",
     description:
       "For the first time, Kafuli Cafe opens its doors to all, offering a serene dining experience at 7,500 ft amidst the Garhwal Himalayas. Savor breathtaking views, soulful cuisine, and moments of peaceful indulgence — now open for bookings.",
-    images: ["/im21.webp", "/im3.webp"],
+    images: [
+      "/im21.webp",
+      "/im3.webp",
+      "/_MG_3330-HDR.jpg",
+      "/_MG_3355-HDR.jpg",
+      "/_MG_3372.jpg",
+      "/_MG_3402.jpg",
+      "/DSC00989.jpg",
+      // "/DSC02899.jpg",
+      // "/DSC02933.jpeg",
+      // "/DSC02938.jpg",
+    ],
     link: { label: "BOOK NOW", url: "" },
   },
   experiences: {

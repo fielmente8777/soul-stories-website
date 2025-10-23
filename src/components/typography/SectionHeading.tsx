@@ -66,6 +66,11 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
             <LineLeft />
           </span>
         )}
+        {line && (
+          <span className="lg:hidden block mx-auto mt-2 w-fit">
+            <BottomLine />
+          </span>
+        )}
       </div>
     </div>
   );
@@ -96,5 +101,18 @@ export const LineLeft = () => (
   >
     <rect x={24} y="0.5" width={60} height={2} fill="#E8B716" />
     <rect y="8.5" width={60} height={2} fill="#E8B716" />
+  </svg>
+);
+
+export const BottomLine = () => (
+  <svg
+    width={180}
+    height={11}
+    viewBox="0 0 180 11"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect y={1} width={180} height={2} fill="#E8B716" />
+    <rect x={52} y={9} width={76} height={2} fill="#E8B716" />
   </svg>
 );

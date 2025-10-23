@@ -4,7 +4,7 @@ export const contact = {
     address:"5 kms up from Suwakholi towards Dhanulti Chalchala Village District Dehradun",
     addressLink:"https://maps.app.goo.gl/KShoExape2wqqMfr6",
     socialMedia:{
-        facebook:"https://www.facebook.com/profile.php?id=61552892282924",
+        facebook:"https://www.facebook.com/soulstorries/",
         instagram:"https://www.instagram.com/soulstorries_luxuryestate/",
         linkedin:"https://www.linkedin.com/"
     },

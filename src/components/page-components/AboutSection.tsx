@@ -61,15 +61,19 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           <SwiperCarousel
             data={images}
             slidesPerView={1}
-            spaceBetween={0}
+            spaceBetween={20}
             loop
             modules={[Autoplay]}
             autoplay={{ delay: 2500 }}
             className="w-full"
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
             renderSlide={(src) => (
-              <div
-                className={`relative w-full aspect-[4/3]`}
-              >
+              <div className={`relative w-full aspect-[4/3]`}>
                 <Image
                   src={src}
                   alt={title}

@@ -16,32 +16,29 @@ const Footer = () => {
     <footer className="max_screen_width bg-primary">
       <Container>
         <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4">
-         <div className="md:max-w-[300px] flex flex-col gap-4 items-center">
-           <div className="w-[100px] relative md:w-[199px] aspect-[4/2.5]">
-            <Image
-              src={footerData.logo}
-              alt="logo"
-              fill
-              sizes="100%"
-              className="object-contain "
-            />
+          <div className="md:max-w-[300px] flex flex-col gap-4 items-center">
+            <div className="w-[100px] relative md:w-[199px] aspect-[4/2.5]">
+              <Image
+                src={footerData.logo}
+                alt="logo"
+                fill
+                sizes="100%"
+                className="object-contain "
+              />
+            </div>
+            <p className="text-white text-center">{footerData.description}</p>
           </div>
-          <p className="text-white text-center">{footerData.description}</p>
-         </div>
           {footerData.lists.map((list, index) => (
-            <div className={`${index === 1 ? "lg:w-fit lg:ml-auto" : ""}`} key={index}>
+            <div
+              className={`${index === 1 ? "lg:w-fit lg:ml-auto" : ""}`}
+              key={index}
+            >
               <h2 className="md:text-[2rem] text-white font-aboreto  text-xl mb-4">
                 {list.title}
               </h2>
-              <div className={`flex flex-col gap-2`}>
+              <ul className={`flex flex-col gap-2`}>
                 {list.links.map((item, suIndex) => (
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={item.href}
-                    key={suIndex}
-                    className="flex gap-2"
-                  >
+                  <li className="flex gap-2" key={suIndex}>
                     <span
                       className={`mt-1 ${
                         index === 1
@@ -52,10 +49,55 @@ const Footer = () => {
                       {item.icon}
                       <span className="sr-only">{item.label}</span>
                     </span>
-                    <span className={`${index === 1 ? "text-white font-aboreto text-2xl my-auto" : "md:text-lg text-white"}`}>{item.label}</span>
-                  </Link>
+                    {item.title && (
+                      <span
+                        className={`${
+                          index === 1
+                            ? "text-white font-aboreto text-2xl my-auto"
+                            : "md:text-lg text-white"
+                        }`}
+                      >
+                        {item.title}
+                      </span>
+                    )}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={item.href}
+                      className="flex gap-2"
+                    >
+                      <span
+                        className={`${
+                          index === 1
+                            ? "text-white font-aboreto text-2xl my-auto"
+                            : "md:text-lg text-white"
+                        }`}
+                      >
+                        {item.label}
+                      </span>
+                    </Link>
+                    {item.label2 && <span className="text-white -ml-1">,</span>}
+                    {item.label2 && item.href2 && (
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={item.href2}
+                        className="flex gap-2"
+                      >
+                        <span
+                          className={`${
+                            index === 1
+                              ? "text-white font-aboreto text-2xl my-auto"
+                              : "md:text-lg text-white"
+                          }`}
+                        >
+                          {item.label2}
+                        </span>
+                      </Link>
+                    )}
+                  </li>
                 ))}
-              </div>
+              </ul>
               {index === 1 && (
                 <LinkButton
                   target="_blank"

@@ -4,6 +4,7 @@ import "./globals.css";
 import "./style.scss";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
+import Script from "next/script";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -18,8 +19,10 @@ const aboreto = Aboreto({
 });
 
 export const metadata: Metadata = {
-  title: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
-  description: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
+  title:
+    "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
+  description:
+    "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
 };
 
 export default function RootLayout({
@@ -36,6 +39,18 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Script id="chatbot-config" strategy="afterInteractive">
+          {`
+            window.eazbotConfig = {
+              ndid: "4f14df46-bcfa-43da-8d99-0c6c414445ba",
+              hid: "78285901",
+            };
+          `}
+        </Script>
+        <Script
+          src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

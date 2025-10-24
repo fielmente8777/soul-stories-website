@@ -106,7 +106,7 @@ export const hotelLandingPageData = {
         title: "AURA",
         noOfBadRooms: "1 Bedroom Luxury Villa",
         description:
-          "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
+          "Escape the corner office and unwind in Aura, our cozy one-bedroom wooden chalet. With panoramic Himalayan views, it’s the perfect romantic retreat in Mussoorie.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im15.webp"],
         listOfIcons: [
@@ -128,7 +128,7 @@ export const hotelLandingPageData = {
         title: "ATHENA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
         description:
-          "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
+          "A  luxurious 2-bedroom, 1,700 sqft retreat at Soul Storries, perfect for small families. Enjoy serene comfort, a cozy balcony, & breathtaking views of the magical Mussoorie mountains.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im15.webp"],
         listOfIcons: [

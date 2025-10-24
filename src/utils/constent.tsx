@@ -10,7 +10,7 @@ export const contact = {
         linkedin:"https://www.linkedin.com/"
     },
     WhatsappCta:`https://wa.me/+919667209878?text=${enCodeText}`,
-    formDomain:"testmulti"
+    formDomain:"soulstories"
 }
 
 

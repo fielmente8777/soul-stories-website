@@ -5,6 +5,9 @@ import "./style.scss";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import Script from "next/script";
+import Call from "@/components/ContactButton/Call";
+import { contact } from "@/utils/constent";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,6 +42,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Call callNumber={contact.phone[0]} />
+        <Whatsapp whatsAppNumber={contact.phone[0]} />
         <Script id="chatbot-config" strategy="afterInteractive">
           {`
             window.eazbotConfig = {

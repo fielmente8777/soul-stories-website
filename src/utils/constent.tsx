@@ -1,14 +1,15 @@
+const enCodeText = encodeURIComponent("I'm looking for - Pre-booking Inquiry");
 export const contact = {
     email:"contact@soulstorries.com",
     phone:["+91 96672 09878"," +91 78198 91695 "],
     address:"5 kms up from Suwakholi towards Dhanulti Chalchala Village District Dehradun",
     addressLink:"https://maps.app.goo.gl/KShoExape2wqqMfr6",
     socialMedia:{
-        facebook:"https://www.facebook.com/soulstorries/",
+        facebook:"https://www.facebook.com/p/Soul-Stories-Luxury-Villas-and-Resorts-61569153506448/",
         instagram:"https://www.instagram.com/soulstorries_luxuryestate/",
         linkedin:"https://www.linkedin.com/"
     },
-    WhatsappCta:"https://wa.me/+919667209878?text=Hello",
+    WhatsappCta:`https://wa.me/+919667209878?text=${enCodeText}`,
     formDomain:"testmulti"
 }
 

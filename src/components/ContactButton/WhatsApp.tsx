@@ -10,10 +10,11 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
     if (pathName === "/thank-you/") {
       return null;
     }
+    const enCodeText = encodeURIComponent("I'm looking for - Pre-booking Inquiry");
   return (
     <div className={`fixed bottom-24 lg:left-3 left-4 z-20 cursor-pointer`}>
       <Link
-        href={`https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=Hello`}
+        href={`https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=${enCodeText}`}
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-green-500 hover:bg-green-600 transition-all hover:shadow-2xl"

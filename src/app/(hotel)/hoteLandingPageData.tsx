@@ -10,14 +10,14 @@ import {
 
 export const hotelLandingPageData = {
   bannerData: {
-    src: "/im14.webp",
+    videoSrc:"https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
   },
   aboutHotel: {
     title: "WELCOME TO SOUL STORRIES",
     subTitle: "Your Luxury Wellness Estate in Mussooriee",
     description:
       "Amid Uttarakhand’s tranquil hills, where nature whispers ancient wisdom, I found my sanctuary — Soul Storries. Born during the stillness of Covid, my restless traveler’s heart longed for the embrace of my homeland. Returning to these serene mountains awakened something profound within me — a deep connection to nature, consciousness, and purpose. Here, amidst the valleys and silence, I discovered harmony, renewal, and a vision that reaches beyond self.",
-    link: { label: "BOOK NOW", url: "" },
+    link: { label: "BOOK NOW", url: contact.WhatsappCta },
     src: "/logo-2.png",
     images: [
       "/im1.webp",
@@ -41,7 +41,7 @@ export const hotelLandingPageData = {
         noOfBadRooms: "4 Bedrooms Luxury Villa",
         description:
           "Experience Flora — a luxurious 4-bedroom chalet at Soul Storries, featuring private access, elegant comforts, and stunning mountain views of Mussoorie.",
-        link: { label: "BOOK NOW", url: "" },
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im13.webp"],
         listOfIcons: [
           {
@@ -63,7 +63,7 @@ export const hotelLandingPageData = {
         noOfBadRooms: "1 Bedroom Luxury Villa",
         description:
           "One-bedroom villas provide a luxurious and comfortable retreat for those seeking a private and intimate stay experience with all the essential amenities and more.",
-        link: { label: "BOOK NOW", url: "" },
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im9.webp"],
         listOfIcons: [
           {
@@ -85,7 +85,7 @@ export const hotelLandingPageData = {
         noOfBadRooms: "2 Bedrooms Luxury Villa",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
-        link: { label: "BOOK NOW", url: "" },
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im15.webp"],
         listOfIcons: [
           {
@@ -107,7 +107,7 @@ export const hotelLandingPageData = {
         noOfBadRooms: "1 Bedroom Luxury Villa",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
-        link: { label: "BOOK NOW", url: "" },
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im15.webp"],
         listOfIcons: [
           {
@@ -129,7 +129,7 @@ export const hotelLandingPageData = {
         noOfBadRooms: "2 Bedrooms Luxury Villa",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
-        link: { label: "BOOK NOW", url: "" },
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
         images: ["/im15.webp"],
         listOfIcons: [
           {
@@ -165,14 +165,14 @@ export const hotelLandingPageData = {
       // "/DSC02933.jpeg",
       // "/DSC02938.jpg",
     ],
-    link: { label: "BOOK NOW", url: "" },
+    link: { label: "BOOK NOW", url: contact.WhatsappCta },
   },
   experiences: {
     title: "UNIQUE EXPERIENCES",
     subTitle: "at soul storries",
     link: {
       label: "BOOK NOW",
-      url: "",
+      url: contact.WhatsappCta,
     },
     cards: [
       {

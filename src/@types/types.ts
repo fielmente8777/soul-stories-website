@@ -84,3 +84,18 @@ export interface BanquetsProps {
     url: string;
   };
 }
+
+export interface OurPackagesPropsTypes {
+  title: string;
+  description: string;
+  cards: {
+    packageType: string;
+    days: string;
+    description: string;
+    src: string;
+    link: {
+      href: string;
+      label: string;
+    };
+  }[];
+}

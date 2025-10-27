@@ -44,13 +44,14 @@ export default function RootLayout({
         <Footer />
         <Call callNumber={contact.phone[0]} />
         <Whatsapp whatsAppNumber={contact.phone[0]} />
+        {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">
           {`
-            window.eazbotConfig = {
-              ndid: "4f14df46-bcfa-43da-8d99-0c6c414445ba",
-              hid: "78285901",
-            };
-          `}
+          window.eazbotConfig = {
+            ndid: "4f14df46-bcfa-43da-8d99-0c6c414445ba",
+            hid: "71711659",
+          };
+        `}
         </Script>
         <Script
           src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"

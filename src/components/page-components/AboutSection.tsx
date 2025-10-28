@@ -30,17 +30,19 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   return (
     <SectionWithContainer>
       <div className="flex flex-col gap-8 md:gap-12">
-        <div className="w-[100px] aspect-[4/2] relative mx-auto">
-          <Image
-            src={src}
-            alt={title}
-            fill
-            sizes="100%"
-            quality={100}
-            className="object-contain"
-          />
+        <div className="">
+          <div className="w-[100px] aspect-[4/2] relative mx-auto">
+            <Image
+              src={src}
+              alt={title ? title : ""}
+              fill
+              sizes="100%"
+              quality={100}
+              className="object-contain"
+            />
+          </div>
+          <SectionHeading title={title ?? ""} subTitle={subTitle} line />
         </div>
-        <SectionHeading title={title} subTitle={subTitle} line />
         <div className="lg:grid hidden grid-cols-4 grid-flow-row auto-rows-[6.5rem] gap-4">
           {images.map((image, index) => (
             <div
@@ -49,7 +51,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             >
               <Image
                 src={image}
-                alt={title}
+                alt={title ? title : image}
                 fill
                 sizes="100%"
                 className="object-cover object-center rounded-[20px]"
@@ -76,7 +78,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
               <div className={`relative w-full aspect-[4/3]`}>
                 <Image
                   src={src}
-                  alt={title}
+                  alt={title ? title : src}
                   fill
                   sizes="100%"
                   className="object-cover object-center rounded-[20px]"

@@ -16,7 +16,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section
-      className={`max_screen_width ${defaultPadding ? "py-8 md:py-16" : ""} ${className}`}
+      className={`max_screen_width ${defaultPadding ? "py-14 md:py-[6rem]" : ""} ${className}`}
       id={id}
       style={style}
       {...props}

@@ -95,219 +95,9 @@
   }
 }
 
-.contact-us {
-  position: relative;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 63px;
-    bottom: 0;
-  }
-  &::before {
-    background-image: url("/im9.png");
-    left: 0;
-  }
-  &::after {
-    background-image: url("/im9.png");
-    right: 0;
-  }
-}
-
-.footer {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 688px;
-    height: 88px;
-    top: -90px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url("/Layer3.png");
-  }
-}
-
-.testimonial {
-  position: relative;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-
-    background-repeat: no-repeat;
-  }
-  &::before {
-    background-image: url("/im10.png");
-    right: 0;
-    bottom: 0;
-    width: 55px;
-    height: 63px;
-    background-size: cover;
-  }
-  &::after {
-    background-image: url("/im5.png");
-    left: 0;
-    bottom: -13rem;
-    width: 250px;
-    height: 455px;
-    background-size: cover;
-    pointer-events: none;
-  }
-}
-
-.rating {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 55px;
-    height: 63px;
-    top: -65px;
-    left: 0;
-    background-image: url("/im10.png");
-  }
-}
-
-.activity {
-  position: relative;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  &::before {
-    background-image: url("/im3.png");
-    top: -6rem;
-    right: 0;
-    width: 380px;
-    height: 300px;
-  }
-  &::after {
-    background-image: url("/im2.png");
-    top: 20px;
-    left: 0;
-    width: 372px;
-    height: 46px;
-    background-size: cover;
-  }
-}
-
-.gallery {
-  position: relative;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: 0;
-  }
-  &::before {
-    right: 0;
-    width: 55px;
-    height: 63px;
-    background-image: url("/im10.png");
-  }
-  &::after {
-    left: 0;
-    width: 480px;
-    height: 60px;
-    background-image: url("/im2.png");
-  }
-}
-
-.about-us {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background-image: url("/im5.png");
-    left: 0;
-    bottom: -13rem;
-    width: 250px;
-    height: 455px;
-    background-size: cover;
-    pointer-events: none;
-  }
-}
-
 input {
   @media (width < 768px) {
     padding: 0.8rem !important;
-  }
-}
-
-*::after,
-*::before {
-  @media (width <= 768) {
-    display: none;
-  }
-}
-
-.about {
-  position: relative;
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-  }
-  &::after {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60%;
-    background-color: #c6a445;
-  }
-  &::before {
-    background-image: url("/im9.png");
-    left: 0;
-    top: 33.05%;
-    width: 55px;
-    height: 63px;
-    background-size: cover;
-    pointer-events: none;
-  }
-}
-
-.banner-1 {
-  position: relative;
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-  }
-  &::after {
-    inset: 0;
-    background-color: #c6a445;
-  }
-  &::before {
-    background-image: url("/im9.png");
-    left: 0;
-    top: 33.05%;
-    width: 55px;
-    height: 63px;
-    background-size: cover;
-    pointer-events: none;
   }
 }
 
@@ -321,7 +111,7 @@ input {
   }
   &::before {
     inset: 0;
-    background-color: #2f4b26;
+    background-color: #003232;
     z-index: -2;
   }
   &::after {
@@ -350,6 +140,113 @@ input {
     @media (width < 780px) {
       width: 50px;
       height: 30px;
+    }
+  }
+}
+
+.soul-care-gallery,
+.about-soul,
+.about-soul-care,
+.wellness-services,
+.wellness-wrapper {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+.wellness-services {
+  &::before {
+    inset: 0;
+    background-color: #003232;
+    z-index: -2;
+  }
+  &::after {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("/soul-care/group1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 780px) {
+      height: 400px;
+    }
+  }
+}
+
+.wellness-wrapper {
+  &::before {
+    top: -2rem;
+    left: 0;
+    width: 38px;
+    height: 32px;
+    z-index: 1;
+    background-image: url("/soul-care/x38.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 780px) {
+      height: 400px;
+    }
+  }
+}
+.about-soul-care {
+  &::before {
+    top: -2rem;
+    left: 0;
+    width: 38px;
+    height: 32px;
+    z-index: 1;
+    background-image: url("/soul-care/x8_7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.about-soul {
+  &::before {
+    top: 5rem;
+    left: 2rem;
+    width: 448px;
+    height: 383px;
+    z-index: -1;
+    background-image: url("/soul-care/im7.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 780px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: 0;
+    right: 0;
+    width: 139px;
+    height: 123px;
+    z-index: -1;
+    background-image: url("/soul-care/group48.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 780px) {
+      height: 400px;
+    }
+  }
+}
+
+.soul-care-gallery {
+  &::before {
+    bottom: -1.5rem;
+    right: .5rem;
+    width: 448px;
+    height: 383px;
+    z-index: -1;
+    background-image: url("/soul-care/im7.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (width < 780px) {
+      display: none;
     }
   }
 }

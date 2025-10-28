@@ -70,3 +70,49 @@ export const footerData: FooterData = {
     },
   ],
 };
+export const footerData2: FooterData = {
+  logo: "/soul-care/logo.webp",
+  description:
+    "Soulcare — your sanctuary for deep rest, renewal, and inner healing.",
+  lists: [
+    {
+      title: "Contact Us",
+      links: [
+        {
+          title: "Address: ",
+          icon: <FillLocationIcon />,
+          label: contact.address,
+          href: contact.addressLink,
+        },
+        {
+          title: "Phone: ",
+          icon: <FillCallIcon />,
+          label: contact.phone[0],
+          href: "tel:" + contact.phone[0],
+          label2: contact.phone[1],
+          href2: "tel:" + contact.phone[1],
+        },
+        {
+          title: "Email: ",
+          icon: <FillMailIcon />,
+          label: contact.email,
+          href: "mailto:" + contact.email,
+        },
+      ],
+    },
+    {
+      links: [
+        {
+          icon: <FillFaceBookIcon />,
+          label: "Facebook",
+          href: contact.socialMedia.facebook,
+        },
+        {
+          icon: <FillInstaIcon />,
+          label: "Instagram",
+          href: contact.socialMedia.instagram,
+        },
+      ],
+    },
+  ],
+};

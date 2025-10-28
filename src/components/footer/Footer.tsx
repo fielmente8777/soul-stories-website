@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { footerData } from "./footerdata";
+import { footerData, footerData2 } from "./footerdata";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LinkButton from "../buttons/LinkButton";
@@ -12,6 +12,9 @@ const Footer = () => {
   if (pathName === "/thank-you/") {
     return null;
   }
+
+  const data = pathName === "/" ? footerData : footerData2;
+
   return (
     <footer className="max_screen_width bg-primary">
       <Container>
@@ -19,16 +22,16 @@ const Footer = () => {
           <div className="md:max-w-[300px] flex flex-col gap-4 items-center">
             <div className="w-[100px] relative md:w-[199px] aspect-[4/2.5]">
               <Image
-                src={footerData.logo}
+                src={data.logo}
                 alt="logo"
                 fill
                 sizes="100%"
                 className="object-contain "
               />
             </div>
-            <p className="text-white text-center">{footerData.description}</p>
+            <p className="text-white text-center">{data.description}</p>
           </div>
-          {footerData.lists.map((list, index) => (
+          {data.lists.map((list, index) => (
             <div
               className={`${index === 1 ? "lg:w-fit lg:ml-auto" : ""}`}
               key={index}
@@ -38,12 +41,12 @@ const Footer = () => {
               </h2>
               <ul className={`flex flex-col gap-2`}>
                 {list.links.map((item, suIndex) => (
-                  <li className="flex gap-2" key={suIndex}>
+                  <li className="flex gap-2 flex-wrap" key={suIndex}>
                     <span
                       className={`mt-1 ${
                         index === 1
                           ? "text-secondary flex items-center justify-center rounded-sm bg-white w-10 aspect-square"
-                          : "text-white "
+                          : "text-white inline-block"
                       }`}
                     >
                       {item.icon}
@@ -54,7 +57,7 @@ const Footer = () => {
                         className={`${
                           index === 1
                             ? "text-white font-aboreto text-2xl my-auto"
-                            : "md:text-lg text-white"
+                            : "md:text-lg text-white inline-block"
                         }`}
                       >
                         {item.title}
@@ -70,7 +73,7 @@ const Footer = () => {
                         className={`${
                           index === 1
                             ? "text-white font-aboreto text-2xl my-auto"
-                            : "md:text-lg text-white"
+                            : "md:text-lg text-white inline-block"
                         }`}
                       >
                         {item.label}

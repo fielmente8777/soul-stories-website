@@ -398,7 +398,7 @@ export const PrevBtn = () => (
   >
     <path
       d="M0.292892 8.07112C-0.0976295 7.6806 -0.0976295 7.04743 0.292892 6.65691L6.65685 0.292946C7.04738 -0.0975785 7.68054 -0.0975785 8.07107 0.292946C8.46159 0.68347 8.46159 1.31664 8.07107 1.70716L2.41422 7.36401L8.07107 13.0209C8.46159 13.4114 8.46159 14.0446 8.07107 14.4351C7.68054 14.8256 7.04738 14.8256 6.65685 14.4351L0.292892 8.07112ZM49 7.36401V8.36401H1V7.36401V6.36401H49V7.36401Z"
-      fill="white"
+      fill="currentColor"
     />
   </svg>
 );
@@ -413,7 +413,7 @@ export const NextBtn = () => (
   >
     <path
       d="M48.7071 8.07112C49.0976 7.6806 49.0976 7.04743 48.7071 6.65691L42.3431 0.292946C41.9526 -0.0975785 41.3195 -0.0975785 40.9289 0.292946C40.5384 0.68347 40.5384 1.31664 40.9289 1.70716L46.5858 7.36401L40.9289 13.0209C40.5384 13.4114 40.5384 14.0446 40.9289 14.4351C41.3195 14.8256 41.9526 14.8256 42.3431 14.4351L48.7071 8.07112ZM0 7.36401V8.36401H48V7.36401V6.36401H0V7.36401Z"
-      fill="white"
+      fill="currentColor"
     />
   </svg>
 );
@@ -429,7 +429,7 @@ export const HillStationICon = () => (
     <g clipPath="url(#clip0_4_2998)">
       <path
         d="M0.351562 22.8416H23.6484"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -437,7 +437,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M7.47478 18.8343L6.58594 18.4439C5.98031 18.1779 5.28998 18.1827 4.68811 18.4571L0.351562 20.4337"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -445,7 +445,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M23.6484 21.2194L19.3172 20.0072C18.8897 19.8719 18.4322 19.8633 17.9998 19.9823L14.1332 21.0465C13.4886 21.2239 12.8025 21.174 12.1903 20.9052L8.97095 19.4912"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -453,7 +453,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M3.64304 1.52026L3.1585 2.00481L2.67395 1.52026"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -461,7 +461,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M6.02773 1.52026L5.54319 2.00481L5.05859 1.52026"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -469,7 +469,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M4.8856 3.2937L4.40105 3.77825L3.9165 3.2937"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -477,7 +477,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M18.9372 16.6148L21.1793 16.6146C21.6275 16.6146 21.9219 16.1463 21.7274 15.7423L20.7461 13.704L21.5584 13.1731C21.8689 12.9703 21.9272 12.5392 21.6816 12.2611L20.3958 10.8054L21.1554 10.379C21.5068 10.1817 21.5727 9.70334 21.2877 9.41834L18.0606 6.19116L17.2655 6.98621"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -485,7 +485,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M14.8424 14.8101L14.3936 15.7423C14.1992 16.1462 14.4935 16.6146 14.9418 16.6146L17.1838 16.6148"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -493,7 +493,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M17.1838 20.2069V13.3734C17.1838 12.8893 17.5763 12.4968 18.0604 12.4968C18.5446 12.4968 18.9371 12.8893 18.9371 13.3734V19.9215"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -501,7 +501,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M9.1576 14.8101L9.60666 15.7424C9.80072 16.146 9.50682 16.6147 9.05822 16.6147H6.81628"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -509,7 +509,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M5.06295 16.6148H2.82091C2.37278 16.6148 2.0784 16.1461 2.27293 15.7425L3.25403 13.7039L2.44168 13.1732C2.13137 12.9703 2.07278 12.539 2.3184 12.261L3.60419 10.8056L2.84481 10.379C2.49325 10.1817 2.42715 9.70353 2.71215 9.41853L5.23639 6.89429L5.93952 6.19116L8.00751 8.25916"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -517,7 +517,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M6.81621 18.5449V13.3734C6.81621 12.8893 6.42372 12.4968 5.9396 12.4968C5.45547 12.4968 5.06299 12.8893 5.06299 13.3734V18.3237"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -525,7 +525,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M13.1482 14.8101L16.0847 14.8101C16.6718 14.8101 17.0572 14.1967 16.8026 13.6677L15.5174 10.998L16.5813 10.3028C16.988 10.037 17.0642 9.47243 16.7427 9.10831L15.0586 7.20165L16.0534 6.64323C16.5137 6.38481 16.6 5.75832 16.2268 5.38505L12.0001 1.15845L7.77341 5.3851C7.40014 5.75836 7.48648 6.3849 7.9468 6.64328L8.94154 7.2017L7.2575 9.10835C6.93593 9.47243 7.0122 10.0371 7.41884 10.3028L8.48277 10.998L7.19759 13.6677C6.94292 14.1967 7.32842 14.8101 7.91549 14.8101H10.8519"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -533,7 +533,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M10.8519 10.7386V10.5651C10.8519 9.93103 11.366 9.41699 12 9.41699C12.6341 9.41699 13.1482 9.93103 13.1482 10.5651V21.1432"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -541,7 +541,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M10.8519 20.3173V12.428"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -549,7 +549,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M1.59241 19.7336V17.9009"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -557,7 +557,7 @@ export const HillStationICon = () => (
       />
       <path
         d="M15.2656 20.7347V18.2476"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="0.5"
         strokeMiterlimit={10}
         strokeLinecap="round"
@@ -566,7 +566,7 @@ export const HillStationICon = () => (
     </g>
     <defs>
       <clipPath id="clip0_4_2998">
-        <rect width={24} height={24} fill="white" />
+        <rect width={24} height={24} fill="currentColor" />
       </clipPath>
     </defs>
   </svg>
@@ -582,7 +582,7 @@ export const BadICon = () => (
   >
     <path
       d="M20.1954 9.89768V4.1046C20.1954 3.79958 19.9481 3.5523 19.643 3.5523C19.338 3.5523 19.0907 3.79958 19.0907 4.1046C15.6204 4.1046 15.6204 3 12.15 3C8.67961 3 8.67961 4.1046 5.20924 4.1046C5.20924 3.79958 4.96195 3.5523 4.65693 3.5523C4.3519 3.5523 4.10461 3.79958 4.10461 4.1046V9.89768"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -590,7 +590,7 @@ export const BadICon = () => (
     />
     <path
       d="M10.493 9.14911C11.1031 9.14911 11.5977 8.65458 11.5977 8.04451V7.41857C11.5977 6.80849 11.1031 6.31396 10.493 6.31396H6.31386C5.70377 6.31396 5.20923 6.80849 5.20923 7.41857V8.04451C5.20923 8.65458 5.70377 9.14911 6.31386 9.14911"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -598,7 +598,7 @@ export const BadICon = () => (
     />
     <path
       d="M17.9861 9.14911C18.5962 9.14911 19.0907 8.65458 19.0907 8.04451V7.41857C19.0907 6.80849 18.5962 6.31396 17.9861 6.31396H13.8069C13.1968 6.31396 12.7023 6.80849 12.7023 7.41857V8.04451C12.7023 8.65458 13.1968 9.14911 13.8069 9.14911"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -606,7 +606,7 @@ export const BadICon = () => (
     />
     <path
       d="M20.7477 14.1199V11.3584C20.7477 10.1383 19.7586 9.14917 18.5385 9.14917H5.76162C4.54149 9.14917 3.55237 10.1383 3.55237 11.3584V14.1199"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -614,7 +614,7 @@ export const BadICon = () => (
     />
     <path
       d="M20.7477 13.5669C20.7477 12.3468 19.7586 11.3577 18.5385 11.3577H5.76162C4.54149 11.3577 3.55237 12.3468 3.55237 13.5669"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -622,7 +622,7 @@ export const BadICon = () => (
     />
     <path
       d="M5.20923 19.0901H21.3"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -630,7 +630,7 @@ export const BadICon = () => (
     />
     <path
       d="M20.1954 19.0909V21.3001H21.3V14.6725C21.3 14.3675 21.0527 14.1202 20.7477 14.1202C20.4427 14.1202 20.1954 14.3675 20.1954 14.6725C16.1727 14.6725 16.1727 13.5679 12.15 13.5679C8.12731 13.5679 8.12731 14.6725 4.10463 14.6725C4.10463 14.3675 3.85734 14.1202 3.55231 14.1202C3.24729 14.1202 3 14.3675 3 14.6725V21.3001H4.10463V19.0909H3"
-      stroke="white"
+      stroke="currentColor"
       strokeWidth="0.5"
       strokeMiterlimit={10}
       strokeLinecap="round"
@@ -659,7 +659,7 @@ export const WifiIcon = ({ ...props }) => (
       width={18}
       height={18}
     >
-      <path d="M18 0H0v18h18V0z" fill="#fff" />
+      <path d="M18 0H0v18h18V0z" fill="currentColor" />
     </mask>
     <g mask="url(#a)">
       <mask
@@ -673,11 +673,11 @@ export const WifiIcon = ({ ...props }) => (
         width={18}
         height={18}
       >
-        <path d="M0 0h18v18H0V0z" fill="#fff" />
+        <path d="M0 0h18v18H0V0z" fill="currentColor" />
       </mask>
       <g
-        mask="url(#b)"
-        stroke="#fff"
+        // mask="url(#b)"
+        stroke="currentColor"
         strokeWidth={0.5}
         strokeMiterlimit={10}
         strokeLinecap="round"

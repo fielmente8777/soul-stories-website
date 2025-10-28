@@ -1,9 +1,8 @@
 import { JSX } from "react";
-import CafeAndRestaurants from "../components/page-components/CafeAndRestaurants";
 
 export interface AboutSectionProps {
-  title: string;
-  subTitle: string;
+  title?: string;
+  subTitle?: string;
   description: string;
   link: {
     label: string;
@@ -14,22 +13,28 @@ export interface AboutSectionProps {
 }
 
 export interface RoomsProps {
+  bg?: string;
   title: string;
   subTitle: string;
   cards: {
+    textColor?: string;
     title: string;
     noOfBadRooms: string;
-    description: string;
+    description?: string;
     listOfIcons: {
       icons: JSX.Element;
       title: string;
     }[];
-    link: {
+    link?: {
       label: string;
       url: string;
     };
     images: string[];
   }[];
+  link?: {
+    label: string;
+    url: string;
+  };
 }
 
 export interface FacilitiesProps {

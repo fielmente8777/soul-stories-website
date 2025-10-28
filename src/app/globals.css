@@ -28,7 +28,7 @@
 
 body {
   font-family: var(--font-montserrat);
-  background-color: var(--bg-clr);
+  /* background-color: var(--bg-clr); */
 }
 
 @layer utilities {

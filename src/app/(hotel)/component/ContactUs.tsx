@@ -1,6 +1,5 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
-import { SectionHeading } from "@/components/typography";
 import { contact } from "@/utils/constent";
 import Image from "next/image";
 import { JSX } from "react";

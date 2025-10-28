@@ -1,5 +1,4 @@
 import { contact } from "@/utils/constent";
-import Footer from './Footer';
 import {
   FillCallIcon,
   FillFaceBookIcon,

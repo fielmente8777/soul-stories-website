@@ -201,17 +201,17 @@ export const hotelLandingPageData = {
       {
         icons: <BusIcon />,
         title: "Bus Station",
-        distance: "XX Kilometers",
+        distance: "Nearest Bus Station — Dehradun ISBT (38 km)",
       },
       {
         icons: <TrainIcon />,
         title: "Train Station",
-        distance: "XX Kilometers",
+        distance: "Nearest Railway Station — Dehradun (36 km)",
       },
       {
         icons: <AirPortIcon />,
         title: "Airport",
-        distance: "XX Kilometers",
+        distance: "Nearest Airport — Jolly Grant, Dehradun (60 km)",
       },
     ],
     link: {

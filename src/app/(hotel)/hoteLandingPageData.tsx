@@ -36,10 +36,12 @@ export const hotelLandingPageData = {
   rooms: {
     title: "WHERE COMFORT MEETS LUXURY",
     subTitle: "Our VILLA Accommodations",
+    description:"**Rs 2,500 Extra Bed charges per guest per night with Breakfast. Breakfast is complimentary, and all other meals are available on an à la carte.",
     cards: [
       {
         title: "FLORA",
         noOfBadRooms: "4 Bedrooms Luxury Villa",
+        price:"₹ 60,000 + 18% Taxes",
         description:
           "Experience Flora — a luxurious 4-bedroom chalet at Soul Storries, featuring private access, elegant comforts, and stunning mountain views of Mussoorie.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
@@ -62,6 +64,7 @@ export const hotelLandingPageData = {
       {
         title: "Amaraa",
         noOfBadRooms: "1 Bedroom Luxury Villa",
+        price:"₹ 15,000 + 18% Taxes",
         description:
           "One-bedroom villas provide a luxurious and comfortable retreat for those seeking a private and intimate stay experience with all the essential amenities and more.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
@@ -84,6 +87,7 @@ export const hotelLandingPageData = {
       {
         title: "AURORA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
+        price:"₹ 30,000 + 18% Taxes",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
@@ -106,6 +110,7 @@ export const hotelLandingPageData = {
       {
         title: "AURA",
         noOfBadRooms: "1 Bedroom Luxury Villa",
+        price:"₹ 15,000 + 18% Taxes",
         description:
           "Escape the corner office and unwind in Aura, our cozy one-bedroom wooden chalet. With panoramic Himalayan views, it’s the perfect romantic retreat in Mussoorie.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
@@ -128,6 +133,7 @@ export const hotelLandingPageData = {
       {
         title: "ATHENA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
+        price:"₹ 30,000 + 18% Taxes",
         description:
           "A  luxurious 2-bedroom, 1,700 sqft retreat at Soul Storries, perfect for small families. Enjoy serene comfort, a cozy balcony, & breathtaking views of the magical Mussoorie mountains.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },

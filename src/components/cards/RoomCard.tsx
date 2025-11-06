@@ -14,6 +14,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   link,
   listOfIcons,
   textColor,
+  price,
 }) => {
   return (
     <div className="flex flex-col gap-4 overflow-hidden">
@@ -60,6 +61,9 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           {noOfBadRooms}
         </p>
         {description && <p className="text-white ">{description}</p>}
+        {price && (
+          <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
+        )}
         {link && (
           <LinkButton
             href={link.url}

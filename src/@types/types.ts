@@ -16,11 +16,13 @@ export interface RoomsProps {
   bg?: string;
   title: string;
   subTitle: string;
+  description?: string;
   cards: {
     textColor?: string;
     title: string;
     noOfBadRooms: string;
     description?: string;
+    price?: string;
     listOfIcons: {
       icons: JSX.Element;
       title: string;

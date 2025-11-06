@@ -4,9 +4,16 @@ import { RoomsSlider } from "../sliders";
 import { SectionHeading } from "../typography";
 import LinkButton from "../buttons/LinkButton";
 
-const Rooms: React.FC<RoomsProps> = ({ title, subTitle, cards, link, bg }) => {
+const Rooms: React.FC<RoomsProps> = ({
+  title,
+  subTitle,
+  cards,
+  link,
+  bg,
+  description,
+}) => {
   return (
-    <Section className= {`${bg ? `bg-[#F9FFEB]` : "bg-primary"}`}>
+    <Section className={`${bg ? `bg-[#F9FFEB]` : "bg-primary"}`}>
       <div className="flex flex-col md:gap-14 gap-8">
         <SectionHeading
           title={title}
@@ -17,6 +24,7 @@ const Rooms: React.FC<RoomsProps> = ({ title, subTitle, cards, link, bg }) => {
           line
         />
         <RoomsSlider cards={cards} bg={bg} />
+        {description && <p className="md:text-lg text-white text-center">{description}</p>}
         {link && (
           <LinkButton
             href={link.url}

@@ -61,9 +61,9 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           {noOfBadRooms}
         </p>
         {description && <p className="text-white ">{description}</p>}
-        {price && (
+        {/* {price && (
           <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
-        )}
+        )} */}
         {link && (
           <LinkButton
             href={link.url}

@@ -172,7 +172,7 @@ const Form1: React.FC<formProps> = ({
           check_in: `${formData?.checkIn}`,
           check_out: `${formData?.checkOut}`,
           created_from: "landing-page",
-          hid: "71711659",
+          hId: "71711659",
         },
         {
           headers: {

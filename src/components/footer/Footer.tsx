@@ -1,20 +1,20 @@
 "use client";
+import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
-import { footerData, footerData2 } from "./footerdata";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import LinkButton from "../buttons/LinkButton";
-import { contact } from "@/utils/constent";
+import OnlyButton from "../buttons/OnlyButton";
 import { Container } from "../sectionComponants";
+import { footerData, footerData2 } from "./footerdata";
 
 const Footer = () => {
+  const { setIsOpenPopup } = useWebContext();
   const pathName = usePathname();
   if (pathName === "/thank-you/") {
     return null;
   }
 
   const data = pathName === "/" ? footerData : footerData2;
-
   return (
     <footer className="max_screen_width bg-primary">
       <Container>
@@ -102,11 +102,16 @@ const Footer = () => {
                 ))}
               </ul>
               {index === 1 && (
-                <LinkButton
-                  target="_blank"
-                  rel="noopener noreferrer"
+                // <LinkButton
+                //   target="_blank"
+                //   rel="noopener noreferrer"
+                //   label={"Book Now"}
+                //   href={contact.WhatsappCta}
+                //   className="mt-6 w-full justify-center text-white bg-secondary border-secondary"
+                // />
+                <OnlyButton
+                  onclick={() => setIsOpenPopup(true)}
                   label={"Book Now"}
-                  href={contact.WhatsappCta}
                   className="mt-6 w-full justify-center text-white bg-secondary border-secondary"
                 />
               )}

@@ -1,15 +1,28 @@
+import { ArrowUpIcons } from "@/utils/icons";
 
 interface OnlyButtonProps {
-    label: string,
-    className?: string,
-    onclick?: () => void
+  label: string;
+  className?: string;
+  onclick?: () => void;
 }
-const OnlyButton: React.FC<OnlyButtonProps> = ({label, className="", onclick, ...props}) => {
-    return (
-        <button className={`transition-all border duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-lg px-6 py-3 ${className}`} {...props} onClick={onclick}>
-            {label}
-        </button>
-    );
-}
+const OnlyButton: React.FC<OnlyButtonProps> = ({
+  label,
+  className = "",
+  onclick,
+  ...props
+}) => {
+  return (
+    <button
+      className={`flex uppercase items-center gap-2 border w-fit px-4 py-2 rounded-lg font-semibold hover:scale-95 transition-all duration-300 ease-in-out hover:shadow-lg ${className}`}
+      {...props}
+      onClick={onclick}
+    >
+      {label}
+      <span>
+        <ArrowUpIcons />
+      </span>
+    </button>
+  );
+};
 
 export default OnlyButton;

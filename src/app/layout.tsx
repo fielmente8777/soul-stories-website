@@ -8,6 +8,8 @@ import Script from "next/script";
 import Call from "@/components/ContactButton/Call";
 import { contact } from "@/utils/constent";
 import Whatsapp from "@/components/ContactButton/WhatsApp";
+import { WebProvider } from "@/context-api/WebContext";
+import PopUpForm from "@/components/pop-up/PopUpForm";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -122,11 +124,14 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
-        <Navbar />
-        {children}
-        <Footer />
-        <Call callNumber={contact.phone[0]} />
-        <Whatsapp whatsAppNumber={contact.phone[0]} />
+        <WebProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <Call callNumber={contact.phone[0]} />
+          <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <PopUpForm />
+        </WebProvider>
         {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">
           {`

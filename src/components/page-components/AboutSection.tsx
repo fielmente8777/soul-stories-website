@@ -1,11 +1,12 @@
 "use client";
 import { AboutSectionProps } from "@/@types/types";
-import { SectionWithContainer } from "../sectionComponants";
+import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
-import LinkButton from "../buttons/LinkButton";
-import { SectionHeading } from "../typography";
-import SwiperCarousel from "../sliders/SwiperCarousel";
 import { Autoplay } from "swiper/modules";
+import OnlyButton from "../buttons/OnlyButton";
+import { SectionWithContainer } from "../sectionComponants";
+import SwiperCarousel from "../sliders/SwiperCarousel";
+import { SectionHeading } from "../typography";
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   title,
@@ -27,6 +28,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     "row-span-2",
     "row-span-2",
   ];
+  const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
       <div className="flex flex-col gap-8 md:gap-12">
@@ -90,9 +92,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({
         <p className="text-center text-dark md:text-lg lg:max-w-[69rem] mx-auto">
           {description}
         </p>
-        <LinkButton
+        {/* <LinkButton
           href={link.url}
           label={link.label}
+          className=" text-white bg-secondary text-nowrap border-secondary mx-auto"
+        /> */}
+        <OnlyButton
+          label={link.label}
+          onclick={() => setIsOpenPopup(true)}
           className=" text-white bg-secondary text-nowrap border-secondary mx-auto"
         />
       </div>

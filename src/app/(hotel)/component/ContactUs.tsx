@@ -1,6 +1,7 @@
-import LinkButton from "@/components/buttons/LinkButton";
+"use client";
+import OnlyButton from "@/components/buttons/OnlyButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
-import { contact } from "@/utils/constent";
+import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 import { JSX } from "react";
 
@@ -18,14 +19,17 @@ interface IConnectivity {
   };
 }
 const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
+  const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="md:grid grid-cols-2 md:items-center flex flex-col-reverse gap-8 w-full mt-8">
           <div className="flex flex-col gap-8 max-md:order-2">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-[130px] bg-secondary"/>
-              <h2 className="text-3xl md:text-[2.5rem] text-primary lg:max-w-[500px] font-aboreto">{title}</h2>
+              <div className="w-3 h-[130px] bg-secondary" />
+              <h2 className="text-3xl md:text-[2.5rem] text-primary lg:max-w-[500px] font-aboreto">
+                {title}
+              </h2>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               {items?.map((item, index) => (
@@ -41,8 +45,13 @@ const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
                 </div>
               ))}
             </div>
-            <LinkButton
+            {/* <LinkButton
               href={contact.WhatsappCta}
+              label={"Book Now"}
+              className="text-white bg-secondary text-nowrap border-secondary"
+            /> */}
+            <OnlyButton
+              onclick={() => setIsOpenPopup(true)}
               label={"Book Now"}
               className="text-white bg-secondary text-nowrap border-secondary"
             />

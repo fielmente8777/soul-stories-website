@@ -230,15 +230,15 @@ const Form1: React.FC<formProps> = ({
     <form
       onSubmit={handleFormSubmit}
       className={`grid ${
-        !gridView ? "md:grid-cols-12" : "gap-2 bg-transparent"
-      } grid-cols-2 max-md:gap-2  divide-x divide-[#E0E0E0]`}
+        !gridView ? "md:grid-cols-12 divide-x" : "gap-2 bg-transparent divide-y"
+      } grid-cols-2 max-md:gap-2  max-md:divide-y divide-[#E0E0E0]`}
       ref={formRef}
     >
       {/* Full Name Field */}
       <div
         className={`col-span-2 relative flex flex-col px-4 gap-4 ${
           rounded && "lg:rounded-l-2xl"
-        } bg-[#fff]  `}
+        } bg-[#fff] ${gridView && "pb-4"} md:pb-4`}
       >
         <label
           htmlFor="fullName"
@@ -267,7 +267,7 @@ const Form1: React.FC<formProps> = ({
       </div>
 
       {/* Phone Number Field */}
-      <div className={`col-span-2 w-full flex flex-col px-4 gap-4 bg-[#fff]`}>
+      <div className={`col-span-2 ${gridView && "pb-4"} md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}>
         <label
           htmlFor="PhoneNumber"
           className="text-sm max-md:py-3 uppercase text-[#343434]"
@@ -318,7 +318,7 @@ const Form1: React.FC<formProps> = ({
 
       {/* Email Field */}
       <div
-        className={`col-span-2 relative px-4 flex flex-col gap-4 bg-[#fff]`}
+        className={`col-span-2 ${gridView && "pb-4"} md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
       >
         <label htmlFor="EmailId" className="text-sm uppercase max-md:py-3 text-[#343434]">
           Email Id
@@ -343,7 +343,7 @@ const Form1: React.FC<formProps> = ({
       </div>
       {/* villa Field */}
       <div
-        className={`relative col-span-2 w-full flex flex-col bg-white`}
+        className={`relative col-span-2 ${gridView && "pb-4"} md:pb-4 w-full flex flex-col bg-white`}
         ref={villaDropDownRef}
       >
         <label
@@ -355,7 +355,7 @@ const Form1: React.FC<formProps> = ({
         <button
           type="button"
           onClick={() => setIsVillaDropdownOpen(!isVillaDropdownOpen)}
-          className={`w-full h-full px-4 py-3.5 text-left bg-white flex items-center justify-between ${
+          className={`w-full h-full ps-4 pe-2 py-3.5 text-left bg-white flex items-center justify-between ${
             !formData.villa ? "text-gray-400" : ""
           }`}
           aria-haspopup="listbox"
@@ -406,7 +406,7 @@ const Form1: React.FC<formProps> = ({
         )}
       </div>
       {/* Date Picker Field */}
-      <div className={`col-span-2 flex flex-col px-4 bg-[#fff] relative`}>
+      <div className={`col-span-2 ${gridView && "pb-4"} md:pb-4 flex flex-col px-4 bg-[#fff] relative`}>
         <label htmlFor="checkIn" className="text-sm max-md:py-3 text-[#343434]">
           Check In & Check Out*
         </label>

@@ -171,7 +171,8 @@ const Form2: React.FC<formProps> = ({
           Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut}, PACKAGE: ${formData?.PACKAGE}`,
           check_in: `${formData?.checkIn}`,
           check_out: `${formData?.checkOut}`,
-          created_from: "landing-page",
+          created_from: "web-form",
+          source_url: window.location.href,
         },
         {
           headers: {
@@ -316,10 +317,11 @@ const Form2: React.FC<formProps> = ({
       </div>
 
       {/* Email Field */}
-      <div
-        className={`col-span-2 relative px-4 flex flex-col gap-4 bg-[#fff]`}
-      >
-        <label htmlFor="EmailId" className="text-sm uppercase max-md:py-3 text-[#343434]">
+      <div className={`col-span-2 relative px-4 flex flex-col gap-4 bg-[#fff]`}>
+        <label
+          htmlFor="EmailId"
+          className="text-sm uppercase max-md:py-3 text-[#343434]"
+        >
           Email Id
         </label>
         <input
@@ -406,7 +408,10 @@ const Form2: React.FC<formProps> = ({
       </div>
       {/* Date Picker Field */}
       <div className={`col-span-2 flex flex-col px-4 bg-[#fff] relative`}>
-        <label htmlFor="checkIn" className="text-sm uppercase max-md:py-3 text-[#343434]">
+        <label
+          htmlFor="checkIn"
+          className="text-sm uppercase max-md:py-3 text-[#343434]"
+        >
           Check In & Check Out*
         </label>
         <DatePicker

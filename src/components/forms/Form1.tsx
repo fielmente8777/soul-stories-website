@@ -171,7 +171,8 @@ const Form1: React.FC<formProps> = ({
           Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut}, Villa: ${formData?.villa}`,
           check_in: `${formData?.checkIn}`,
           check_out: `${formData?.checkOut}`,
-          created_from: "landing-page",
+          created_from: "web-form",
+          source_url: window.location.href,
           hId: "71711659",
         },
         {
@@ -267,7 +268,11 @@ const Form1: React.FC<formProps> = ({
       </div>
 
       {/* Phone Number Field */}
-      <div className={`col-span-2 ${gridView && "pb-4"} md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}>
+      <div
+        className={`col-span-2 ${
+          gridView && "pb-4"
+        } md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}
+      >
         <label
           htmlFor="PhoneNumber"
           className="text-sm max-md:py-3 uppercase text-[#343434]"
@@ -318,9 +323,14 @@ const Form1: React.FC<formProps> = ({
 
       {/* Email Field */}
       <div
-        className={`col-span-2 ${gridView && "pb-4"} md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
+        className={`col-span-2 ${
+          gridView && "pb-4"
+        } md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
       >
-        <label htmlFor="EmailId" className="text-sm uppercase max-md:py-3 text-[#343434]">
+        <label
+          htmlFor="EmailId"
+          className="text-sm uppercase max-md:py-3 text-[#343434]"
+        >
           Email Id
         </label>
         <input
@@ -343,7 +353,9 @@ const Form1: React.FC<formProps> = ({
       </div>
       {/* villa Field */}
       <div
-        className={`relative col-span-2 ${gridView && "pb-4"} md:pb-4 w-full flex flex-col bg-white`}
+        className={`relative col-span-2 ${
+          gridView && "pb-4"
+        } md:pb-4 w-full flex flex-col bg-white`}
         ref={villaDropDownRef}
       >
         <label
@@ -406,7 +418,11 @@ const Form1: React.FC<formProps> = ({
         )}
       </div>
       {/* Date Picker Field */}
-      <div className={`col-span-2 ${gridView && "pb-4"} md:pb-4 flex flex-col px-4 bg-[#fff] relative`}>
+      <div
+        className={`col-span-2 ${
+          gridView && "pb-4"
+        } md:pb-4 flex flex-col px-4 bg-[#fff] relative`}
+      >
         <label htmlFor="checkIn" className="text-sm max-md:py-3 text-[#343434]">
           Check In & Check Out*
         </label>

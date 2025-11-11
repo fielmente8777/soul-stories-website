@@ -2,8 +2,9 @@
 import { RoomsProps } from "@/@types/types";
 import Image from "next/image";
 import { FC } from "react";
+import OnlyButton from "../buttons/OnlyButton";
 import SwiperCarousel from "../sliders/SwiperCarousel";
-import LinkButton from "../buttons/LinkButton";
+import { useWebContext } from "@/context-api/WebContext";
 // import { Navigation } from "swiper/modules";
 
 const RoomCard: FC<RoomsProps["cards"][0]> = ({
@@ -14,8 +15,8 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   link,
   listOfIcons,
   textColor,
-  price,
 }) => {
+  const {setIsOpenPopup} = useWebContext();
   return (
     <div className="flex flex-col gap-4 overflow-hidden">
       <SwiperCarousel
@@ -65,10 +66,15 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
         )} */}
         {link && (
-          <LinkButton
-            href={link.url}
+          // <LinkButton
+          //   href={link.url}
+          //   label={link.label}
+          //   className="mt-4 text-white"
+          // />
+           <OnlyButton
             label={link.label}
-            className="mt-4 text-white"
+            onclick={() => setIsOpenPopup(true)}
+            className="text-nowrap text-white bg-secondary border-secondary mx-auto"
           />
         )}
       </div>

@@ -18,6 +18,7 @@ const Banner: React.FC<BannerProps> = ({ src, videoSrc }) => {
           muted={true}
           autoPlay
           loop
+          poster={src}
           controls={false}
         />
       ) : (

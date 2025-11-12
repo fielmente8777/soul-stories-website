@@ -61,9 +61,11 @@ const CafeSlider: React.FC<CafeSliderProps> = ({ cards }) => {
       <div className="flex items-center justify-center gap-2 mt-6">
         <button className="w-10 aspect-square text-white bg-primary rounded-full flex items-center justify-center cafe-prev">
           <BtnPrev />
+          <span className="sr-only">Previous</span>
         </button>
         <button className="w-10 aspect-square text-white bg-primary rounded-full flex items-center justify-center cafe-next">
           <BtnNext />
+          <span className="sr-only">Next</span>
         </button>
       </div>
     </div>

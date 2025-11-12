@@ -74,7 +74,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
            <OnlyButton
             label={link.label}
             onclick={() => setIsOpenPopup(true)}
-            className="text-nowrap text-white bg-secondary border-secondary mx-auto"
+            className="text-nowrap text-white bg-secondary border-secondary"
           />
         )}
       </div>

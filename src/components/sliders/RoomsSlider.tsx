@@ -18,6 +18,7 @@ const RoomsSlider: FC<RoomsSliderProps> = ({ cards, bg }) => {
           bg ? "text-primary" : "text-white"
         }`}>
         <PrevBtn />
+        <span className="sr-only">Previous</span>
       </button>
       <Container>
         <SwiperCarousel
@@ -50,6 +51,7 @@ const RoomsSlider: FC<RoomsSliderProps> = ({ cards, bg }) => {
         }`}
       >
         <NextBtn />
+        <span className="sr-only">Next</span>
       </button>
     </div>
   );

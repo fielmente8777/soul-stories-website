@@ -239,7 +239,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`col-span-2 relative flex flex-col px-4 gap-4 ${
           rounded && "lg:rounded-l-2xl"
-        } bg-[#fff] ${gridView && "pb-4"} md:pb-4`}
+        } bg-[#fff] ${gridView && "pb-4"} max-md:pb-4`}
       >
         <label
           htmlFor="fullName"
@@ -271,7 +271,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`col-span-2 ${
           gridView && "pb-4"
-        } md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}
+        } max-md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}
       >
         <label
           htmlFor="PhoneNumber"
@@ -325,7 +325,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`col-span-2 ${
           gridView && "pb-4"
-        } md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
+        } max-md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
       >
         <label
           htmlFor="EmailId"
@@ -355,7 +355,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`relative col-span-2 ${
           gridView && "pb-4"
-        } md:pb-4 w-full flex flex-col bg-white`}
+        } max-md:pb-4 w-full flex flex-col bg-white`}
         ref={villaDropDownRef}
       >
         <label

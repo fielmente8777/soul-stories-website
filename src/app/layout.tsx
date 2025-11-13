@@ -86,6 +86,7 @@ export default function RootLayout({
         <Script
           type="text/javascript"
           id="clarity"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -98,7 +99,7 @@ export default function RootLayout({
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

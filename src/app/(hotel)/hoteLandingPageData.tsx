@@ -11,7 +11,8 @@ import {
 export const hotelLandingPageData = {
   bannerData: {
     src: "/Screens2025.png",
-    videoSrc:"https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+    videoSrc:
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
   },
   aboutHotel: {
     title: "WELCOME TO SOUL STORRIES",
@@ -36,16 +37,29 @@ export const hotelLandingPageData = {
   rooms: {
     title: "WHERE COMFORT MEETS LUXURY",
     subTitle: "Our VILLA Accommodations",
-    description:"**Rs 2,500 Extra Bed charges per guest per night with Breakfast. Breakfast is complimentary, and all other meals are available on an à la carte.",
+    description:
+      "**Rs 2,500 Extra Bed charges per guest per night with Breakfast. Breakfast is complimentary, and all other meals are available on an à la carte.",
     cards: [
       {
         title: "FLORA",
         noOfBadRooms: "4 Bedrooms Luxury Villa",
-        price:"₹ 60,000 + 18% Taxes",
+        price: "₹ 60,000 + 18% Taxes",
         description:
           "Experience Flora — a luxurious 4-bedroom chalet at Soul Storries, featuring private access, elegant comforts, and stunning mountain views of Mussoorie.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
-        images: ["/im13.webp"],
+        images: [
+          "/images/Flora/Flora-bedroom1.webp",
+          "/images/Flora/Flora-bedroom2.webp",
+          "/images/Flora/Flora-living1.webp",
+          "/images/Flora/Flora-living2.webp",
+          "/images/Flora/Flora-living3.webp",
+          "/images/Flora/Flora-living4.webp",
+          "/images/Flora/Flora-outside1.webp",
+          // "/images/Flora/Flora-outside2.webp",
+          "/images/Flora/Flora-outside3.webp",
+
+          "/images/Flora/Flora-bathroom.webp",
+        ],
         listOfIcons: [
           {
             icons: <HillStationICon />,
@@ -64,11 +78,19 @@ export const hotelLandingPageData = {
       {
         title: "Amaraa",
         noOfBadRooms: "1 Bedroom Luxury Villa",
-        price:"₹ 15,000 + 18% Taxes",
+        price: "₹ 15,000 + 18% Taxes",
         description:
           "One-bedroom villas provide a luxurious and comfortable retreat for those seeking a private and intimate stay experience with all the essential amenities and more.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
-        images: ["/im9.webp"],
+        images: [
+          "/images/Amara/Amara-bedroom2.webp",
+          "/images/Amara/Amara-bedroom1.webp",
+          "/images/Amara/Amara-living1.webp",
+          "/images/Amara/Amara-living2.webp",
+          "/images/Amara/Amara-outside1.webp",
+          "/images/Amara/Amara-outside2.webp",
+          "/images/Amara/Amara-bathroom.webp",
+        ],
         listOfIcons: [
           {
             icons: <HillStationICon />,
@@ -87,11 +109,18 @@ export const hotelLandingPageData = {
       {
         title: "AURORA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
-        price:"₹ 30,000 + 18% Taxes",
+        price: "₹ 30,000 + 18% Taxes",
         description:
           "Discover Aurora — a 2-bedroom wooden chalet at Soul Storries, offering cozy luxury, shared moments, and breathtaking views of the Mussoorie mountains.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
-        images: ["/im15.webp"],
+        images: [
+          "/images/Aurora/Aurora-bedroom1.webp",
+          "/images/Aurora/Aurora-bedroom2.webp",
+          "/images/Aurora/Aurora-living1.webp",
+          "/images/Aurora/Aurora-living2.webp",
+          "/images/Aurora/Aurora-outside1.webp",
+          "/images/Aurora/Aurora-bathroom.webp",
+        ],
         listOfIcons: [
           {
             icons: <HillStationICon />,
@@ -110,11 +139,17 @@ export const hotelLandingPageData = {
       {
         title: "AURA",
         noOfBadRooms: "1 Bedroom Luxury Villa",
-        price:"₹ 15,000 + 18% Taxes",
+        price: "₹ 15,000 + 18% Taxes",
         description:
           "Escape the corner office and unwind in Aura, our cozy one-bedroom wooden chalet. With panoramic Himalayan views, it’s the perfect romantic retreat in Mussoorie.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
-        images: ["/im15.webp"],
+        images: [
+          "/images/Aura/Aura-bedroom1.webp",
+          "/images/Aura/Aura-bedroom2.webp",
+          "/images/Aura/Aura-living1.webp",
+          "/images/Aura/Aura-outside1.webp",
+          "/images/Aura/Aura-bathroom.webp",
+        ],
         listOfIcons: [
           {
             icons: <HillStationICon />,
@@ -133,11 +168,16 @@ export const hotelLandingPageData = {
       {
         title: "ATHENA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
-        price:"₹ 30,000 + 18% Taxes",
+        price: "₹ 30,000 + 18% Taxes",
         description:
           "A  luxurious 2-bedroom, 1,700 sqft retreat at Soul Storries, perfect for small families. Enjoy serene comfort, a cozy balcony, & breathtaking views of the magical Mussoorie mountains.",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
-        images: ["/im15.webp"],
+        images: [
+          "/images/Athena/Athena-bedroom1.webp",
+          "/images/Athena/Athena-bedroom2.webp",
+          "/images/Athena/Athena-living1.webp",
+          "/images/Athena/Athena-living2.webp",
+        ],
         listOfIcons: [
           {
             icons: <HillStationICon />,
@@ -161,16 +201,11 @@ export const hotelLandingPageData = {
     description:
       "For the first time, Kafuli Cafe opens its doors to all, offering a serene dining experience at 7,500 ft amidst the Garhwal Himalayas. Savor breathtaking views, soulful cuisine, and moments of peaceful indulgence — now open for bookings.",
     images: [
-      "/im21.webp",
-      "/im3.webp",
-      "/_MG_3330-HDR.jpg",
-      "/_MG_3355-HDR.jpg",
-      "/_MG_3372.jpg",
-      "/_MG_3402.jpg",
-      "/DSC00989.jpg",
-      // "/DSC02899.jpg",
-      // "/DSC02933.jpeg",
-      // "/DSC02938.jpg",
+      "/images/Kafuli/Kafuli-cafe-img1.webp",
+      "/images/Kafuli/Kafuli-cafe-img2.webp",
+      "/images/Kafuli/Kafuli-cafe-img3.webp",
+      "/images/Kafuli/Kafuli-cafe-img4.webp",
+      "/images/Kafuli/Kafuli-cafe-img5.webp",
     ],
     link: { label: "BOOK NOW", url: contact.WhatsappCta },
   },

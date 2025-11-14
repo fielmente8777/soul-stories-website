@@ -5,6 +5,7 @@ import { FC } from "react";
 import OnlyButton from "../buttons/OnlyButton";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { useWebContext } from "@/context-api/WebContext";
+import { Navigation } from "swiper/modules";
 // import { Navigation } from "swiper/modules";
 
 const RoomCard: FC<RoomsProps["cards"][0]> = ({
@@ -16,15 +17,15 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   listOfIcons,
   textColor,
 }) => {
-  const {setIsOpenPopup} = useWebContext();
+  const { setIsOpenPopup } = useWebContext();
   return (
-    <div className="flex flex-col gap-4 overflow-hidden">
+    <div className="flex flex-col gap-4 overflow-hidden room-card">
       <SwiperCarousel
         data={images}
         slidesPerView={1}
         spaceBetween={0}
-        // modules={[Navigation]}
-        navigation
+        modules={[Navigation]}
+        navigation={true}
         className="w-full "
         renderSlide={(src) => (
           <div className="w-full relative aspect-[4/3.5]">
@@ -71,10 +72,10 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           //   label={link.label}
           //   className="mt-4 text-white"
           // />
-           <OnlyButton
+          <OnlyButton
             label={link.label}
             onclick={() => setIsOpenPopup(true)}
-            className="text-nowrap text-white bg-secondary border-secondary"
+            className="text-nowrap text-white bg-secondary border-secondary mt-6"
           />
         )}
       </div>

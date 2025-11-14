@@ -238,7 +238,7 @@ input {
 .soul-care-gallery {
   &::before {
     bottom: -1.5rem;
-    right: .5rem;
+    right: 0.5rem;
     width: 448px;
     height: 383px;
     z-index: -1;
@@ -247,6 +247,31 @@ input {
     background-size: contain;
     @media (width < 780px) {
       display: none;
+    }
+  }
+}
+
+.room-card {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+    background-color: #fff;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      color: var(--primary);
+      width: 20px;
+      height: 20px;
+    }
+    @media (width < 768px) {
+      width: 30px;
+      height: 30px;
     }
   }
 }

@@ -1,10 +1,11 @@
 "use client";
 import { CafeAndRestaurantsProps } from "@/@types/types";
-import OnlyButton from "../buttons/OnlyButton";
+// import OnlyButton from "../buttons/OnlyButton";
 import { SectionWithContainer } from "../sectionComponants";
 import CafeSlider from "../sliders/CafeSlider";
 import { SectionHeading } from "../typography";
 import { useWebContext } from "@/context-api/WebContext";
+import LinkButton from "../buttons/LinkButton";
 
 const CafeAndRestaurants: React.FC<CafeAndRestaurantsProps> = ({
   title,
@@ -20,16 +21,16 @@ const CafeAndRestaurants: React.FC<CafeAndRestaurantsProps> = ({
         <SectionHeading title={title} subTitle={subTitle} line />
         <CafeSlider cards={images} />
         <p className="md:text-lg text-center text-light">{description}</p>
-        {/* <LinkButton
+        <LinkButton
           href={link.url}
           label={link.label}
           className="text-white bg-secondary text-nowrap mx-auto"
-        /> */}
-        <OnlyButton
+        />
+        {/* <OnlyButton
           label={link.label}
           onclick={() => setIsOpenPopup(true)}
           className="text-nowrap text-white bg-secondary border-secondary mx-auto"
-        />
+        /> */}
       </div>
     </SectionWithContainer>
   );

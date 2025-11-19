@@ -1,10 +1,11 @@
 "use client";
 import { RoomsProps } from "@/@types/types";
 import { useWebContext } from "@/context-api/WebContext";
-import OnlyButton from "../buttons/OnlyButton";
+// import OnlyButton from "../buttons/OnlyButton";
 import { Section } from "../sectionComponants";
 import { RoomsSlider } from "../sliders";
 import { SectionHeading } from "../typography";
+import LinkButton from "../buttons/LinkButton";
 
 const Rooms: React.FC<RoomsProps> = ({
   title,
@@ -31,16 +32,16 @@ const Rooms: React.FC<RoomsProps> = ({
           <p className="md:text-lg text-white text-center">{description}</p>
         )}
         {link && (
-          // <LinkButton
-          //   href={link.url}
-          //   label={link.label}
-          //   className="text-nowrap text-white bg-secondary border-secondary mx-auto"
-          // />
-          <OnlyButton
+          <LinkButton
+            href={link.url}
             label={link.label}
-            onclick={() => setIsOpenPopup(true)}
             className="text-nowrap text-white bg-secondary border-secondary mx-auto"
           />
+          // <OnlyButton
+          //   label={link.label}
+          //   onclick={() => setIsOpenPopup(true)}
+          //   className="text-nowrap text-white bg-secondary border-secondary mx-auto"
+          // />
         )}
       </div>
     </Section>

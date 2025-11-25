@@ -34,7 +34,7 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
     <div className={`flex flex-col w-full ${wrapperClassName}`}>
       {logo && (
         <div className="flex justify-center">
-          <Image src={"/Logo.png"} alt="logo" width={100} height={100} />
+          <Image src={"/logo.png"} alt="logo" width={100} height={100} />
         </div>
       )}
       {title && (

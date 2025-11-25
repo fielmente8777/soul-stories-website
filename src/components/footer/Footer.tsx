@@ -3,9 +3,11 @@ import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import OnlyButton from "../buttons/OnlyButton";
+// import OnlyButton from "../buttons/OnlyButton";
 import { Container } from "../sectionComponants";
 import { footerData, footerData2 } from "./footerdata";
+import LinkButton from "../buttons/LinkButton";
+import { contact } from "@/utils/constent";
 
 const Footer = () => {
   const { setIsOpenPopup } = useWebContext();
@@ -102,18 +104,18 @@ const Footer = () => {
                 ))}
               </ul>
               {index === 1 && (
-                // <LinkButton
-                //   target="_blank"
-                //   rel="noopener noreferrer"
-                //   label={"Book Now"}
-                //   href={contact.WhatsappCta}
-                //   className="mt-6 w-full justify-center text-white bg-secondary border-secondary"
-                // />
-                <OnlyButton
-                  onclick={() => setIsOpenPopup(true)}
+                <LinkButton
+                  target="_blank"
+                  rel="noopener noreferrer"
                   label={"Book Now"}
+                  href={contact.WhatsappCta}
                   className="mt-6 w-full justify-center text-white bg-secondary border-secondary"
                 />
+                // <OnlyButton
+                //   onclick={() => setIsOpenPopup(true)}
+                //   label={"Book Now"}
+                //   className="mt-6 w-full justify-center text-white bg-secondary border-secondary"
+                // />
               )}
             </div>
           ))}

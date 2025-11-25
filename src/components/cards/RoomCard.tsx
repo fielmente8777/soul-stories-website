@@ -2,10 +2,11 @@
 import { RoomsProps } from "@/@types/types";
 import Image from "next/image";
 import { FC } from "react";
-import OnlyButton from "../buttons/OnlyButton";
+// import OnlyButton from "../buttons/OnlyButton";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { useWebContext } from "@/context-api/WebContext";
 import { Navigation } from "swiper/modules";
+import LinkButton from "../buttons/LinkButton";
 // import { Navigation } from "swiper/modules";
 
 const RoomCard: FC<RoomsProps["cards"][0]> = ({
@@ -67,16 +68,16 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
         )} */}
         {link && (
-          // <LinkButton
-          //   href={link.url}
-          //   label={link.label}
-          //   className="mt-4 text-white"
-          // />
-          <OnlyButton
+          <LinkButton
+            href={link.url}
             label={link.label}
-            onclick={() => setIsOpenPopup(true)}
-            className="text-nowrap text-white bg-secondary border-secondary mt-6"
+            className="mt-4 text-white"
           />
+          // <OnlyButton
+          //   label={link.label}
+          //   onclick={() => setIsOpenPopup(true)}
+          //   className="text-nowrap text-white bg-secondary border-secondary mt-6"
+          // />
         )}
       </div>
     </div>

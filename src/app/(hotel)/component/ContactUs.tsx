@@ -1,5 +1,6 @@
 "use client";
-import OnlyButton from "@/components/buttons/OnlyButton";
+import LinkButton from "@/components/buttons/LinkButton";
+// import OnlyButton from "@/components/buttons/OnlyButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
@@ -18,7 +19,7 @@ interface IConnectivity {
     href: string;
   };
 }
-const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
+const ContactUs: React.FC<IConnectivity> = ({ title, src, items, link }) => {
   const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
@@ -45,16 +46,16 @@ const ContactUs: React.FC<IConnectivity> = ({ title, src, items }) => {
                 </div>
               ))}
             </div>
-            {/* <LinkButton
-              href={contact.WhatsappCta}
-              label={"Book Now"}
-              className="text-white bg-secondary text-nowrap border-secondary"
-            /> */}
-            <OnlyButton
-              onclick={() => setIsOpenPopup(true)}
+            <LinkButton
+              href={link.href}
               label={"Book Now"}
               className="text-white bg-secondary text-nowrap border-secondary"
             />
+            {/* <OnlyButton
+              onclick={() => setIsOpenPopup(true)}
+              label={"Book Now"}
+              className="text-white bg-secondary text-nowrap border-secondary"
+            /> */}
           </div>
           <div className="relative lg:aspect-[4/2.5] max-md:order-1 rounded-sm overflow-hidden aspect-[4/3]  w-full">
             <Image src={src} alt={title} fill className="" />

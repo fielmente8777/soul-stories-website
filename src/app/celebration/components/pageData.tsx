@@ -30,7 +30,7 @@ export const pageData = {
     },
     link: {
       label: "BOOK NOW",
-      href: "/contact",
+      href: contact.WhatsappCta,
     },
   },
 

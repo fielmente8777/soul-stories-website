@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Headings from "./Headings";
 
 interface SectionHeadingDescProps {
@@ -12,6 +13,7 @@ interface SectionHeadingDescProps {
   titleClassName?: string;
   subTitleClassName?: string;
   line?: boolean;
+  logo?: boolean;
 }
 
 const SectionHeading: React.FC<SectionHeadingDescProps> = ({
@@ -26,9 +28,15 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   wrapperClassName = "",
   titleClassName = "",
   subTitleClassName = "",
+  logo = false,
 }) => {
   return (
     <div className={`flex flex-col w-full ${wrapperClassName}`}>
+      {logo && (
+        <div className="flex justify-center">
+          <Image src={"/Logo.png"} alt="logo" width={100} height={100} />
+        </div>
+      )}
       {title && (
         <Headings
           level={2}

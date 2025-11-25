@@ -9,14 +9,16 @@ import { NextBtn, PrevBtn } from "@/utils/icons";
 
 interface RoomsSliderProps {
   cards: RoomsProps["cards"];
-  bg?: string;
+  bg?: boolean | string;
 }
 const RoomsSlider: FC<RoomsSliderProps> = ({ cards, bg }) => {
   return (
     <div className="w-full flex items-center lg:px-4">
-      <button className={`rooms-prev lg:block hidden ${
+      <button
+        className={`rooms-prev lg:block hidden ${
           bg ? "text-primary" : "text-white"
-        }`}>
+        }`}
+      >
         <PrevBtn />
         <span className="sr-only">Previous</span>
       </button>
@@ -42,7 +44,9 @@ const RoomsSlider: FC<RoomsSliderProps> = ({ cards, bg }) => {
             },
           }}
           className="w-full"
-          renderSlide={(card) => <RoomCard {...card} />}
+          renderSlide={(card) => (
+            <RoomCard {...card} textColor={bg ? "black" : "white"} />
+          )}
         />
       </Container>
       <button

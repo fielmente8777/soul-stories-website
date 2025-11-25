@@ -13,7 +13,7 @@ export interface AboutSectionProps {
 }
 
 export interface RoomsProps {
-  bg?: string;
+  bg?: boolean | string;
   title: string;
   subTitle: string;
   description?: string;

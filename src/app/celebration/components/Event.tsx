@@ -61,7 +61,7 @@ const Event: React.FC<EventProps> = ({
               clickable: true,
               el: ".pagination_3",
             }}
-            className="w-full custom-swiper md:aspect-4/2 aspect-[4/5.5]"
+            className="w-full custom-swiper md:aspect-[4/2.2] aspect-[4/6]"
             slidesPerView={1}
             spaceBetween={24}
             breakpoints={{

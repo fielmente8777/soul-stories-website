@@ -42,7 +42,7 @@ const WebsiteNavBar = () => {
             ))}
             <li>
               <button onClick={() => setIsMobile(!isMobile)}>
-                {isMobile ? (
+                {!isMobile ? (
                   <AiOutlineMenu className="text-2xl" />
                 ) : (
                   <AiOutlineClose className="text-2xl" />

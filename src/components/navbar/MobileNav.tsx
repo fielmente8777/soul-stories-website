@@ -12,7 +12,7 @@ const MobileNav = () => {
   return (
     <div
       className={`fixed top-[5rem] z-50 w-[350px] h-full duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
-        isMobile ? "-right-0" : "-right-full"
+        !isMobile ? "-right-full" : "-right-0"
       }`}
     >
       <ul>

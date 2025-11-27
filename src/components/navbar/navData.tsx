@@ -44,8 +44,8 @@ export const BottomNav = {
       href: "/contact-us/",
     },
     {
-      label: "blog",
-      href: "/blog/",
+      label: "blogs",
+      href: "/blogs/",
     },
     {
       label: "celebrations",

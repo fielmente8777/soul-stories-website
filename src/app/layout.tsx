@@ -1,15 +1,14 @@
-import type { Metadata } from "next";
-import { Montserrat, Aboreto } from "next/font/google";
-import "./globals.css";
-import "./style.scss";
+import Call from "@/components/ContactButton/Call";
+import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
-import Script from "next/script";
-import Call from "@/components/ContactButton/Call";
-import { contact } from "@/utils/constent";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
 import { WebProvider } from "@/context-api/WebContext";
-import PopUpForm from "@/components/pop-up/PopUpForm";
+import { contact } from "@/utils/constent";
+import type { Metadata } from "next";
+import { Aboreto, Montserrat } from "next/font/google";
+import Script from "next/script";
+import "./globals.css";
+import "./style.scss";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -131,7 +130,6 @@ export default function RootLayout({
           <Footer />
           <Call callNumber={contact.phone[0]} />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
-          <PopUpForm />
         </WebProvider>
         {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">

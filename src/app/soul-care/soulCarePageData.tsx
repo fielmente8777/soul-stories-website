@@ -1,5 +1,5 @@
 import { contact } from "@/utils/constent";
-import { hotelLandingPageData } from "../(hotel)/hoteLandingPageData";
+import { hotelLandingPageData } from "../hotel/hoteLandingPageData";
 
 export const soulCarePageData = {
   bannerData: {

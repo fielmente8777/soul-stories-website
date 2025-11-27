@@ -314,18 +314,19 @@ export const RatingIcon = () => (
   </svg>
 );
 
-export const CallIcon = () => (
+export const CallIcon = ({ ...props }) => (
   <svg
     width={40}
     height={40}
     viewBox="0 0 40 40"
     fill="none"
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <circle cx={20} cy={20} r="19.5" stroke="white" />
-    <g clipPath="url(#clip0_4_201)">
+    <circle cx={20} cy={20} r="19.5" stroke="currentColor" />
+    <g clipPath="url(#clip0_316_121)">
       <mask
-        id="mask0_4_201"
+        id="mask0_316_121"
         style={{ maskType: "luminance" }}
         maskUnits="userSpaceOnUse"
         x={10}
@@ -335,9 +336,9 @@ export const CallIcon = () => (
       >
         <path d="M30.67 10.0002H10V30.6702H30.67V10.0002Z" fill="white" />
       </mask>
-      <g mask="url(#mask0_4_201)">
+      <g mask="url(#mask0_316_121)">
         <mask
-          id="mask1_4_201"
+          id="mask1_316_121"
           style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
           x={7}
@@ -350,24 +351,24 @@ export const CallIcon = () => (
             fill="white"
           />
         </mask>
-        <g mask="url(#mask1_4_201)">
+        <g mask="url(#mask1_316_121)">
           <path
             d="M17.4387 20.1181C17.8833 20.6803 18.3726 21.2312 18.9047 21.7634C19.4369 22.2956 19.9879 22.7849 20.5499 23.2294C21.631 24.0844 23.1626 23.9953 24.1372 23.0207L24.4662 22.6918C25.4368 21.7212 27.0251 21.7212 27.9957 22.6918L29.3051 24.0011C31.6692 26.3652 27.8797 29.5528 26.3665 29.7817C23.3736 30.769 18.8386 29.1329 15.1869 25.4812C11.5352 21.8296 9.89904 17.2945 10.8864 14.3016C11.1153 12.7884 14.3029 8.99893 16.667 11.3631L17.9763 12.6724C18.947 13.643 18.947 15.2313 17.9763 16.2019L17.6474 16.5309C16.6728 17.5055 16.5836 19.0371 17.4387 20.1181Z"
-            stroke="white"
+            stroke="currentColor"
             strokeMiterlimit="22.926"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
-            d="M22.8049 14.1113C23.7286 14.3016 24.5762 14.7583 25.243 15.4252C25.9003 16.0825 26.3538 16.9157 26.5487 17.8247"
-            stroke="white"
+            d="M22.8047 14.1113C23.7283 14.3016 24.5759 14.7583 25.2428 15.4252C25.9001 16.0825 26.3535 16.9157 26.5485 17.8247"
+            stroke="currentColor"
             strokeMiterlimit="22.926"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M20.3789 11.6547C22.786 11.1676 25.277 11.9187 27.0136 13.6553C28.7473 15.389 29.499 17.8751 29.0163 20.279"
-            stroke="white"
+            stroke="currentColor"
             strokeMiterlimit="22.926"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -376,7 +377,7 @@ export const CallIcon = () => (
       </g>
     </g>
     <defs>
-      <clipPath id="clip0_4_201">
+      <clipPath id="clip0_316_121">
         <rect
           width="20.67"
           height="20.67"

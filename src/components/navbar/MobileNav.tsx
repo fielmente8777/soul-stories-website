@@ -1,0 +1,37 @@
+"use client";
+
+import { useWebContext } from "@/context-api/WebContext";
+import { BottomNav } from "./navData";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const MobileNav = () => {
+  const pathName = usePathname();
+  const { isMobile, setIsMobile } = useWebContext();
+  const isActive = (href: string) => pathName === href;
+  return (
+    <div
+      className={`fixed top-[5rem] z-50 w-[350px] h-full duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
+        isMobile ? "-right-0" : "-right-full"
+      }`}
+    >
+      <ul>
+        {BottomNav.links.map((link, index) => (
+          <li key={index} className="mb-4">
+            <Link
+              href={link.href}
+              onClick={() => setIsMobile(false)}
+              className={`uppercase ps-2 text-lg transition-all duration-300 ease-in-out hover:border-l-2 hover:border-white${
+                isActive(link.href) ? " border-l-2" : ""
+              }`}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default MobileNav;

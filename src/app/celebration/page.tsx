@@ -4,7 +4,7 @@ import { pageData } from "./components/pageData";
 import Form1 from "@/components/forms/Form1";
 import Celebrate from "./components/Celebrate";
 import { Rooms } from "@/components/page-components";
-import ContactUs from "../(hotel)/component/ContactUs";
+import ContactUs from "../hotel/component/ContactUs";
 import OfferSlider from "@/components/sliders/OfferSlider";
 import Event from "./components/Event";
 

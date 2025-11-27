@@ -4,15 +4,20 @@ import { createContext, useContext, useState } from "react";
 interface IWebContextProps {
   isOpenPopup: boolean;
   setIsOpenPopup: React.Dispatch<React.SetStateAction<boolean>>;
+  isMobile: boolean;
+  setIsMobile: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const WebContext = createContext<IWebContextProps | undefined>(undefined);
 
 export const WebProvider = ({ children }: { children: React.ReactNode }) => {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <WebContext.Provider value={{ isOpenPopup, setIsOpenPopup }}>
+    <WebContext.Provider
+      value={{ isOpenPopup, setIsOpenPopup, isMobile, setIsMobile }}
+    >
       {children}
     </WebContext.Provider>
   );
@@ -21,6 +26,7 @@ export const WebProvider = ({ children }: { children: React.ReactNode }) => {
 // ✅ Custom hook (recommended)
 export const useWebContext = () => {
   const context = useContext(WebContext);
-  if (!context) throw new Error("useWebContext must be used within WebProvider");
+  if (!context)
+    throw new Error("useWebContext must be used within WebProvider");
   return context;
 };

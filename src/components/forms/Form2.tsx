@@ -1,5 +1,5 @@
 "use client";
-import { hotelLandingPageData } from "@/app/(hotel)/hoteLandingPageData";
+import { hotelLandingPageData } from "@/app/hotel/hoteLandingPageData";
 import { getDateInputLimits } from "@/hooks/getDateInputLimits";
 import useClickOutside from "@/hooks/useClickOutside";
 import { contact, countries } from "@/utils/constent";

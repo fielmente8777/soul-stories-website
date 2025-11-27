@@ -12,6 +12,7 @@ interface AboutSoulCareProps {
     label: string;
     url: string;
   };
+  align?: "left" | "right";
 }
 
 const AboutSoulCare: React.FC<AboutSoulCareProps> = ({
@@ -20,12 +21,19 @@ const AboutSoulCare: React.FC<AboutSoulCareProps> = ({
   subTitle,
   description,
   link,
+  align = "right",
 }) => {
   return (
     <SectionWithContainer sectionClassName="about-soul">
       <div className="grid lg:grid-cols-6 auto-cols-auto gap-6 items-center">
-        <div className="lg:col-span-2 space-y-6">
-          <SectionHeading title={title} subTitle={subTitle} wrapperClassName="about-soul-care" />
+        <div
+          className={`lg:col-span-2 space-y-6 ${align === "left" && "order-2"}`}
+        >
+          <SectionHeading
+            title={title}
+            subTitle={subTitle}
+            wrapperClassName="about-soul-care"
+          />
           <div className="lg:hidden flex gap-6 items-end w-full">
             {images.map((image, index) => (
               <div
@@ -50,9 +58,15 @@ const AboutSoulCare: React.FC<AboutSoulCareProps> = ({
             href={link.url}
             label={link.label}
             className="bg-secondary border-secondary text-white"
+            whatsAppIcon={true}
+            arrowIcon={false}
           />
         </div>
-        <div className="lg:col-span-4 lg:flex hidden gap-6 items-end w-full">
+        <div
+          className={`lg:col-span-4 lg:flex hidden gap-6 items-end w-full ${
+            align === "left" && "order-1"
+          }`}
+        >
           {images.map((image, index) => (
             <div
               className={`max-w-1/2 w-full ${

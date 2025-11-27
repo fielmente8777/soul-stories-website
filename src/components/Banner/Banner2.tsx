@@ -11,6 +11,8 @@ interface Banner2Props {
     label: string;
     url: string;
   };
+  fullBorder?: boolean;
+  isLogo?: boolean;
 }
 
 const Banner2: React.FC<Banner2Props> = ({
@@ -19,11 +21,19 @@ const Banner2: React.FC<Banner2Props> = ({
   title,
   description,
   link,
+  fullBorder = false,
+  isLogo = true,
 }) => {
   return (
     <Section
       defaultPadding={false}
-      className="relative w-full md:aspect-[4/2] aspect-[4/4.5] md:after:absolute md:after:inset-x-4 md:after:h-[98%] after:h-[96%] after:top-4 after:border-x-[.5px] after:border-t-[.5px] after:border-secondary"
+      className={`relative w-full md:aspect-[4/2] aspect-[4/4.5] md:after:absolute md:after:inset-x-4  ${
+        fullBorder
+          ? "after:h-[90%] md:after:h-[96%] after:top-3"
+          : "after:h-[96%] md:after:h-[98%] after:top-4"
+      } after:border-x-[.5px] ${
+        fullBorder ? "after:border-y-[.5px]" : "after:border-t-[.5px]"
+      } after:border-secondary`}
     >
       <Image
         src={src}
@@ -36,15 +46,10 @@ const Banner2: React.FC<Banner2Props> = ({
       />
       <div className="absolute inset-0 md:bg-gradient-to-r bg-gradient-to-t from-black/80 to-50% to-black/0" />
       <div className="max-md:absolute inset-0 bg-gradient-to-b from-black/80 to-50% to-black/0" />
-      
+
       <div className="max-md:absolute inset-x-4  top-4 z-20 flex lg:hidden items-center justify-baseline">
         <div className="relative aspect-[4/2.5] w-[112px]">
-          <Image
-            src={logo}
-            alt="logo"
-            fill
-            className="object-contain"
-          />
+          <Image src={logo} alt="logo" fill className="object-contain" />
         </div>
         <Link href={link.url} className="ml-auto text-white">
           <CallIcon />
@@ -53,14 +58,20 @@ const Banner2: React.FC<Banner2Props> = ({
       <div className="absolute inset-4 z-10 flex flex-col items-center justify-center max-md:items-end max-md:justify-end gap-4">
         <Container>
           <div className="flex flex-col gap-[12px] max-w-lg">
-            <div className="relative aspect-[4/2.5] lg:w-[210px] md:block hidden w-[112px]">
-              <Image
-                src={logo}
-                alt="logo"
-                fill
-                className="object-contain"
-              />
-            </div>
+            {isLogo ? (
+              <div className="relative aspect-[4/2.5] lg:w-[210px] md:block hidden w-[112px]">
+                <Image src={logo} alt="logo" fill className="object-contain" />
+              </div>
+            ) : (
+              <div className="relative aspect-[4/2.5] w-[60px] md:block hidden">
+                <Image
+                  src={"/Lotus.png"}
+                  alt="logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            )}
             <h1 className="md:text-5xl max-md:text-center text-3xl font-aboreto text-white">
               {title}
             </h1>

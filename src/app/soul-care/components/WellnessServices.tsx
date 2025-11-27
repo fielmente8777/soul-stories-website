@@ -29,7 +29,7 @@ const WellnessServices: React.FC<WellnessServicesProps> = ({
   return (
     <Section className="space-y-12 wellness-services">
       <Container>
-        <div className="flex  gap-8 md:gap-12" >
+        <div className="flex  gap-8 md:gap-12">
           <SectionHeading
             title={title}
             subTitle={subTitle}
@@ -99,6 +99,8 @@ const WellnessServices: React.FC<WellnessServicesProps> = ({
         href={link.url}
         label={link.label}
         className="bg-secondary border-secondary text-white mx-auto"
+        whatsAppIcon={true}
+        arrowIcon={false}
       />
     </Section>
   );

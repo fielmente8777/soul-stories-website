@@ -16,7 +16,7 @@ interface SectionHeadingDescProps {
   logo?: boolean;
 }
 
-const SectionHeading2: React.FC<SectionHeadingDescProps> = ({
+const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   title,
   subTitle,
   line = false,
@@ -31,15 +31,12 @@ const SectionHeading2: React.FC<SectionHeadingDescProps> = ({
   logo = false,
 }) => {
   return (
-    <div
-      className={`flex flex-col max-w-7xl w-full mx-auto ${wrapperClassName}`}
-    >
+    <div className={`flex flex-col w-full ${wrapperClassName}`}>
       {logo && (
         <div className="flex justify-center">
-          <Image src={"/logo3.png"} alt="logo" width={130} height={130} />
+          <Image src={"/logo.png"} alt="logo" width={100} height={100} />
         </div>
       )}
-
       {title && (
         <Headings
           level={2}
@@ -53,7 +50,6 @@ const SectionHeading2: React.FC<SectionHeadingDescProps> = ({
           heading={title}
         />
       )}
-
       <div className={`${line && "lg:flex items-center gap-4 mx-auto"}`}>
         {line && (
           <span className="lg:block hidden">
@@ -88,7 +84,7 @@ const SectionHeading2: React.FC<SectionHeadingDescProps> = ({
   );
 };
 
-export default SectionHeading2;
+export default SectionHeading;
 
 export const LineRight = () => (
   <svg

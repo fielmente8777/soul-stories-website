@@ -1,5 +1,8 @@
+"use client";
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
+import SwiperCarousel from "@/components/sliders/SwiperCarousel";
+import Image from "next/image";
 
 interface AboutBannerProps {
   title: string;
@@ -34,7 +37,53 @@ const AboutBanner: React.FC<AboutBannerProps> = ({
           <div className="bg-secondary w-full h-[1px]" />
         </div>
         <p className="md:text-lg text-primary mt-4">{description[0]}</p>
-        <div></div>
+        <div>
+          <div className="lg:grid hidden md:grid-cols-3 gap-5 mt-12">
+            {videos.map((card, index) => (
+              <div
+                key={index}
+                className={`relative w-full aspect-[4/4.4] border ${
+                  index == 0 && `mt-26`
+                } ${index == 1 && `mt-14`}`}
+              >
+                <Image
+                  src={card.videoSrc}
+                  alt={"Image"}
+                  fill
+                  className="object-cover"
+                />
+
+                <div className="absolute bottom-0 bg-white/60 w-full flex justify-center py-2">
+                  {/* <h2>{card.title}</h2> */}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="lg:hidden block mt-12">
+            <SwiperCarousel
+              data={videos}
+              className="w-full h-full"
+              renderSlide={(card, index) => (
+                <div
+                  key={index}
+                  className={`relative w-full aspect-[4/4.4] border`}
+                >
+                  <Image
+                    src={card.videoSrc}
+                    alt={"Images"}
+                    fill
+                    className="object-cover"
+                  />
+
+                  {/* <div className="absolute bottom-0 bg-white/60 w-full flex justify-center py-2">
+                    <h2 className="avenir">{card.title}</h2>
+                  </div> */}
+                </div>
+              )}
+            />
+          </div>
+        </div>
         <p className="md:text-lg text-primary mt-4 text-right">
           {description[1]}
         </p>

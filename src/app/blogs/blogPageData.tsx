@@ -10,6 +10,6 @@ export const blogPageData = {
     title: blog.title,
     description: blog.description,
     date: blog.date,
-    link: { href: `/blog/${blog.slug}`, label: "Read More" },
+    link: { href: `/blogs/${blog.slug}`, label: "Read More" },
   })),
 };

@@ -19,8 +19,8 @@ const BlogCard: React.FC<BlogCardProps> = ({
   link,
 }) => {
   return (
-        <div className="w-full box-shadow h-full overflow-hidden rounded-[20px] box-shadow bg-[#F9FFEB]">
-      <div className="relative w-full aspect-[4/3]">
+        <div className="w-full box-shadow h-full overflow-hidden rounded-lg box-shadow bg-[#F9FFEB]">
+      <div className="relative w-full aspect-[4/2.5]">
         <Image
           src={src}
           alt={title}
@@ -29,14 +29,14 @@ const BlogCard: React.FC<BlogCardProps> = ({
           className="object-cover"
         />
       </div>
-      <div className="px-6 py-5">
+      <div className="px-6 py-5 space-y-2">
         <h3 className="text-[1.375rem] text-primary font-aboreto uppercase">
           {title}
         </h3>
-        <span className="text-dark">{date}</span>
+        <p className="text-dark">{date}</p>
         <p className="md:text-lg text-primary">
           {description.slice(0, 90)}...
-          <Link href={link.href} className="text-primary">
+          <Link href={link.href} className="text-primary font-medium">
             {link.label}
           </Link>
         </p>

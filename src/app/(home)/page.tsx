@@ -1,20 +1,27 @@
 import Banner from "@/components/Banner/Banner";
-import { homePageData } from "./homePageData";
-import HomeAbout from "./components/HomeAbout";
+import Form1 from "@/components/forms/Form1";
 import { Section, SectionWithContainer } from "@/components/sectionComponants";
-import RoomSection from "./components/RoomSection";
+import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
+import { ArrowUpIcons } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpIcons } from "@/utils/icons";
-import Experiences from "./components/Experiences";
 import ContactUs from "./components/ContactUs";
-import { contact } from "../../utils/constent";
-import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
+import Experiences from "./components/Experiences";
+import HomeAbout from "./components/HomeAbout";
+import RoomSection from "./components/RoomSection";
+import { homePageData } from "./homePageData";
 
 export default function Home() {
   return (
     <main>
       <Banner {...homePageData.bannerData} />
+      <div className="md:-top-16 md:relative z-30 max-md:py-[16px] max-md:bg-dark2">
+        <div className="!p-4 bg-primary md:rounded-md max-w-[1400px] mx-auto">
+          <div className="md:rounded-2xl  md:shadow-xl md:py-5 bg-white">
+            <Form1 rounded />
+          </div>
+        </div>
+      </div>
       <HomeAbout {...homePageData.aboutUsData} />
       <SectionWithContainer>
         <div className="bg-secondary max-w-sm mx-auto h-[1px] w-full" />

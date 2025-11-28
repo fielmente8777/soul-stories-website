@@ -3,10 +3,9 @@ import { RoomsProps } from "@/@types/types";
 import Image from "next/image";
 import { FC } from "react";
 // import OnlyButton from "../buttons/OnlyButton";
-import SwiperCarousel from "../sliders/SwiperCarousel";
-import { useWebContext } from "@/context-api/WebContext";
 import { Navigation } from "swiper/modules";
 import LinkButton from "../buttons/LinkButton";
+import SwiperCarousel from "../sliders/SwiperCarousel";
 // import { Navigation } from "swiper/modules";
 
 const RoomCard: FC<RoomsProps["cards"][0]> = ({
@@ -17,8 +16,8 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   link,
   listOfIcons,
   textColor,
+  headingClass,
 }) => {
-  const { setIsOpenPopup } = useWebContext();
   return (
     <div className="flex flex-col gap-4 overflow-hidden room-card">
       <SwiperCarousel
@@ -26,7 +25,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
         slidesPerView={1}
         spaceBetween={0}
         modules={[Navigation]}
-        navigation={true}
+        navigation={images.length > 1 ? true : false}
         className="w-full "
         renderSlide={(src) => (
           <div className="w-full relative aspect-[4/3.5]">
@@ -34,12 +33,12 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           </div>
         )}
       />
-      <div className="space-y-2 px-4 pb-4">
+      <div className="space-y-2 pb-4">
         <div className="flex items-center justify-between gap-4">
           <h3
             className={`md:text-[2.5rem] text-2xl text-${
               textColor ? textColor : "white"
-            } font-aboreto`}
+            } ${headingClass ? headingClass : ""} font-aboreto`}
           >
             {title}
           </h3>

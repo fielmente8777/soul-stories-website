@@ -38,7 +38,7 @@ const LandingNavBar = () => {
                   </div>
                 )}
               </li>
-              {navUpper?.slice(0, 2).map((link, index) => (
+              {navUpper?.slice(0, 1).map((link, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <span>{link.icon}</span>
                   <Link href={link.href ? link.href : "#"}>{link.label}</Link>

@@ -23,14 +23,6 @@ const TestimonialsSlider: FC<TestimonialsSliderProps> = ({ cards }) => {
           prevEl: ".testimonials-prev",
         }}
         autoplay={{ delay: 2500 }}
-        breakpoints={{
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 2,
-          },
-        }}
         className="w-full"
         renderSlide={(card) => <TestimonialCard2 {...card} />}
       />

@@ -2,6 +2,7 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import SwiperCarousel from "@/components/sliders/SwiperCarousel";
+import { LazyLoadedVideo } from "@/components/Video";
 import Image from "next/image";
 
 interface AboutBannerProps {
@@ -42,15 +43,23 @@ const AboutBanner: React.FC<AboutBannerProps> = ({
             {videos.map((card, index) => (
               <div
                 key={index}
-                className={`relative w-full aspect-[4/4.4] border ${
+                className={`relative w-full aspect-[4/4.4] ${
                   index == 0 && `mt-26`
                 } ${index == 1 && `mt-14`}`}
               >
-                <Image
+                {/* <Image
                   src={card.videoSrc}
                   alt={"Image"}
                   fill
                   className="object-cover"
+                /> */}
+                <LazyLoadedVideo
+                  src={card.videoSrc}
+                  muted={true}
+                  autoPlay
+                  loop
+                  poster={card.poster}
+                  controls={false}
                 />
 
                 <div className="absolute bottom-0 bg-white/60 w-full flex justify-center py-2">

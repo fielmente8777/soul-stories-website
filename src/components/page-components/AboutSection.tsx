@@ -29,7 +29,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({
     "row-span-2",
     "row-span-2",
   ];
-  const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
       <div className="flex flex-col gap-8 md:gap-12">

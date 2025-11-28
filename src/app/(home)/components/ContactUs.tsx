@@ -1,0 +1,59 @@
+"use client";
+import LinkButton from "@/components/buttons/LinkButton";
+import { SectionWithContainer } from "@/components/sectionComponants";
+import Image from "next/image";
+import { JSX } from "react";
+
+interface IConnectivity {
+  title: string;
+  src: string;
+  items: {
+    icons: JSX.Element;
+    title: string;
+    distance: string;
+  }[];
+  link: {
+    text: string;
+    href: string;
+  };
+}
+const ContactUs: React.FC<IConnectivity> = ({ title, src, items, link }) => {
+  return (
+    <SectionWithContainer sectionClassName="bg-[#F9FFEB]">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <div className="md:grid grid-cols-2 md:items-center flex flex-col-reverse gap-8 w-full mt-8">
+          <div className="flex flex-col gap-8 max-md:order-2">
+            <h2 className="text-3xl md:text-[2.5rem] text-primary lg:max-w-[500px] font-aboreto">
+              {title}
+            </h2>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+              {items?.map((item, index) => (
+                <div key={index} className="flex gap-3">
+                  <div className="">{item.icons}</div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-2xl text-light font-aboreto">
+                      {item.title}
+                    </h3>
+                    {/* <SectionHeading subTitle={item.distance} subTitleClassName="description1 !text-primary" /> */}
+                    <p className="text-light">{item.distance}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <LinkButton
+              href={link.href}
+              label={link.text}
+              getDirectionIcon
+              className="text-white bg-secondary text-nowrap border-secondary"
+            />
+          </div>
+          <div className="relative lg:aspect-[4/2.5] max-md:order-1 rounded-sm overflow-hidden aspect-[4/3]  w-full">
+            <Image src={src} alt={title} fill className="" />
+          </div>
+        </div>
+      </div>
+    </SectionWithContainer>
+  );
+};
+
+export default ContactUs;

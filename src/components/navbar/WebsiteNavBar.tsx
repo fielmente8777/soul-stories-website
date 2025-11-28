@@ -29,7 +29,7 @@ const WebsiteNavBar = () => {
               </Link>
             </li>
             {BottomNav.links.slice(0, 5).map((link, index) => (
-              <li key={index}>
+              <li key={index} className="lg:block hidden">
                 <Link
                   href={link.href}
                   className={`uppercase text-lg transition-all duration-300 ease-in-out relative after:absolute hover:after:w-full after:left-0 after:w-0  after:bottom-0 after:h-px after:bg-white ${
@@ -49,12 +49,12 @@ const WebsiteNavBar = () => {
                 )}
               </button>
             </li>
-            <li>
+            <li className="lg:block hidden">
               <Link
                 href={contact.WhatsappCta}
                 target="_blank"
                 rel="noreferrer"
-                className="uppercase bg-secondary px-5 py-3 rounded-lg flex items-center gap-2 justify-center"
+                className="uppercase bg-secondary px-5 py-3 rounded-lg flex  items-center gap-2 justify-center"
               >
                 <span className="">
                   <span className="sr-only">WhatsappIcon</span>

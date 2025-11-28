@@ -4,14 +4,25 @@ import { useWebContext } from "@/context-api/WebContext";
 import { BottomNav } from "./navData";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 const MobileNav = () => {
   const pathName = usePathname();
   const { isMobile, setIsMobile } = useWebContext();
   const isActive = (href: string) => pathName === href;
+  useEffect(() => {
+    if (isMobile) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobile]);
   return (
     <div
-      className={`fixed top-[5rem] z-50 w-[350px] h-full duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
+      className={`fixed md:top-[5rem] top-[6.8rem] z-50 md:w-[350px] w-full h-full duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
         !isMobile ? "-right-full" : "-right-0"
       }`}
     >

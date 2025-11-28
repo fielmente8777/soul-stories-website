@@ -19,7 +19,6 @@ export const navUpper = [
   },
 ];
 
-
 export const BottomNav = {
   logo: "/logo.png",
   links: [
@@ -43,25 +42,26 @@ export const BottomNav = {
       label: "Contact Us",
       href: "/contact-us/",
     },
+
     {
-      label: "blogs",
-      href: "/blogs/",
+      label: "gallery",
+      href: "/gallery/",
     },
     {
       label: "celebrations",
       href: "/celebrations/",
     },
     {
-      label: "gallery",
-      href: "/gallery/",
+      label: "wellness",
+      href: "/wellness/",
+    },
+    {
+      label: "blogs",
+      href: "/blogs/",
     },
     {
       label: "nearby places",
       href: "/nearby-places/",
     },
-    {
-      label: "wellness",
-      href: "/wellness/",
-    },
   ],
-}
+};

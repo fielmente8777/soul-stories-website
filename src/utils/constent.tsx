@@ -4,6 +4,7 @@ export const contact = {
     phone:["+91 96672 09878"," +91 78198 91695 "],
     address:"5 kms up from Suwakholi towards Dhanulti Chalchala Village District Dehradun",
     addressLink:"https://maps.app.goo.gl/KShoExape2wqqMfr6",
+    mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9611178498703!2d78.19054679999999!3d30.4379725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d9c165434c33%3A0xc1827fcf83326b28!2sSoul%20Storries%20-%20Luxury%20Wellness%20Estate%2C%20Mussoorie!5e1!3m2!1sen!2sin!4v1764333825811!5m2!1sen!2sin",
     socialMedia:{
         facebook:"https://www.facebook.com/p/Soul-Stories-Luxury-Villas-and-Resorts-61569153506448/",
         instagram:"https://www.instagram.com/soulstorries_luxuryestate/",
@@ -12,7 +13,6 @@ export const contact = {
     WhatsappCta:`https://wa.me/+919667209878?text=${enCodeText}`,
     formDomain:"soulstories"
 }
-
 
 interface data_Type {
   name: string;

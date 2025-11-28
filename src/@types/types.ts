@@ -19,6 +19,7 @@ export interface RoomsProps {
   description?: string;
   cards: {
     textColor?: string;
+    headingClass?: string;
     title: string;
     noOfBadRooms: string;
     description?: string;
@@ -37,6 +38,17 @@ export interface RoomsProps {
     label: string;
     url: string;
   };
+}
+
+export interface ExperiencesProps {
+  src: string;
+  title: string;
+  subTitle: string;
+  cards: {
+    title?: string;
+    alt?: string;
+    src: string;
+  }[];
 }
 
 export interface FacilitiesProps {
@@ -72,8 +84,7 @@ export interface TestimonialsProps {
     rating: string;
   }[];
   cards: {
-    src: string;
-    title: string;
+    name: string;
     description: string;
   }[];
 }

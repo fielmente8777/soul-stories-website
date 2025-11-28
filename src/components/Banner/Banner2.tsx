@@ -47,14 +47,14 @@ const Banner2: React.FC<Banner2Props> = ({
       <div className="absolute inset-0 md:bg-gradient-to-r bg-gradient-to-t from-black/80 to-50% to-black/0" />
       <div className="max-md:absolute inset-0 bg-gradient-to-b from-black/80 to-50% to-black/0" />
 
-      <div className="max-md:absolute inset-x-4  top-4 z-20 flex lg:hidden items-center justify-baseline">
+      {/* <div className="max-md:absolute inset-x-4  top-4 z-20 flex lg:hidden items-center justify-baseline">
         <div className="relative aspect-[4/2.5] w-[112px]">
           <Image src={logo} alt="logo" fill className="object-contain" />
         </div>
         <Link href={link.url} className="ml-auto text-white">
           <CallIcon />
         </Link>
-      </div>
+      </div> */}
       <div className="absolute inset-4 z-10 flex flex-col items-center justify-center max-md:items-end max-md:justify-end gap-4">
         <Container>
           <div className="flex flex-col gap-[12px] max-w-lg">

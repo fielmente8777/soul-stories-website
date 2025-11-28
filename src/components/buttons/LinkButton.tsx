@@ -5,9 +5,10 @@ interface LinkButtonProps {
   href: string;
   label: string;
   className?: string;
-  [key: string]: unknown;
   whatsAppIcon?: boolean;
   arrowIcon?: boolean;
+  getDirectionIcon?: boolean;
+  [key: string]: unknown;
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({
@@ -16,6 +17,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   className = "",
   whatsAppIcon = false,
   arrowIcon = true,
+  getDirectionIcon = false,
   ...props
 }) => {
   return (
@@ -28,11 +30,12 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     >
       {whatsAppIcon && <WhatsAppIcon />}
       {label}
-      {arrowIcon && (
+      {arrowIcon && !whatsAppIcon && !getDirectionIcon && (
         <span>
           <ArrowUpIcons />
         </span>
       )}
+      {getDirectionIcon && <GetDirections />}
     </Link>
   );
 };
@@ -48,7 +51,7 @@ const WhatsAppIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_383_967)">
+      <g clipPath="url(#clip0_383_967)">
         <path
           d="M0.512578 11.8563C0.512016 13.8728 1.04302 15.8417 2.0527 17.5771L0.416016 23.5066L6.53152 21.9156C8.22299 22.8292 10.1181 23.308 12.044 23.3081H12.0491C18.4067 23.3081 23.582 18.1748 23.5847 11.8653C23.586 8.80792 22.3871 5.93295 20.2089 3.76997C18.0311 1.60718 15.1347 0.415458 12.0486 0.414062C5.6902 0.414062 0.515297 5.54709 0.512672 11.8563"
           fill="url(#paint0_linear_383_967)"
@@ -71,8 +74,8 @@ const WhatsAppIcon = () => {
           y2="0.414062"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1FAF38" />
-          <stop offset="1" stop-color="#60D669" />
+          <stop stopColor="#1FAF38" />
+          <stop offset="1" stopColor="#60D669" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_383_967"
@@ -82,8 +85,8 @@ const WhatsAppIcon = () => {
           y2="0"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9F9F9" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F9F9F9" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <clipPath id="clip0_383_967">
           <rect width="24" height="24" fill="white" />
@@ -92,3 +95,21 @@ const WhatsAppIcon = () => {
     </svg>
   );
 };
+
+const GetDirections = () => (
+  <svg
+    width={32}
+    height={32}
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M26.6706 19.9998C26.6706 19.9998 29.3359 18.0358 29.3359 17.3331C29.3359 16.6304 26.6693 14.6664 26.6693 14.6664M29.0359 17.1558C27.1533 17.5424 23.6253 17.6931 21.8786 14.4224C21.1546 13.2704 21.2906 11.3424 21.2906 9.14776C21.2453 8.25443 20.4826 6.62643 18.5733 6.66776C16.6639 6.7091 16.0373 8.27576 15.9626 9.05443V22.5358C15.9813 23.6718 15.3226 25.3318 13.3013 25.3318C11.3279 25.3318 10.5546 23.5824 10.7253 22.2718C11.1866 18.7198 10.1079 14.9958 5.44126 14.6704H2.6626"
+      stroke="white"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);

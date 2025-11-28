@@ -31,42 +31,29 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
   logo = false,
 }) => {
   return (
-    <div className={`flex flex-col w-full ${wrapperClassName}`}>
+    <div className={`flex flex-col gap-2 w-full ${wrapperClassName}`}>
       {logo && (
         <div className="flex justify-center">
           <Image src={"/logo.png"} alt="logo" width={100} height={100} />
         </div>
       )}
-      {title && (
-        <Headings
-          level={2}
-          className={`${titleClassName} ${
-            mdTextCenter ? "md:text-center" : ""
-          } ${textCenter ? "text-center mx-auto" : ""} ${
-            smTextCenter ? "max-md:text-center" : ""
-          } ${
-            titleColor ? `text-${titleColor}` : "text-primary"
-          } text-xl font-medium`}
-          heading={title}
-        />
-      )}
-      <div className={`${line && "lg:flex items-center gap-4 mx-auto"}`}>
+      <div className={`${line && "lg:flex items-center gap-4 mx-auto "}`}>
         {line && (
           <span className="lg:block hidden">
             <LineRight />
           </span>
         )}
-        {subTitle && (
+        {title && (
           <Headings
-            level={3}
-            className={`${subTitleClassName} ${
+            level={2}
+            className={`${titleClassName} ${
               mdTextCenter ? "md:text-center" : ""
-            } ${textCenter ? "text-center" : ""} ${
+            } ${textCenter ? "text-center mx-auto" : ""} ${
               smTextCenter ? "max-md:text-center" : ""
             } ${
-              subTitleColor ? `text-${subTitleColor}` : "text-primary"
-            } uppercase md:text-[2.5rem] text-3xl font-aboreto`}
-            heading={subTitle}
+              titleColor ? `text-${titleColor}` : "text-primary"
+            } text-xl font-medium`}
+            heading={title}
           />
         )}
         {line && (
@@ -80,6 +67,20 @@ const SectionHeading: React.FC<SectionHeadingDescProps> = ({
           </span>
         )}
       </div>
+
+      {subTitle && (
+        <Headings
+          level={3}
+          className={`${subTitleClassName} ${
+            mdTextCenter ? "md:text-center" : ""
+          } ${textCenter ? "text-center" : ""} ${
+            smTextCenter ? "max-md:text-center" : ""
+          } ${
+            subTitleColor ? `text-${subTitleColor}` : "text-primary"
+          } uppercase md:text-[2.5rem] text-3xl font-aboreto`}
+          heading={subTitle}
+        />
+      )}
     </div>
   );
 };

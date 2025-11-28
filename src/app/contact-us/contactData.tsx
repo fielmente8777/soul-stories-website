@@ -31,5 +31,5 @@ export const contactData = {
       },
     ],
   },
-  mapUrl: "",
+  mapUrl: contact.mapUrl,
 };

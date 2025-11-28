@@ -1,3 +1,4 @@
+import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
 import VillaAccommodations from "./components/VillaAccommodations";
 import VillasBanner from "./components/VillasBanner";
 import { villasPageData } from "./villasPageData";
@@ -7,6 +8,7 @@ export default function VillsPage() {
     <main>
       <VillasBanner {...villasPageData.bannerData} />
       <VillaAccommodations {...villasPageData.roomsData} />
+      <TestimonialsSection />
     </main>
   );
 }

@@ -1,14 +1,29 @@
 import { contact } from "@/utils/constent";
 import { AirPortIcon, BusIcon, TrainIcon } from "@/utils/icons";
 import { hotelLandingPageData } from "../hotel/hoteLandingPageData";
+import { soulCarePageData } from "../soul-care/soulCarePageData";
 
 export const homePageData = {
-  bannerData: {},
+  bannerData: {
+    src: "/Screens2025.png",
+    videoSrc:
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+  },
   aboutUsData: {
     title: "WELCOME TO SOUL STORRIES",
     subTitle: "experience serenity at Soul Storries, Mussoorie",
-    description: "Step into a world of mountain magic at Soul Storries, nestled in the serene heart of Garhwal’s picturesque village. Our exclusive Mussoorie retreat seamlessly combines modern luxury with the untouched beauty of nature, offering a one-of-a-kind sanctuary that promises an unforgettable escape.",
-    images: [],
+    description:
+      "Step into a world of mountain magic at Soul Storries, nestled in the serene heart of Garhwal’s picturesque village. Our exclusive Mussoorie retreat seamlessly combines modern luxury with the untouched beauty of nature, offering a one-of-a-kind sanctuary that promises an unforgettable escape.",
+    cards: [
+      {
+        src: "/home-about.jpg",
+      },
+      {
+        src: "/Screens2025.png",
+        videoSrc:
+          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+      },
+    ],
     link: {
       label: "ABOUT US",
       url: "/about-us",
@@ -25,7 +40,7 @@ export const homePageData = {
       title: card.title,
       noOfBadRooms: card.noOfBadRooms,
       listOfIcons: card.listOfIcons,
-      images: card.images,
+      images: [card.images[0]],
     })),
     link: {
       label: "KNOW MORE",
@@ -34,33 +49,19 @@ export const homePageData = {
   },
   addPosterData: {
     title: "Himalayan Views Meet Soulful Food",
-    images: [],
+    images: ["/adds.png"],
     link: {
       label: "EXPLORE",
-      url: "",
+      url: "/kafuli-cafe",
     },
   },
   experiences: {
-    src: "",
+    src: "/layer-2.png",
     title: "MORE THAN JUST HIMALAYAN VIEW",
     subTitle: "Exclusive Experiences, Reserved for Soul Storries Guests",
     cards: [
-      {
-        src: "",
-        alt: "DIY BARBEQUE",
-      },
-      {
-        src: "",
-        alt: "SPA & WELLNESS",
-      },
-      {
-        src: "",
-        alt: "TERRACE BAR & GRILL",
-      },
-      // {
-      //     src:"",
-      //     alt:"",
-      // },
+      ...hotelLandingPageData.experiences.cards,
+      ...soulCarePageData.wellnessServices.cards,
     ],
   },
   contactUsData: {
@@ -94,15 +95,5 @@ export const homePageData = {
       link: "",
     },
   ],
-  testimonialData: {
-    src: "",
-    logo: "",
-    title: "Appreciation From Our Guests",
-    cards: [
-      {
-        description: "",
-        name: "",
-      },
-    ],
-  },
+  
 };

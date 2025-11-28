@@ -31,7 +31,7 @@ const AboutBanner: React.FC<AboutBannerProps> = ({
         <div className="flex items-center gap-2">
           <div className="">
             <h1 className="text-xl text-black">{title}</h1>
-            <h2 className="text-primary md:text-[2.5rem] text-4xl font-aboreto text-nowrap">
+            <h2 className="text-primary md:text-[2.5rem] text-4xl font-aboreto lg:text-nowrap">
               {subTitle}
             </h2>
           </div>
@@ -78,16 +78,14 @@ const AboutBanner: React.FC<AboutBannerProps> = ({
                   key={index}
                   className={`relative w-full aspect-[4/4.4] border`}
                 >
-                  <Image
+                  <LazyLoadedVideo
                     src={card.videoSrc}
-                    alt={"Images"}
-                    fill
-                    className="object-cover"
+                    muted={true}
+                    autoPlay
+                    loop
+                    poster={card.poster}
+                    controls={false}
                   />
-
-                  {/* <div className="absolute bottom-0 bg-white/60 w-full flex justify-center py-2">
-                    <h2 className="avenir">{card.title}</h2>
-                  </div> */}
                 </div>
               )}
             />

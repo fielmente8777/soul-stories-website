@@ -275,3 +275,54 @@ input {
     }
   }
 }
+
+.blog_content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  h2{
+    font-family: var(--font-aboreto);
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--primary);
+    @media (width < 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  h3{
+    font-family: var(--font-aboreto);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--primary);
+    @media (width < 768px) {
+      font-size: 1.2rem;
+    }
+  }
+  h4{
+    font-family: var(--font-aboreto);
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: var(--primary);
+    @media (width < 768px) {
+      font-size: 1rem;
+    }
+  }
+  p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--dark);
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: disc;
+    padding-left: 1rem;
+    li{
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--dark);
+    }
+  }
+}

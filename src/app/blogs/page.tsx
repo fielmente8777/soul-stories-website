@@ -6,11 +6,13 @@ import { BlogCard } from "@/components/cards";
 export default function Blogs() {
   return (
     <main>
-      <SectionWithContainer>
+      <SectionWithContainer sectionClassName="bg-[#F9FFEB]">
         <SectionHeading
           title={blogPageData.bannerData.title}
           subTitle={blogPageData.bannerData.subTitle}
           line
+          titleClassName="uppercase"
+          titleColor="primary"
         />
         <div
           className="grid

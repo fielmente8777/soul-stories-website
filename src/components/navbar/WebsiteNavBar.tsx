@@ -13,7 +13,7 @@ const WebsiteNavBar = () => {
   const isActive = (href: string) => pathName === href;
   const { isMobile, setIsMobile } = useWebContext();
   return (
-    <header>
+    <header className="max_screen_width">
       <LandingNavBar />
       <div className="bg-primary text-white">
         <nav className="max_width">

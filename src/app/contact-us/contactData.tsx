@@ -1,5 +1,5 @@
 import { contact } from "@/utils/constent";
-import { FillMailIcon } from "@/utils/icons";
+import { MdCall, MdLocationOn, MdMail } from "react-icons/md";
 
 export const contactData = {
   bannerData: {
@@ -13,21 +13,21 @@ export const contactData = {
         title: "EMAIL ADDRESS:",
         label: contact.email,
         href: "mailto:" + contact.email,
-        icon: <FillMailIcon />,
+        icon: <MdMail />,
       },
       {
-        title: "PHONE NUMBER:",
+        title: "PHONE:",
         label: contact.phone[0],
         href: "tel:" + contact.phone[0],
         label2: contact.phone[1],
         href2: "tel:" + contact.phone[1],
-        icon: <FillMailIcon />,
+        icon: <MdCall />,
       },
       {
         title: "ADDRESS:",
         label: contact.address,
         href: contact.addressLink,
-        icon: <FillMailIcon />,
+        icon: <MdLocationOn />,
       },
     ],
   },

@@ -9,6 +9,7 @@ import { Aboreto, Montserrat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
+import ImagePopUp from "@/components/pop-up/ImagePopUp";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,9 +24,9 @@ const aboreto = Aboreto({
 });
 
 export const metadata: Metadata = {
-  title: "Soul Storries | Luxury Villas & Wellness Estate in Mussoorie",
+  title: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
   description:
-    "Escape to Soul Storries — Mussoorie’s luxury wellness estate offering designer villas, spa, Kafuli Café, and serene Himalayan experiences. Book your stay today.",
+    "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
   keywords: [
     "luxury villas Mussoorie",
     "Soul Storries Mussoorie",
@@ -42,18 +43,18 @@ export const metadata: Metadata = {
     "Mussoorie bonfire retreat",
   ],
   alternates: {
-    canonical: "https://landing.soulstorries.com/",
+    canonical: "https://soulstorries.com/",
     languages: {
-      "en-US": "https://landing.soulstorries.com/",
+      "en-US": "https://soulstorries.com/",
     },
   },
   openGraph: {
-    title: "Soul Storries | Luxury Villas & Wellness Estate in Mussoorie",
+    title: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
     description:
-      "Experience Soul Storries — luxury villas, Kafuli Café, and Himalayan wellness at 7,500 ft in Mussoorie. A boutique retreat of comfort, serenity, and soul.",
+      "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
     images: [
       {
-        url: "https://landing.soulstorries.com/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/images/soulstorries-og.webp",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     ],
     siteName: "Soul Storries",
     type: "website",
-    url: "https://landing.soulstorries.com/",
+    url: "https://soulstorries.com/",
     locale: "en_US",
   },
   twitter: {
@@ -69,8 +70,21 @@ export const metadata: Metadata = {
     title: "Soul Storries | Luxury Villas & Wellness Estate in Mussoorie",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://landing.soulstorries.com/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/images/soulstorries-og.webp"],
     site: "@soulstorries",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    }
   },
 };
 
@@ -130,6 +144,7 @@ export default function RootLayout({
           <Footer />
           <Call callNumber={contact.phone[0]} />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
+          <ImagePopUp />
         </WebProvider>
         {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">

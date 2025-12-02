@@ -31,7 +31,7 @@ const ContactData = ({
 }: BannerData) => {
   return (
     <Section className="p-0!">
-      <div className="grid md:grid-cols-2 md:divide-x divide-y divide-secondary">
+      <div className="grid md:grid-cols-2 md:divide-x max-md:divide-y divide-secondary">
         <div className="space-y-4 py-16">
           <SectionHeading2 title={title} subTitle={subTitle} textCenter />
           <div className="relative w-full aspect-4/1">
@@ -46,7 +46,7 @@ const ContactData = ({
             {cards?.map((card, index) => (
               <div key={index} className="pb-12 space-y-2 text-primary">
                 <div className="flex items-center gap-1">
-                  <span className="text-secondary"> {card.icon}</span>
+                  <span className="text-secondary md:text-3xl"> {card.icon}</span>
                   <h2 className="md:text-2xl font-aboreto">{card.title}</h2>
                 </div>
 

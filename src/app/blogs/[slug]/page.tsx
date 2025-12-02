@@ -21,6 +21,50 @@ export async function generateMetadata(props: Params) {
     title: blog?.meta.title,
     description: blog?.meta.description,
     keywords: blog?.meta.keywords,
+    alternates: {
+      canonical: `https://soulstorries.com/blogs/${blogs.slug}`,
+      languages: {
+        "en-US": `https://soulstorries.com/blogs/${blogs.slug}`,
+      },
+    },
+    openGraph: {
+      title: blog?.meta.title,
+      description: blog?.meta.description,
+      images: [
+        {
+          url: `https://soulstorries.com/blogs/${blogs.slug}/images/soulstorries-og.webp`,
+          width: 1200,
+          height: 630,
+          alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
+        },
+      ],
+      siteName: "Soul Storries",
+      type: "website",
+      url: `https://soulstorries.com/blogs/${blogs.slug}`,
+      locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog?.meta.title,
+      description: blog?.meta.description,
+      images: [
+        `https://soulstorries.com/blogs/${blogs.slug}/images/soulstorries-og.webp`,
+      ],
+      site: "@soulstorries",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
   };
 }
 

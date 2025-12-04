@@ -40,7 +40,7 @@ const WebsiteNavBar = () => {
                 </Link>
               </li>
             ))}
-            <li>
+            <li className="lg:hidden block">
               <button onClick={() => setIsMobile(!isMobile)}>
                 {!isMobile ? (
                   <AiOutlineMenu className="text-2xl" />

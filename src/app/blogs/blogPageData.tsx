@@ -3,7 +3,7 @@ import { blogsData } from "./[slug]/blogsData";
 export const blogPageData = {
   bannerData: {
     title: "Our Blogs",
-    subTitle:"The Soul Storries Edit",
+    subTitle:"The Soul Storries BLOGS",
   },
   cards: blogsData.map((blog) => ({
     src: blog.image,

@@ -4,7 +4,7 @@ import { hotelLandingPageData } from "../hotel/hoteLandingPageData";
 export const villasPageData = {
   bannerData: {
     title: "EXPLORE OUR LUXURY VILLAS",
-    subTitle: "Mountain View Villas for a Soulful Stay",
+    subTitle: "Villas for a Soulful Stay",
     description: "Our villas blend mindful design with the quiet charm of the Himalayas, offering thoughtful interiors and expansive natural views. Every corner invites comfort, warmth, and calm, creating a peaceful retreat where you can unwind, recharge, and reconnect.",
     src: "/villas.png",
   },

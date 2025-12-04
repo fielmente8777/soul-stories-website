@@ -8,7 +8,7 @@ export const kafuliPageData = {
       "Welcome to Café Kafuli at Soul Storries – a hidden sanctuary perched at 7,500 feet in the heart of the Garhwal Himalayas, where nature’s splendor meets the artistry of fine gastronomy.",
     link: {
       label: "Download Menu",
-      href: "",
+      href: "/Cafe-Kafuli.pdf",
     },
     src:"/cafe.jpg",
     logo:"/kafuli.png",

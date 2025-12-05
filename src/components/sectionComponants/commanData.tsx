@@ -1,5 +1,5 @@
 export const testimonialData = {
-  src: "/test.jpg",
+  src: "/test_11zon.webp",
   logo: "/google.png",
   title: "Appreciation From Our Guests",
   cards: [

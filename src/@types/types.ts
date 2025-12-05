@@ -12,28 +12,38 @@ export interface AboutSectionProps {
   images: string[];
 }
 
+export interface RoomCard {
+  textColor?: string;
+  headingClass?: string;
+
+  // Room-related fields
+  title?: string;
+  noOfBadRooms?: string;
+  description?: string;
+  price?: string;
+  listOfIcons?: {
+    icons: JSX.Element;
+    title: string;
+  }[];
+  images?: string[];
+
+  // Video-related fields
+  videoSrc?: string;
+  poster?: string;
+
+  // Common
+  link?: {
+    label: string;
+    url: string;
+  };
+}
+
 export interface RoomsProps {
   bg?: boolean | string;
   title: string;
   subTitle: string;
   description?: string;
-  cards: {
-    textColor?: string;
-    headingClass?: string;
-    title: string;
-    noOfBadRooms: string;
-    description?: string;
-    price?: string;
-    listOfIcons: {
-      icons: JSX.Element;
-      title: string;
-    }[];
-    link?: {
-      label: string;
-      url: string;
-    };
-    images: string[];
-  }[];
+  cards: RoomCard[];
   link?: {
     label: string;
     url: string;

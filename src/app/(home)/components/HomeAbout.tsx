@@ -48,8 +48,8 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
             </div>
           )}
           {cards[1].videoSrc && (
-            <div className="max-w-[45%] absolute top-[30%] right-0 z-10">
-              <div className="w-full aspect-[4/6] relative">
+            <div className="max-w-[45%] absolute top-[30%] right-0 z-10 border border-white">
+              <div className="w-full aspect-[4/6.2] relative">
                 <LazyLoadedVideo
                   src={cards[1].videoSrc}
                   muted={true}

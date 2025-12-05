@@ -19,9 +19,9 @@ export const homePageData = {
         src: "/home-about.jpg",
       },
       {
-        src: "/Screens2025.png",
+        src: "video/mp4",
         videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
       },
     ],
     link: {
@@ -40,7 +40,7 @@ export const homePageData = {
       title: card.title,
       noOfBadRooms: card.noOfBadRooms,
       listOfIcons: card.listOfIcons,
-      images: [card.images[0]],
+        images: card.images ? [card.images[0]] : [],
     })),
     link: {
       label: "KNOW MORE",

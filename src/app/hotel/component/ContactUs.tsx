@@ -2,7 +2,6 @@
 import LinkButton from "@/components/buttons/LinkButton";
 // import OnlyButton from "@/components/buttons/OnlyButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
-import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 import { JSX } from "react";
 
@@ -20,7 +19,6 @@ interface IConnectivity {
   };
 }
 const ContactUs: React.FC<IConnectivity> = ({ title, src, items, link }) => {
-  const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
       <div className="flex flex-col items-center justify-center gap-4">

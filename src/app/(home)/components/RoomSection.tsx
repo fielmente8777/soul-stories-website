@@ -15,6 +15,8 @@ const RoomSection: React.FC<RoomsProps> = ({
   cards,
   link,
 }) => {
+  const data = cards.filter((card) => card.images && card.images.length > 0);
+  console.log(data)
   return (
     <Section className="bg-[#F9FFEB]">
       <div className="grid max-w-[1400px] max-md:px-4 ml-auto md:grid-cols-7 grid-cols-1 items-center gap-6">
@@ -31,7 +33,7 @@ const RoomSection: React.FC<RoomsProps> = ({
         </div>
         <div className="md:col-span-5 relative">
           <SwiperCarousel
-            data={cards || []}
+            data={data || []}
             slidesPerView={1}
             spaceBetween={26}
             loop

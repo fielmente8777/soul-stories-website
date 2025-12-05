@@ -6,7 +6,6 @@ import {
   FillLocationIcon,
   FillMailIcon,
 } from "@/utils/icons";
-import { title } from "process";
 import { BottomNav } from "../navbar/navData";
 
 interface FooterData {

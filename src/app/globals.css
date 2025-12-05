@@ -37,6 +37,11 @@ body {
  }
 }
 
+button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .custom-swiper {
   .swiper-slide-next {
     margin-top: 4.5rem !important;

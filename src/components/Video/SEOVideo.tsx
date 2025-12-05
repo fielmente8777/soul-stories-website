@@ -66,7 +66,7 @@ const LazyLoadedVideo: React.FC<VideoProps> = ({
   }, [isInView, autoPlay]);
 
   return (
-    <div ref={containerRef} className="w-full h-full">
+    <div ref={containerRef} className="absolute inset-0 object-cover">
       <video
         ref={videoRef}
         src={src}

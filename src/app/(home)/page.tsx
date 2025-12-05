@@ -33,7 +33,7 @@ export default function Home() {
       <RoomSection {...homePageData.roomsData} />
       <Section
         defaultPadding={false}
-        className="relative aspect-[4/3] w-full after:absolute after:inset-3 after:border-[.5px] after:border-white"
+        className="relative md:aspect-[4/3] aspect-[4/4] w-full after:absolute after:inset-3 after:border-[.5px] after:border-white"
       >
         <Image
           src={homePageData.addPosterData.images[0]}
@@ -44,7 +44,7 @@ export default function Home() {
         />
         <Link
           href={homePageData.addPosterData.link.url}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white flex items-center justify-center gap-2 text-lg border-b border-white transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-lg z-10"
+          className="absolute md:bottom-10 bottom-30 left-1/2 -translate-x-1/2 text-white flex items-center justify-center gap-2 md:text-lg border-b border-white transition-all duration-300 ease-in-out hover:scale-x-105 active:scale-95 hover:shadow-lg z-10"
         >
           {homePageData.addPosterData.link.label}
           <span className="">

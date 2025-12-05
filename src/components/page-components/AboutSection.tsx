@@ -1,13 +1,12 @@
 "use client";
 import { AboutSectionProps } from "@/@types/types";
-import { useWebContext } from "@/context-api/WebContext";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 // import OnlyButton from "../buttons/OnlyButton";
+import LinkButton from "../buttons/LinkButton";
 import { SectionWithContainer } from "../sectionComponants";
 import SwiperCarousel from "../sliders/SwiperCarousel";
 import { SectionHeading } from "../typography";
-import LinkButton from "../buttons/LinkButton";
 
 const AboutSection: React.FC<AboutSectionProps> = ({
   title,

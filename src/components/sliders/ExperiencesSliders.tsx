@@ -1,6 +1,6 @@
 "use client";
 import { ExperiencesProps } from "@/@types/types";
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 import SwiperCarousel from "./SwiperCarousel";
 import ExperienceCard from "../cards/ExperienceCard";
 
@@ -13,11 +13,12 @@ const ExperiencesSliders: React.FC<ExperiencesSlidersProps> = ({ cards }) => {
     <div className="w-full">
       <SwiperCarousel
         data={cards || []}
-        modules={[EffectCoverflow, Navigation]}
+        modules={[EffectCoverflow, Navigation, Autoplay]}
         navigation={{
           nextEl: ".cafe-next",
           prevEl: ".cafe-prev",
         }}
+        autoplay={{ delay: 2500 }}
         className="w-full we-offer-slider"
         swiperSlideClassName="swiper-slide"
         effect="coverflow"
@@ -45,11 +46,8 @@ const ExperiencesSliders: React.FC<ExperiencesSlidersProps> = ({ cards }) => {
             spaceBetween: 24,
           },
         }}
-        renderSlide={(card) => (
-          <ExperienceCard {...card} />
-        )}
+        renderSlide={(card) => <ExperienceCard {...card} />}
       />
-      
     </div>
   );
 };

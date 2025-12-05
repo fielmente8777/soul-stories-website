@@ -1,11 +1,10 @@
 "use client";
 import { CafeAndRestaurantsProps } from "@/@types/types";
 // import OnlyButton from "../buttons/OnlyButton";
+import LinkButton from "../buttons/LinkButton";
 import { SectionWithContainer } from "../sectionComponants";
 import CafeSlider from "../sliders/CafeSlider";
 import { SectionHeading } from "../typography";
-import { useWebContext } from "@/context-api/WebContext";
-import LinkButton from "../buttons/LinkButton";
 
 const CafeAndRestaurants: React.FC<CafeAndRestaurantsProps> = ({
   title,
@@ -14,7 +13,6 @@ const CafeAndRestaurants: React.FC<CafeAndRestaurantsProps> = ({
   images,
   link,
 }) => {
-  const { setIsOpenPopup } = useWebContext();
   return (
     <SectionWithContainer>
       <div className="flex flex-col gap-8 md:gap-12">

@@ -1,12 +1,11 @@
 "use client";
 import { FacilitiesProps } from "@/@types/types";
-import { useWebContext } from "@/context-api/WebContext";
 import React from "react";
 // import OnlyButton from "../buttons/OnlyButton";
+import LinkButton from "../buttons/LinkButton";
 import { Section } from "../sectionComponants";
 import { CommonSlider } from "../sliders";
 import { SectionHeading } from "../typography";
-import LinkButton from "../buttons/LinkButton";
 
 const Experiences: React.FC<FacilitiesProps> = ({
   title,
@@ -14,7 +13,6 @@ const Experiences: React.FC<FacilitiesProps> = ({
   cards,
   link,
 }) => {
-  const { setIsOpenPopup } = useWebContext();
   return (
     <Section>
       <div className="flex flex-col gap-8 md:gap-12">

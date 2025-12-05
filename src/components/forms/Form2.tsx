@@ -1,5 +1,5 @@
 "use client";
-import { hotelLandingPageData } from "@/app/hotel/hoteLandingPageData";
+import { soulCarePageData } from "@/app/soul-care/soulCarePageData";
 import { getDateInputLimits } from "@/hooks/getDateInputLimits";
 import useClickOutside from "@/hooks/useClickOutside";
 import { contact, countries } from "@/utils/constent";
@@ -29,7 +29,9 @@ const Form2: React.FC<formProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const PACKAGEs = hotelLandingPageData.rooms.cards.map((card) => card.title);
+  const PACKAGEs = soulCarePageData?.ourPackages?.cards?.map(
+    (card) => card?.packageType
+  );
   const [isPACKAGEDropdownOpen, setIsPACKAGEDropdownOpen] = useState(false);
   const [formData, setFormData] = useState({
     checkIn: "",

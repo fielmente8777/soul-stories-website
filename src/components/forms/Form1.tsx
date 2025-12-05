@@ -29,7 +29,7 @@ const Form1: React.FC<formProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const villas = hotelLandingPageData.rooms.cards.map((card) => card.title);
+  const villas = hotelLandingPageData?.rooms?.cards?.map((card) => card?.title || "");
   const [isVillaDropdownOpen, setIsVillaDropdownOpen] = useState(false);
   const [formData, setFormData] = useState({
     checkIn: "",
@@ -387,7 +387,7 @@ const Form1: React.FC<formProps> = ({
             role="listbox"
             className="absolute top-full z-10 w-full bg-white border border-light shadow-lg"
           >
-            {villas.map((villa) => (
+            {villas?.map((villa) => (
               <button
                 key={villa}
                 type="button"

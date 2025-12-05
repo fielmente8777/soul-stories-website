@@ -20,19 +20,21 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
 }) => {
   return (
     <div className="flex flex-col gap-4 overflow-hidden room-card">
-      <SwiperCarousel
-        data={images}
-        slidesPerView={1}
-        spaceBetween={0}
-        modules={[Navigation]}
-        navigation={images.length > 1 ? true : false}
-        className="w-full "
-        renderSlide={(src) => (
-          <div className="w-full relative aspect-[4/3.5]">
-            <Image src={src} alt={title} fill className="object-cover" />
-          </div>
-        )}
-      />
+      {images && title && (
+        <SwiperCarousel
+          data={images}
+          slidesPerView={1}
+          spaceBetween={0}
+          modules={[Navigation]}
+          navigation={images.length > 1 ? true : false}
+          className="w-full "
+          renderSlide={(src) => (
+            <div className="w-full relative aspect-[4/3.5]">
+              <Image src={src} alt={title} fill className="object-cover" />
+            </div>
+          )}
+        />
+      )}
       <div className="space-y-2 pb-4">
         <div className="flex items-center justify-between gap-4">
           <h3

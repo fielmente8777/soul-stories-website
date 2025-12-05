@@ -55,7 +55,7 @@ export const useWeather = ({
       isMounted = false;
       controller.abort();
     };
-  }, []);
+  }, [longitudeAndLatitude]);
 
   return { temp, loading, error };
 };

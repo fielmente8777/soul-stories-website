@@ -1,11 +1,10 @@
 "use client";
 import { RoomsProps } from "@/@types/types";
-import { useWebContext } from "@/context-api/WebContext";
 // import OnlyButton from "../buttons/OnlyButton";
+import LinkButton from "../buttons/LinkButton";
 import { Section } from "../sectionComponants";
 import { RoomsSlider } from "../sliders";
 import { SectionHeading } from "../typography";
-import LinkButton from "../buttons/LinkButton";
 
 const Rooms: React.FC<RoomsProps> = ({
   title,
@@ -15,7 +14,6 @@ const Rooms: React.FC<RoomsProps> = ({
   bg,
   description,
 }) => {
-  const { setIsOpenPopup } = useWebContext();
   return (
     <Section className={`${bg ? `bg-[#F9FFEB]` : "bg-primary"}`}>
       <div className="flex flex-col md:gap-14 gap-8">

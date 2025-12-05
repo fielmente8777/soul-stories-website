@@ -54,7 +54,7 @@ const WebsiteNavBar = () => {
                 href={contact.WhatsappCta}
                 target="_blank"
                 rel="noreferrer"
-                className="uppercase bg-secondary px-5 py-3 rounded-lg flex  items-center gap-2 justify-center"
+                className="uppercase bg-secondary font-semibold px-5 py-3 rounded-lg flex  items-center gap-2 justify-center"
               >
                 <span className="">
                   <span className="sr-only">WhatsappIcon</span>

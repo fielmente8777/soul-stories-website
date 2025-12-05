@@ -166,6 +166,12 @@ export const hotelLandingPageData = {
         ],
       },
       {
+        videoSrc:
+          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video2.mp4",
+        poster: "video/mp4",
+        link: { label: "BOOK NOW", url: contact.WhatsappCta },
+      },
+      {
         title: "ATHENA",
         noOfBadRooms: "2 Bedrooms Luxury Villa",
         price: "₹ 30,000 + 18% Taxes",

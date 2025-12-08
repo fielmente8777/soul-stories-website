@@ -225,19 +225,19 @@ export const hotelLandingPageData = {
     cards: [
       {
         title: "DIY BARBEQUE",
-        src: "/im7.webp",
+        src: "/im7.jpg",
       },
       {
         title: "SPA & WELLNESS",
-        src: "/im18.webp",
+        src: "/im18.jpg",
       },
       {
         title: "TERRACE BAR & GRILL",
-        src: "/im11.webp",
+        src: "/im11.jpg",
       },
       {
         title: "BONFIRE",
-        src: "/im10.webp",
+        src: "/im10.jpg",
       },
     ],
   },

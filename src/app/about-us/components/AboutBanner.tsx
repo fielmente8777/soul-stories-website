@@ -38,11 +38,11 @@ const AboutBanner: React.FC<AboutBannerProps> = ({
         </div>
         <p className="md:text-lg text-primary mt-4">{description[0]}</p>
         <div>
-          <div className="lg:grid hidden md:grid-cols-3 gap-5 mt-12">
+          <div className="lg:grid hidden md:grid-cols-3 gap-5 mt-12 max-w-7xl mx-auto">
             {videos.map((card, index) => (
               <div
                 key={index}
-                className={`relative w-full aspect-[4/5] ${
+                className={`relative w-full aspect-[4/6.5] ${
                   index == 0 && `mt-26`
                 } ${index == 1 && `mt-14`}`}
               >

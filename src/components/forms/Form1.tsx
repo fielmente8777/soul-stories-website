@@ -237,7 +237,7 @@ const Form1: React.FC<formProps> = ({
     >
       {/* Full Name Field */}
       <div
-        className={`col-span-2 relative flex flex-col px-4 gap-4 ${
+        className={`col-span-2 relative flex flex-col px-4 md:gap-4 ${
           rounded && "lg:rounded-l-2xl"
         } bg-[#fff] ${gridView && "pb-4"} max-md:pb-4`}
       >
@@ -271,7 +271,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`col-span-2 ${
           gridView && "pb-4"
-        } max-md:pb-4 w-full flex flex-col px-4 gap-4 bg-[#fff]`}
+        } max-md:pb-4 w-full flex flex-col px-4 md:gap-4 bg-[#fff]`}
       >
         <label
           htmlFor="PhoneNumber"
@@ -310,7 +310,7 @@ const Form1: React.FC<formProps> = ({
             value={formData.PhoneNumber}
             className=" ps-1 outline-none max-w-[90%] no-spinner appearance-auto  w-full h-full text-base text-[#343434] placeholder:text-[#343434] bg-transparent"
           />
-          <span className="absolute right-[-.5rem] bottom-0">
+          <span className="absolute md:-right-2 right-2 bottom-0">
             <FillPhoneIcon />
           </span>
         </div>
@@ -325,7 +325,7 @@ const Form1: React.FC<formProps> = ({
       <div
         className={`col-span-2 ${
           gridView && "pb-4"
-        } max-md:pb-4 relative px-4 flex flex-col gap-4 bg-[#fff]`}
+        } max-md:pb-4 relative px-4 flex flex-col md:gap-4 bg-[#fff]`}
       >
         <label
           htmlFor="EmailId"
@@ -342,7 +342,7 @@ const Form1: React.FC<formProps> = ({
           value={formData.EmailId}
           className="outline-none  max-w-[90%] w-full bg-transparent text-base text-[#343434] placeholder:text-[#343434]"
         />
-        <span className="absolute md:right-2 right-6 bottom-3">
+        <span className="absolute md:right-2 right-5 md:bottom-3 bottom-7">
           <FillMail />
         </span>
         {error.EmailId && (
@@ -367,7 +367,7 @@ const Form1: React.FC<formProps> = ({
         <button
           type="button"
           onClick={() => setIsVillaDropdownOpen(!isVillaDropdownOpen)}
-          className={`w-full h-full ps-4 pe-2 py-3.5 text-left bg-white flex items-center justify-between ${
+          className={`w-full h-full ps-4 pe-6 py-3.5 text-left bg-white flex items-center justify-between ${
             !formData.villa ? "text-gray-400" : ""
           }`}
           aria-haspopup="listbox"

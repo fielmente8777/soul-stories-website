@@ -55,7 +55,7 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
                   muted={true}
                   loop={true}
                   autoPlay={true}
-                  controls={false}
+                  poster={cards[1].src}
                 />
               </div>
             </div>

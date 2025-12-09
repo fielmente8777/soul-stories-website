@@ -18,7 +18,7 @@ const RoomSection: React.FC<RoomsProps> = ({
   const data = cards.filter((card) => card.images && card.images.length > 0);
   return (
     <Section className="bg-[#F9FFEB]">
-      <div className="grid max-w-[1400px] max-md:px-4 ml-auto md:grid-cols-7 grid-cols-1 items-center gap-6">
+      <div className="grid max-w-[1400px] max-lg:px-4 ml-auto md:grid-cols-7 grid-cols-1 items-center gap-6">
         <div className="md:col-span-2 space-y-6">
           <SectionHeading title={title} subTitle={subTitle} />
           <p className="text-primary md:text-lg">{description}</p>

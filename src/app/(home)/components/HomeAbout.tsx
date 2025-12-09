@@ -8,10 +8,9 @@ interface HomeAboutProps {
   title: string;
   subTitle: string;
   description: string;
-  cards: {
-    src: string;
-    videoSrc?: string;
-  }[];
+  src: string;
+  videoSrc: string;
+  poster: string;
   link: {
     label: string;
     url: string;
@@ -21,8 +20,10 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
   title,
   subTitle,
   description,
-  cards,
   link,
+  src,
+  videoSrc,
+  poster,
 }) => {
   return (
     <SectionWithContainer>
@@ -37,29 +38,21 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
           />
         </div>
         <div className="lg:col-span-5 relative">
-          {cards[0].src && (
-            <div className="w-full max-w-[75%] aspect-[4/4] relative">
-              <Image
-                src={cards[0].src}
-                alt={title}
-                fill
-                className="object-cover"
+          <div className="w-full max-w-[75%] aspect-[4/4] relative">
+            <Image src={src} alt={title} fill className="object-cover" />
+          </div>
+          <div className="max-w-[45%] w-full absolute top-[30%] right-0 z-10 border border-white">
+            <div className="w-full aspect-[4/6.2] relative">
+              <LazyLoadedVideo
+                src={videoSrc}
+                muted={true}
+                loop={true}
+                autoPlay={true}
+                poster={poster}
+                controls={false}
               />
             </div>
-          )}
-          {cards[1].videoSrc && (
-            <div className="max-w-[45%] absolute top-[30%] right-0 z-10 border border-white">
-              <div className="w-full aspect-[4/6.2] relative">
-                <LazyLoadedVideo
-                  src={cards[1].videoSrc}
-                  muted={true}
-                  loop={true}
-                  autoPlay={true}
-                  poster={cards[1].src}
-                />
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </SectionWithContainer>

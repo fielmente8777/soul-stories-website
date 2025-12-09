@@ -14,16 +14,11 @@ export const homePageData = {
     subTitle: "experience serenity at Soul Storries, Mussoorie",
     description:
       "Step into a world of mountain magic at Soul Storries, nestled in the serene heart of Garhwal’s picturesque village. Our exclusive Mussoorie retreat seamlessly combines modern luxury with the untouched beauty of nature, offering a one-of-a-kind sanctuary that promises an unforgettable escape.",
-    cards: [
-      {
-        src: "/home-about.jpg",
-      },
-      {
-        src: "video/mp4",
-        videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
-      },
-    ],
+    src: "/home-about.jpg",
+    poster: "video/mp4",
+    videoSrc:
+      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
+
     link: {
       label: "ABOUT US",
       url: "/about-us",
@@ -40,7 +35,7 @@ export const homePageData = {
       title: card.title,
       noOfBadRooms: card.noOfBadRooms,
       listOfIcons: card.listOfIcons,
-        images: card.images ? [card.images[0]] : [],
+      images: card.images ? [card.images[0]] : [],
     })),
     link: {
       label: "KNOW MORE",
@@ -95,5 +90,4 @@ export const homePageData = {
       link: "",
     },
   ],
-  
 };

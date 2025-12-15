@@ -54,12 +54,12 @@ const WebsiteFooter = () => {
         <div className="grid md:py-12 py-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.1fr_1.1fr_1.1fr_1.4fr] gap-4 md:gap-4">
           {webSiteFooterData.lists.slice(1).map((list, index) => (
             <div key={index}>
-              <h2 className="md:text-[2rem] text-white font-aboreto  text-xl mb-4">
+              <h2 className="md:text-[2rem] text-white font-aboreto  text-2xl mb-4">
                 {list.title}
               </h2>
               <ul className={`flex flex-col gap-2`}>
                 {list.links.map((item, suIndex) => (
-                  <li className="flex gap-2" key={suIndex}>
+                  <li className={`flex gap-2 ${index === 3 && suIndex === 1 ? "flex-wrap" : ""}`} key={suIndex}>
                     {item.icon && (
                       <span
                         className={`mt-1 ${
@@ -95,7 +95,7 @@ const WebsiteFooter = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         href={item.href2}
-                        className="flex gap-2"
+                        className="flex gap-2 max-md:ml-8"
                       >
                         <span
                           className={`${

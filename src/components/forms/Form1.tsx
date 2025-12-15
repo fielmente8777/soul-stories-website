@@ -29,7 +29,9 @@ const Form1: React.FC<formProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const villas = hotelLandingPageData?.rooms?.cards?.map((card) => card?.title || "");
+  const villas = hotelLandingPageData?.rooms?.cards?.map(
+    (card) => card?.title || ""
+  );
   const [isVillaDropdownOpen, setIsVillaDropdownOpen] = useState(false);
   const [formData, setFormData] = useState({
     checkIn: "",
@@ -277,29 +279,34 @@ const Form1: React.FC<formProps> = ({
           htmlFor="PhoneNumber"
           className="text-sm max-md:py-3 uppercase text-[#343434]"
         >
-          Phone Number
+          Phone Number*
         </label>
         <div className="flex relative items-center w-full">
-          <select
-            aria-label="Country Code"
-            id="countryCode"
-            name="countryCode"
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            className={`text-[#343434] placeholder:text-[#343434] focus:outline-none w-full bg-transparent`}
-            style={{ width: `${countryCode.length * 2}ch` }}
-          >
-            {countries.map((country, index) => (
-              <option
-                key={index + 101}
-                value={country.code}
-                aria-label={country.name}
-                className="bg-gray-100"
-              >
-                {`${country.code}`}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              aria-label="Country Code"
+              id="countryCode"
+              name="countryCode"
+              value={countryCode}
+              onChange={(e) => setCountryCode(e.target.value)}
+              className={`text-[#343434] placeholder:text-[#343434] appearance-none focus:outline-none w-full bg-transparent`}
+              style={{ width: `${countryCode.length * 2}ch` }}
+            >
+              {countries.map((country, index) => (
+                <option
+                  key={index + 101}
+                  value={country.code}
+                  aria-label={country.name}
+                  className="bg-gray-100"
+                >
+                  {`${country.code}`}
+                </option>
+              ))}
+            </select>
+            <span className="absolute pointer-events-none right-0 top-1/2 transform -translate-y-1/2">
+              <DropDownIcon />
+            </span>
+          </div>
 
           <input
             type="tel"
@@ -331,7 +338,7 @@ const Form1: React.FC<formProps> = ({
           htmlFor="EmailId"
           className="text-sm uppercase max-md:py-3 text-[#343434]"
         >
-          Email Id
+          Email Id*
         </label>
         <input
           type="text"
@@ -362,7 +369,7 @@ const Form1: React.FC<formProps> = ({
           htmlFor="villa"
           className="text-sm max-md:py-3 text-[#343434] px-4"
         >
-          VILLA
+          VILLA*
         </label>
         <button
           type="button"
@@ -423,7 +430,10 @@ const Form1: React.FC<formProps> = ({
           gridView && "pb-4"
         } md:pb-4 flex flex-col px-4 bg-[#fff] relative`}
       >
-        <label htmlFor="checkIn" className="text-sm max-md:py-3 text-[#343434]">
+        <label
+          htmlFor="checkIn"
+          className="text-sm max-md:py-3 uppercase text-[#343434]"
+        >
           Check In & Check Out*
         </label>
         <DatePicker

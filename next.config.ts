@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
   //   unoptimized: true,
   // },
   trailingSlash: true,
+  redirects() {
+    return [
+      {
+        source: "/:path*",
+        destination: "https://www.amastaysandtrails.com/en-in/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -1,13 +1,11 @@
+import { BlogCard } from "@/components/cards";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
-import { blogPageData } from "./blogPageData";
-import { BlogCard } from "@/components/cards";
 import { Metadata } from "next";
-
+import { blogPageData } from "./blogPageData";
 
 export const metadata: Metadata = {
-  title:
-    "Luxury Travel & Wellness Blogs | Soul Storries Mussoorie",
+  title: "Luxury Travel & Wellness Blogs | Soul Storries Mussoorie",
   description:
     "Read inspiring blogs on luxury travel, spa retreats, wellness living, and villa stays in Mussoorie by Soul Storries – crafted for mindful, soulful journeys.",
   alternates: {
@@ -17,8 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title:
-      "Luxury Travel & Wellness Blogs | Soul Storries Mussoorie",
+    title: "Luxury Travel & Wellness Blogs | Soul Storries Mussoorie",
     description:
       "Read inspiring blogs on luxury travel, spa retreats, wellness living, and villa stays in Mussoorie by Soul Storries – crafted for mindful, soulful journeys.",
     images: [
@@ -53,11 +50,9 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    }
+    },
   },
-
 };
-
 
 export default function Blogs() {
   return (

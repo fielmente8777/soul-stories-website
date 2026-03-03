@@ -19,7 +19,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   link,
 }) => {
   return (
-        <div className="w-full box-shadow h-full overflow-hidden rounded-lg box-shadow bg-white">
+    <div className="w-full box-shadow h-full overflow-hidden rounded-lg box-shadow bg-white">
       <div className="relative w-full aspect-[4/2.5]">
         <Image
           src={src}

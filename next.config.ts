@@ -1,28 +1,11 @@
 import type { NextConfig } from "next";
+import redirectsData from "./redirects.json";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // output: "export",
-  // images: {
-  //   unoptimized: true,
-  // },
-
   trailingSlash: true,
-  redirects() {
-    return [
-      {
-        source: "/",
-        destination:
-          "https://www.amastaysandtrails.com/en-in/soul-stories-mussoorie",
-        permanent: true,
-      },
-      {
-        source: "/blogs/:path*/",
-        destination:
-          "https://www.amastaysandtrails.com/en-in/soul-stories-mussoorie",
-        permanent: true,
-      },
-    ];
+
+  async redirects() {
+    return redirectsData;
   },
 };
 

@@ -1,0 +1,597 @@
+[
+  {
+    "source": "Current URL",
+    "destination": "Redirection URL",
+    "permanent": true
+  },
+  {
+    "source": "/villa/flora",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
+    "permanent": true
+  },
+  {
+    "source": "/top-experiences/george-everests-house",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-sights-in-mussoo/kempty-falls",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/kafuli-cafe",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/press",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/corporate-events",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-experiences/clouds-end",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-sights-in-mussoo/lal-tibba-scenic-point",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/about-us",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/villa/aurora",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
+    "permanent": true
+  },
+  {
+    "source": "/top-experiences/mussoorie-lake",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/contact-us",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/destination-wedding",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/villa/aura",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
+    "permanent": true
+  },
+  {
+    "source": "/villa/amaraa",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
+    "permanent": true
+  },
+  {
+    "source": "/blogs",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-sights-in-mussoo/gun-hill",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/villa/athena",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
+    "permanent": true
+  },
+  {
+    "source": "/wellness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-sights-in-mussoo/company-garden-bhatta-falls",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/experience",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/cdn-cgi/l/email-protection",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-sights-in-mussoo/camels-back-road",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-experiences/jharipani-falls",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-experiences/tibetan-culture-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/together-and-celebrations",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/travel-tourism",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/wellness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/luxury-wellness-estate",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/luxury-villas",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness-journeys-stress-to-stillness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/spa-menu",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/yoga-retreat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness/heal-your-life-retreat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness/wellness-journeys-stress-to-stillness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/a-food-lovers-guide-to-kafuli-cafe-at-soul-storries",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/a-complete-guide-to-booking-soul-storries-luxury-villas",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/the-benefits-of-a-wellness-retreat-in-the-himalayas",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/best-villas-in-mussoorie-for-stay-things-to-do-in-september",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/experience-ultimate-relaxation-at-soul-storries-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/luxury-villa-haven-soul-storries-signature-at-7500-ft",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/winter-wonderland-experience-the-snowy-charm-of-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/the-signature-villas-of-soul-storries-a-luxurious-retreat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/corporate-retreats-at-soul-storries-work-unwind-and-connect",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/friends-get-togethers-reconnect-relax-revel-in-the-hills",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/top-5-wellness-packages-offered-at-soul-storries-which-one-is-right-for-you",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/exploring-the-natural-beauty-around-soul-storries-top-nearby-attractions",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/kafuli-cafe-a-culinary-retreat-in-the-hills",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/you-may-also-like/corporate-events",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/you-may-also-like/bachelor-family-parties",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/you-may-also-like/destination-wedding",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/press/sunday-pioneer-agenda-finding-soul-connections-at-soul-stories-gyaneshwar-dayal",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/press/hospitality-economic-times-from-the-economic-times-from-exhibitions-to-hospitality-madhavi-madaans-soul-stories-is-more-than-just-a-brick-and-mortar-story",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/press/tnhglobal-soul-storries-an-oasis-of-luxury-and-nature",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/press/travel-turtle-a-serendipitous-sojourn-at-soul-stories-sudipta-saha",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/nature-spots-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/himalayan-food",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/pahadi-cuisine",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/scenic-spots-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/places-to-visit-near-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/friends-getaway-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/adventure",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/bonfire-nights",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-group-vacations",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/adventure-retreats",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-workstation-destinations",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/corporate-retreats-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/private-retreats",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/luxury-villas-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/family",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/boutique-stays",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/snow-activities-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/snowfall-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-winter-getaways",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/new-year-celebrations-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/winter-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/christmas-in-the-hills",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/discovery",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/wellness-escape",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/private-villas-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-spa-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/exclusive-villas-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/luxury-and-wellness-package",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/private-luxury-villa",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/wellness-retreat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/food-lover",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness/yoga-retreat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/luxury-vacation-villa",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/luxury-villa",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-villas-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness/spa-menu",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/spa-wellness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/kafuli-cafe",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/best-cafe-in-mussoorie",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tag/spa-wellness-package",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/shop",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/category/uncategorized",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/product-category/booking",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/product-category/uncategorized",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/my-account",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/cart",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/my-account/lost-password",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/unique-storie/terrace-bar-and-grills",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/unique-storie/bonfire",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tranquility/escape-to-soulstorries_luxuryestat",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/book-now",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/checkout",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/thank-you",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/demo",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/booking",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/wellness/wellness-journeys-sleep-reboot",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tranquility/escape-the-ordinary-and-bring-your-team",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tranquility/cafekafuli-video",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/unique-storie/spa-and-wellness",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/tranquility/step-into-a-world-of-warmth",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  },
+  {
+    "source": "/unique-storie/diy-barbeque",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
+  }
+]

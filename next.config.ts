@@ -6,17 +6,18 @@ const nextConfig: NextConfig = {
   // images: {
   //   unoptimized: true,
   // },
-  
+
   trailingSlash: true,
-  // redirects() {
-  //   return [
-  //     {
-  //       source: "/:path*",
-  //       destination: "https://www.amastaysandtrails.com/en-in/",
-  //       permanent: true,
-  //     },
-  //   ];
-  // },
+  redirects() {
+    return [
+      {
+        source: "/blogs/:path*/",
+        destination:
+          "https://www.amastaysandtrails.com/en-in/soul-stories-mussoorie",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

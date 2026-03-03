@@ -8,15 +8,15 @@ const nextConfig: NextConfig = {
   // },
   
   trailingSlash: true,
-  redirects() {
-    return [
-      {
-        source: "/:path*",
-        destination: "https://www.amastaysandtrails.com/en-in/",
-        permanent: true,
-      },
-    ];
-  },
+  // redirects() {
+  //   return [
+  //     {
+  //       source: "/:path*",
+  //       destination: "https://www.amastaysandtrails.com/en-in/",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;

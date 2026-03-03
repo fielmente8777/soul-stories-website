@@ -1,10 +1,5 @@
 [
   {
-    "source": "Current URL",
-    "destination": "Redirection URL",
-    "permanent": true
-  },
-  {
     "source": "/villa/flora",
     "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie/villa-rooms-and-amenities",
     "permanent": true

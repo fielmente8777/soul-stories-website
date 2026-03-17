@@ -63,9 +63,7 @@ const RoomCard2: React.FC<RoomCard2Props> = ({
       <div className="space-y-2 pb-4">
         {title && (
           <div className="flex items-center justify-between gap-4">
-            <h3
-              className="md:text-[2.5rem] text-2xl text-white font-aboreto"
-            >
+            <h3 className="md:text-[2.5rem] text-2xl text-white font-aboreto">
               {title}
             </h3>
             <div className="w-full h-px bg-secondary" />
@@ -99,13 +97,23 @@ const RoomCard2: React.FC<RoomCard2Props> = ({
           </p>
         )}
 
-        {link && (
-          <LinkButton
-            href={link.url}
-            label={link.label}
-            className="mt-4 text-secondary w-full justify-center border-secondary/50"
-          />
-        )}
+        <div className="flex items-center gap-4">
+          {link && (
+            <LinkButton
+              href={link.url}
+              label={link.label}
+              className="mt-4 text-secondary w-full justify-center border-secondary/50"
+            />
+          )}
+          {description && (
+            <LinkButton
+              href={`./${title?.toLowerCase()}`}
+              target="_self"
+              label="Explore"
+              className="mt-4 text-secondary w-full justify-center border-secondary/50"
+            />
+          )}
+        </div>
       </div>
     </div>
   );

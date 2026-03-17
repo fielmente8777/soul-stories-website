@@ -10,6 +10,8 @@ import Script from "next/script";
 import "./globals.css";
 import "./style.scss";
 import ImagePopUp from "@/components/pop-up/ImagePopUp";
+import PrPopUp from "@/components/pop-up/PrPopUp";
+import AmenitiesPopUp from "@/components/pop-up/AmenitiesPopUp";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,7 +26,8 @@ const aboreto = Aboreto({
 });
 
 export const metadata: Metadata = {
-  title: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
+  title:
+    "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
   description:
     "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
   keywords: [
@@ -49,7 +52,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
+    title:
+      "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
     description:
       "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
     images: [
@@ -84,7 +88,7 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    }
+    },
   },
 };
 
@@ -145,6 +149,8 @@ export default function RootLayout({
           <Call callNumber={contact.phone[0]} />
           <Whatsapp whatsAppNumber={contact.phone[0]} />
           <ImagePopUp />
+          <PrPopUp />
+          <AmenitiesPopUp />
         </WebProvider>
         {/* <!-- Eazbot Script (Next.js) --> */}
         <Script id="chatbot-config" strategy="afterInteractive">

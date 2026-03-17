@@ -86,8 +86,28 @@ export const homePageData = {
   },
   prData: [
     {
-      src: "",
-      link: "",
+      logo: "/pr/travel-turtle.png",
+      src: "/pr/pr-bnr.webp",
+      title: "TRAVEL TURTLE - A SERENDIPITOUS SOJOURN AT SOUL STORRIES - SUDIPTA SAHA",
+      description: "“A Serendipitous Sojourn at Soul Storries” by Sudipta Saha, featured on Travel Turtle, explores a journey of self-discovery and meaningful experiences. The article delves into soulful travel encounters that leave a lasting impact. It highlights the beauty of unexpected moments and the emotions tied to exploring new places. Through vivid storytelling, it inspires readers to embrace the magic of travel.",
+    },
+    {
+      logo: "/pr/the-pionner.png",
+      src: "/pr/pr2-bnr.jpg",
+      title: "SUNDAY PIONEER AGENDA - FINDING SOUL CONNECTIONS AT SOUL STORRIES - GYANESHWAR DAYAL",
+      description: "*”Finding Soul Connections at Soul Storries”* by Gyaneshwar Dayal, featured in *Sunday Pioneer Agenda*, explores the essence of meaningful travel experiences. The article highlights how *Soul Storries* offers a unique blend of luxury, tranquility, and deep emotional connections. It delves into the immersive environment that fosters self-discovery and relaxation. Through engaging storytelling, it captures the magic of soulful retreats.",
+    },
+    {
+      logo: "/pr/hospitality-world.png",
+      src: "/pr/pr3-bnr.png",
+      title: "HOSPITALITY.ECONOMIC TIMES FROM THE ECONOMIC TIMES - FROM EXHIBITIONS TO HOSPITALITY, MADHAVI MADAAN’S 'SOUL STORRIES' IS MORE THAN JUST A BRICK-AND-MORTAR STORY",
+      description: "Madhavi Madaan’s Soul Storries, featured in The Economic Times, goes beyond traditional hospitality, blending art, culture, and immersive experiences. The article highlights how it serves as a platform for exhibitions, storytelling, and luxurious stays. It showcases Madaan’s vision of creating a space that connects people with meaningful narratives. Soul Storries is more than just a destination—it’s a fusion of creativity and hospitality.",
+    },
+    {
+      logo: "/pr/th.png",
+      src: "/pr/pr4-bnr.jpg",
+      title: "TNHGLOBAL - SOUL STORRIES: AN OASIS OF LUXURY AND NATURE",
+      description: "“Soul Storries: An Oasis of Luxury and Nature”*, featured on TNHGLOBAL, explores a retreat that harmonizes opulence with serene natural beauty. The article highlights the exquisite hospitality, breathtaking landscapes, and rejuvenating experiences offered. It delves into how Soul Storries provides a perfect escape for travelers seeking tranquility and comfort. The piece captures the essence of luxury intertwined with nature’s charm.",
     },
   ],
 };

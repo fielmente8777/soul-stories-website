@@ -10,6 +10,7 @@ import Experiences from "./components/Experiences";
 import HomeAbout from "./components/HomeAbout";
 import RoomSection from "./components/RoomSection";
 import { homePageData } from "./homePageData";
+import Pr from "./components/Pr";
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
 
       <Experiences {...homePageData.experiences} />
       <ContactUs {...homePageData.contactUsData} />
+      <Pr prData={homePageData.prData} />
       <TestimonialsSection />
     </main>
   );

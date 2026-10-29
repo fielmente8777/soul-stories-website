@@ -15,7 +15,7 @@ export const homePageData = {
     description:
       "Step into a world of mountain magic at Soul Storries, nestled in the serene heart of Garhwal’s picturesque village. Our exclusive Mussoorie retreat seamlessly combines modern luxury with the untouched beauty of nature, offering a one-of-a-kind sanctuary that promises an unforgettable escape.",
     src: "/home-about.jpg",
-    poster: "video/mp4",
+    poster: "/home-about.jpg",
     videoSrc:
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
 

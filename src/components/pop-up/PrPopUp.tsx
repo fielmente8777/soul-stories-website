@@ -6,6 +6,7 @@ import { MdClose } from "react-icons/md";
 
 const PrPopUp = () => {
   const { popUpPrData, isPrPopUpOPen, setIsPrPopUpOpen } = useWebContext();
+  if (!isPrPopUpOPen) return null;
   return (
     <section
       className={`fixed inset-0 flex items-center justify-center bg-primary/40 backdrop-blur-md transition-all ease-in-out duration-300 z-50 ${isPrPopUpOPen ? "visible opacity-100 scale-100" : "invisible opacity-0 scale-95"}`}
@@ -23,6 +24,7 @@ const PrPopUp = () => {
             src={popUpPrData.src}
             alt={popUpPrData.title}
             className="object-cover"
+            sizes="(min-width: 768px) 50vw, 100vw"
             fill
           />
         </div>

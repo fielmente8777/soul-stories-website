@@ -39,6 +39,7 @@ const RoomCard2: React.FC<RoomCard2Props> = ({
               <Image
                 src={src}
                 alt={title ?? "Villa image"}
+                sizes="(min-width: 768px) 50vw, 100vw"
                 fill
                 className="object-cover"
               />

@@ -20,6 +20,7 @@ const OurPackagesCard: FC<OurPackagesPropsTypes["cards"][0]> = ({
                 <Image
                   src={src}
                   alt={packageType}
+                  sizes="40px"
                   fill
                   className="object-contain p-1"
                 />

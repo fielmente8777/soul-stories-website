@@ -25,7 +25,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           src={src}
           alt={title}
           fill
-          sizes="100vw"
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           className="object-cover"
         />
       </div>

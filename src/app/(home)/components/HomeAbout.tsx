@@ -39,7 +39,7 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
         </div>
         <div className="lg:col-span-5 relative">
           <div className="w-full max-w-[75%] aspect-[4/4] relative">
-            <Image src={src} alt={title} fill className="object-cover" />
+            <Image src={src} alt={title} sizes="(min-width: 1024px) 42vw, 75vw" fill className="object-cover" />
           </div>
           <div className="max-w-[45%] w-full absolute top-[30%] right-0 z-10 border border-white">
             <div className="w-full aspect-[4/6.2] relative">
@@ -49,6 +49,7 @@ const HomeAbout: React.FC<HomeAboutProps> = ({
                 loop={true}
                 autoPlay={true}
                 poster={poster}
+                sizes="(min-width: 1024px) 25vw, 45vw"
                 controls={false}
               />
             </div>

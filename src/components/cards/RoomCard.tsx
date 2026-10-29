@@ -30,7 +30,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           className="w-full "
           renderSlide={(src) => (
             <div className="w-full relative aspect-[4/3.5]">
-              <Image src={src} alt={title} fill className="object-cover" />
+              <Image src={src} alt={title} sizes="(min-width: 768px) 50vw, 100vw" fill className="object-cover" />
             </div>
           )}
         />

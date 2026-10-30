@@ -9,6 +9,7 @@ interface Props {
   roomName: string;
   roomType: string;
   description: string;
+  price?: string;
   link: {
     label: string;
     url: string;
@@ -24,6 +25,7 @@ const Banner: React.FC<Props> = ({
   roomName,
   roomType,
   description,
+  price,
   link,
   amenitiesData,
 }) => {
@@ -44,6 +46,7 @@ const Banner: React.FC<Props> = ({
           </div>
           <div className="flex flex-col gap-4">
             <p className="md:text-lg">{description}</p>
+            {price && <p className="text-xl font-semibold">{price} / per night</p>}
             <LinkButton
               href={link.url}
               label={link.label}

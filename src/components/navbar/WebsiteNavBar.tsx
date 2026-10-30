@@ -41,7 +41,7 @@ const WebsiteNavBar = () => {
               </li>
             ))}
             <li className="lg:hidden block">
-              <button onClick={() => setIsMobile(!isMobile)}>
+              <button aria-label={isMobile ? "Close navigation" : "Open navigation"} aria-expanded={isMobile} onClick={() => setIsMobile(!isMobile)}>
                 {!isMobile ? (
                   <AiOutlineMenu className="text-2xl" />
                 ) : (
@@ -66,6 +66,14 @@ const WebsiteNavBar = () => {
           </ul>
         </nav>
       </div>
+      <nav aria-label="Explore Soul Storries" className="hidden lg:flex justify-center items-center gap-8 bg-bg1 text-primary py-3 px-4 border-b border-primary/10">
+        <Link href="/wellness/" className="hover:underline">Wellness</Link>
+        <details className="relative group"><summary className="cursor-pointer">Group Getaways</summary><div className="absolute left-0 top-full z-50 min-w-64 bg-white shadow-lg p-5 flex flex-col gap-4">
+          <Link href="/destination-wedding/">Destination Wedding</Link><Link href="/corporate-events/">Corporate Events</Link><Link href="/together-and-celebrations/">Together and Celebrations</Link>
+        </div></details>
+        <details className="relative"><summary className="cursor-pointer">Resources</summary><div className="absolute left-0 top-full z-50 min-w-44 bg-white shadow-lg p-5 flex flex-col gap-4"><Link href="/blogs/">Blogs</Link><Link href="/press/">Press</Link><Link href="/experience/">Experiences</Link></div></details>
+        <Link href="/gallery/" className="hover:underline">Gallery</Link><Link href="/nearby-places/" className="hover:underline">Nearby Places</Link>
+      </nav>
       <MobileNav />
     </header>
   );

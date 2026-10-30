@@ -1,3 +1,6 @@
+import { notFound } from "next/navigation";
+import { hotelLandingPageData } from "@/app/hotel/hoteLandingPageData";
+import { GuestInformation } from "@/components/content/GuestInformation";
 import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
 import Banner from "../components/Banner";
 import { roomsPageData } from "./components/pageData";
@@ -13,7 +16,6 @@ export async function generateStaticParams() {
 
   return villas.map((villa) => ({
     slug: villa.slug,
-    fallback: false,
   }));
 }
 
@@ -21,10 +23,11 @@ export async function generateMetadata({ params }: Params) {
   const path = await params;
   const villa = await roomsPageData.find((villa) => villa.slug === path.slug);
 
+  if (!villa) notFound();
   return {
-    title: villa?.metaData.title,
+    title: villa.metaData.title,
     description: villa?.metaData.description,
-    alternate: {
+    alternates: {
       canonical: `https://soulstorries.com/villas/${villa?.slug}`,
       languages: {
         "en-US": `https://soulstorries.com/villas/${villa?.slug}`,
@@ -35,7 +38,7 @@ export async function generateMetadata({ params }: Params) {
       description: villa?.metaData.description,
       images: [
         {
-          url: `https://soulstorries.com/villas/${villa?.slug}/images/soulstorries-og.webp`,
+          url: "https://soulstorries.com/Screens2025.png",
           width: 1200,
           height: 630,
           alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -52,18 +55,12 @@ export async function generateMetadata({ params }: Params) {
 export default async function Villa(props: Params) {
   const params = await props.params;
   const villa = await roomsPageData.find((villa) => villa.slug === params.slug);
-  if (!villa) {
-    return (
-      <main className="max_screen_width py-10">
-        <h1 className="text-2xl font-semibold md:text-4xl text-center">
-          Villa not found
-        </h1>
-      </main>
-    );
-  }
+  if (!villa) notFound();
+  const price = hotelLandingPageData.rooms.cards.find(card => card.title?.toLowerCase() === params.slug)?.price;
   return (
     <main>
       <Banner
+        price={price}
         roomName={villa.title}
         roomType={villa.noOfBadRooms ?? ""}
         description={villa.description}
@@ -89,6 +86,7 @@ export default async function Villa(props: Params) {
           </ul>
         </div>
       </SectionWithContainer>
+      <GuestInformation />
       <TestimonialsSection />
     </main>
   );

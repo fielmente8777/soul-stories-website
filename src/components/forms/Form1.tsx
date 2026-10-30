@@ -29,9 +29,7 @@ const Form1: React.FC<formProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const villas = hotelLandingPageData?.rooms?.cards?.map(
-    (card) => card?.title || ""
-  );
+  const villas = [...hotelLandingPageData.rooms.cards.map(card => card.title).filter((title): title is string => Boolean(title)), "Help me choose / Group booking"];
   const [isVillaDropdownOpen, setIsVillaDropdownOpen] = useState(false);
   const [formData, setFormData] = useState({
     checkIn: "",
@@ -40,6 +38,7 @@ const Form1: React.FC<formProps> = ({
     PhoneNumber: "",
     EmailId: "",
     villa: "",
+    guests: "1",
   });
   const [dateRange, setDateRange] = useState<[Date | null, Date | null]>([
     null,
@@ -55,6 +54,7 @@ const Form1: React.FC<formProps> = ({
     PhoneNumber: "",
     EmailId: "",
     villa: "",
+    guests: "",
   });
 
   const validateEmail = (email: string) => {
@@ -84,8 +84,8 @@ const Form1: React.FC<formProps> = ({
     setDateRange(update);
 
     const [start, end] = update;
-    const checkInString = start ? start.toISOString().split("T")[0] : "";
-    const checkOutString = end ? end.toISOString().split("T")[0] : "";
+    const checkInString = start ? `${start.getFullYear()}-${String(start.getMonth() + 1).padStart(2, "0")}-${String(start.getDate()).padStart(2, "0")}` : "";
+    const checkOutString = end ? `${end.getFullYear()}-${String(end.getMonth() + 1).padStart(2, "0")}-${String(end.getDate()).padStart(2, "0")}` : "";
 
     setFormData((prev) => ({
       ...prev,
@@ -108,6 +108,7 @@ const Form1: React.FC<formProps> = ({
       PhoneNumber: "",
       EmailId: "",
       villa: "",
+    guests: "",
     };
 
     if (!formData.fullName.trim()) {
@@ -139,8 +140,13 @@ const Form1: React.FC<formProps> = ({
     if (!formData.checkOut.trim()) {
       newErrors.checkOut = "Check-out date is required";
       isValid = false;
-    } else if (startDate && endDate && startDate > endDate) {
+    } else if (startDate && endDate && startDate >= endDate) {
       newErrors.checkOut = "Check-out must be after check-in";
+      isValid = false;
+    }
+
+    if (!Number.isInteger(Number(formData.guests)) || Number(formData.guests) < 1) {
+      newErrors.guests = "Enter the number of guests";
       isValid = false;
     }
 
@@ -169,8 +175,8 @@ const Form1: React.FC<formProps> = ({
           Domain: contact.formDomain,
           email: formData?.EmailId,
           Name: formData?.fullName,
-          Contact: formData?.PhoneNumber,
-          Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut}, Villa: ${formData?.villa}`,
+          Contact: `${countryCode}${formData.PhoneNumber}`,
+          Description: `Check-in ${formData?.checkIn}, Check-out: ${formData?.checkOut}, Villa: ${formData?.villa}, Guests: ${formData.guests}`,
           check_in: `${formData?.checkIn}`,
           check_out: `${formData?.checkOut}`,
           created_from: "web-form",
@@ -193,6 +199,7 @@ const Form1: React.FC<formProps> = ({
           PhoneNumber: "",
           EmailId: "",
           villa: "",
+    guests: "1",
         });
         setDateRange([null, null]);
         setError({
@@ -202,6 +209,7 @@ const Form1: React.FC<formProps> = ({
           PhoneNumber: "",
           EmailId: "",
           villa: "",
+    guests: "",
         });
 
         setSubmitSuccess(true);
@@ -233,7 +241,7 @@ const Form1: React.FC<formProps> = ({
     <form
       onSubmit={handleFormSubmit}
       className={`grid ${
-        !gridView ? "md:grid-cols-12 divide-x" : "gap-2 bg-transparent divide-y"
+        !gridView ? "md:grid-cols-14 divide-x" : "gap-2 bg-transparent divide-y"
       } grid-cols-2 max-md:gap-2  max-md:divide-y divide-[#E0E0E0]`}
       ref={formRef}
     >
@@ -406,7 +414,7 @@ const Form1: React.FC<formProps> = ({
                   setIsVillaDropdownOpen(false);
                   setError((prev) => ({
                     ...prev,
-                    wellnessOffer: "",
+                    villa: "",
                   }));
                 }}
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100"
@@ -458,6 +466,7 @@ const Form1: React.FC<formProps> = ({
         )}
       </div>
 
+      <div className="col-span-2 bg-white px-4 py-2 flex flex-col justify-center gap-3"><label htmlFor="guests" className="text-sm text-[#343434]">NUMBER OF GUESTS*</label><input id="guests" name="guests" type="number" min="1" step="1" value={formData.guests} onChange={handleInputChange} className="outline-none text-[#343434] w-full" />{error.guests && <span className="text-red-500 text-xs">{error.guests}</span>}</div>
       {/* Submit Button */}
       <div
         className={`h-full col-span-2 max-md:col-span-2 md:px-2 ${

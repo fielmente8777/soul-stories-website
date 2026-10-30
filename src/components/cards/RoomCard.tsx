@@ -12,6 +12,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   title,
   noOfBadRooms,
   description,
+  price,
   images,
   link,
   listOfIcons,
@@ -65,14 +66,12 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           {noOfBadRooms}
         </p>
         {description && <p className="text-white ">{description}</p>}
-        {/* {price && (
-          <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
-        )} */}
+        {price && <p className={`md:text-lg font-semibold mt-4 ${textColor === "primary" ? "text-primary" : "text-white"}`}>{price}</p>}
         {link && (
           <LinkButton
             href={link.url}
             label={link.label}
-            className="mt-4 text-white"
+            className={`mt-4 ${textColor === "primary" ? "text-primary" : "text-white"}`}
           />
           // <OnlyButton
           //   label={link.label}

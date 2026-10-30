@@ -22,7 +22,9 @@ const MobileNav = () => {
   }, [isMobile]);
   return (
     <div
-      className={`fixed md:top-[5rem] top-[6.8rem] z-50 md:w-[350px] w-full h-full duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
+      aria-hidden={!isMobile}
+      inert={!isMobile}
+      className={`fixed md:top-[5rem] top-[6.8rem] z-50 md:w-[350px] w-full h-[calc(100dvh-6.8rem)] overflow-y-auto pb-20 duration-300 transition-all ease-in-out bg-primary p-4 text-white ${
         !isMobile ? "-right-full" : "-right-0"
       }`}
     >

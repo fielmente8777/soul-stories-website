@@ -108,7 +108,7 @@ const RoomCard2: React.FC<RoomCard2Props> = ({
           )}
           {description && (
             <LinkButton
-              href={`./${title?.toLowerCase()}`}
+              href={`/villas/${title?.toLowerCase()}/`}
               target="_self"
               label="Explore"
               className="mt-4 text-secondary w-full justify-center border-secondary/50"

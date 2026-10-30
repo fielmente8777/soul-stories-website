@@ -1,3 +1,5 @@
+import { LinkCards } from "@/components/content/ContentBlocks";
+import { groupLinks } from "@/lib/legacy";
 import { Metadata } from "next";
 import { celebrationsData } from "./celebrationsData";
 import CelebrationBanner from "./components/CelebrationBanner";
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
       "Unforgettable bachelor and family parties at Soul Storries Mussoorie. Enjoy private luxury villas, scenic mountain views, and personalized event experiences in a peaceful natural setting.",
     images: [
       {
-        url: "https://soulstorries.com/celebrations/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/Screens2025.png",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
     title: "Bachelor & Family Party Venue in Mussoorie | Soul Storries Luxury Villas",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://soulstorries.com/celebrations/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/Screens2025.png"],
     site: "@soulstorries",
   },
   robots: {
@@ -62,6 +64,7 @@ export default function Celebrations() {
     <main>
       <CelebrationBanner {...celebrationsData?.bannerData} />
       <Wedding {...celebrationsData?.weddingsData} />
+      <LinkCards title="Explore Group Getaways" cards={groupLinks} />
     </main>
   );
 }

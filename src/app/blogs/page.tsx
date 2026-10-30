@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Read inspiring blogs on luxury travel, spa retreats, wellness living, and villa stays in Mussoorie by Soul Storries – crafted for mindful, soulful journeys.",
     images: [
       {
-        url: "https://soulstorries.com/blogs/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/Screens2025.png",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Luxury Travel & Wellness Blogs | Soul Storries Mussoorie",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://soulstorries.com/blogs/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/Screens2025.png"],
     site: "@soulstorries",
   },
   robots: {

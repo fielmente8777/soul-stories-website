@@ -1,3 +1,5 @@
+import { AudienceLinks, WellnessPrograms, PremiumAmenities, CafeIntroduction, LatestStories, OriginalFilms } from "@/components/content/HomeContent";
+import { EstateDistances, GuestInformation } from "@/components/content/GuestInformation";
 import Banner from "@/components/Banner/Banner";
 import Form1 from "@/components/forms/Form1";
 import { Section, SectionWithContainer } from "@/components/sectionComponants";
@@ -23,6 +25,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <AudienceLinks />
+      <WellnessPrograms />
       <HomeAbout {...homePageData.aboutUsData} />
       <SectionWithContainer>
         <div className="bg-secondary max-w-sm mx-auto h-[1px] w-full" />
@@ -54,9 +58,16 @@ export default function Home() {
         </Link>
       </Section>
 
+      <PremiumAmenities />
+      <CafeIntroduction />
       <Experiences {...homePageData.experiences} />
+      <div className="text-center pb-8"><Link href="/experience/" className="text-primary border-b border-secondary">Explore All Experiences</Link></div>
+      <OriginalFilms />
+      <EstateDistances />
       <ContactUs {...homePageData.contactUsData} />
       <Pr prData={homePageData.prData} />
+      <LatestStories />
+      <GuestInformation />
       <TestimonialsSection />
     </main>
   );

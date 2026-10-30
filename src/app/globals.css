@@ -51,3 +51,20 @@ button {
     }
   }
 }
+.soul-rich-text { color: var(--light); line-height: 1.85; overflow-wrap: anywhere; }
+.soul-rich-text h2, .soul-rich-text h3, .soul-rich-text h4 { color: var(--primary); font-family: var(--font-aboreto); line-height: 1.45; margin: 1.8rem 0 1rem; }
+.soul-rich-text h2 { font-size: clamp(1.45rem, 3vw, 2rem); }
+.soul-rich-text h3 { font-size: 1.25rem; }
+.soul-rich-text p + p { margin-top: 1rem; }
+.soul-rich-text ul, .soul-rich-text ol { padding-left: 1.6rem; margin: 1rem 0; }
+.soul-rich-text ul { list-style: disc; }
+.soul-rich-text ol { list-style: decimal; }
+.soul-rich-text li + li { margin-top: .45rem; }
+.soul-rich-text a { color: var(--primary); text-decoration: underline; text-underline-offset: 4px; }
+.soul-rich-text table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; font-size: .95rem; }
+.soul-rich-text th, .soul-rich-text td { border: 1px solid var(--border-clr); padding: .85rem; vertical-align: top; }
+.soul-rich-text th { background: var(--primary); color: white; text-align: left; }
+.soul-rich-text tr:nth-child(even) td { background: var(--bg-clr); }
+.soul-rich-text:has(table) { overflow-x: auto; }
+.soul-rich-text blockquote { border-left: 3px solid var(--secondary); padding-left: 1.5rem; }
+@media (max-width: 640px) { .soul-rich-text td, .soul-rich-text th { padding: .6rem; min-width: 110px; } }

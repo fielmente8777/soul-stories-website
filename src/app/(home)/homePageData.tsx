@@ -5,6 +5,7 @@ import { soulCarePageData } from "../soul-care/soulCarePageData";
 
 export const homePageData = {
   bannerData: {
+    title: "A wholesome luxury wellness estate in Mussoorie",
     src: "/Screens2025.png",
     videoSrc:
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
@@ -24,7 +25,7 @@ export const homePageData = {
       url: "/about-us",
     },
   },
-  title: "AN-award WINING EXPERIENCE",
+  title: "A Soulful Himalayan Experience",
   roomsData: {
     title: "VILLA ACCOMMODATIONS",
     subTitle: "AT SOUL STORRIES",
@@ -34,12 +35,14 @@ export const homePageData = {
       textColor: "primary",
       title: card.title,
       noOfBadRooms: card.noOfBadRooms,
+      price: card.price,
+      link: card.title ? { label: "Explore Villa", url: `/villas/${card.title.toLowerCase()}/` } : undefined,
       listOfIcons: card.listOfIcons,
       images: card.images ? [card.images[0]] : [],
     })),
     link: {
       label: "KNOW MORE",
-      url: "",
+      url: "/villas/",
     },
   },
   addPosterData: {

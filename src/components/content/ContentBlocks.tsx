@@ -3,15 +3,26 @@ import Link from "next/link";
 import { ContentBlock, legacy } from "@/lib/legacy";
 
 export function ContentBlocks({ blocks, skipTitle = false }: { blocks: ContentBlock[]; skipTitle?: boolean }) {
+  const seenTables = new Set<string>();
+  let hasTherapyHeading = false;
   return (
     <div className="soul-content space-y-6">
       {blocks.map((block, index) => {
+        if (block.html?.includes("<table")) {
+          const fingerprint = block.html.replace(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g, "").replace(/<[^>]+>/g, "").replace(/\s+/g, "").toLowerCase();
+          if (seenTables.has(fingerprint)) return null;
+          seenTables.add(fingerprint);
+        }
+        if (block.html?.replace(/<[^>]+>/g, "").trim() === "TREATMENTS &amp; THERAPIES") {
+          if (hasTherapyHeading) return null;
+          hasTherapyHeading = true;
+        }
         if (skipTitle && index === 0 && block.html?.startsWith("<h2>")) return null;
         if (block.type === "html") return <div key={index} className="soul-rich-text" dangerouslySetInnerHTML={{ __html: block.html ?? "" }} />;
         if (block.type === "image" && block.src) return (
-          <Image key={index} src={block.src} alt={block.alt || "Soul Storries, Mussoorie"} width={block.width || 1200} height={block.height || 800} sizes="(min-width: 1024px) 960px, 100vw" className="w-full h-auto rounded-sm" />
+          <Image key={index} src={block.src} alt={block.alt || "Soul Storries, Mussoorie"} width={block.width || 1200} height={block.height || 800} sizes="(min-width: 1024px) 960px, 100vw" className="max-w-full h-auto rounded-sm" />
         );
-        if (block.type === "video" && block.src) return <video key={index} controls playsInline preload="none" poster="/Screens2025.png" className="w-full rounded-sm"><source src={block.src} type="video/mp4" /><a href={block.src}>Watch the Soul Storries film</a></video>;
+        if (block.type === "video" && block.src) return <video key={index} controls playsInline preload="none" poster="/images/Flora/Flora-outside1.webp" className="w-full rounded-sm"><source src={block.src} type="video/mp4" /><a href={block.src}>Watch the Soul Storries film</a></video>;
         if (block.type === "link" && block.href) return <Link key={index} href={block.href} className="inline-block border-b border-secondary pb-1 text-primary font-semibold">{block.label}</Link>;
         return null;
       })}

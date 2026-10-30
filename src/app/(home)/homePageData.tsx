@@ -6,7 +6,7 @@ import { soulCarePageData } from "../soul-care/soulCarePageData";
 export const homePageData = {
   bannerData: {
     title: "A wholesome luxury wellness estate in Mussoorie",
-    src: "/Screens2025.png",
+    src: "/images/Flora/Flora-outside1.webp",
     videoSrc:
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
   },

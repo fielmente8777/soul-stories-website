@@ -1,0 +1,13 @@
+{
+  "deployment": "dpl_HpTENQGw7ZvAbBKry9j1n5mpZAXS",
+  "commit": "3de4c61516f76e30e733f8653a9bef87d0f128f2",
+  "base_url": "https://soul-stories-website-lzc334i4w-eazotel.vercel.app",
+  "original_url_inventory": 125,
+  "distinct_page_paths_checked": 155,
+  "successful_responses": 155,
+  "matched_source_blocks": 713,
+  "documented_exceptions": 9,
+  "unexplained_missing": [],
+  "failures": [],
+  "validation_note": "155 paths crawled on deployment dpl_B4WRYWgfAAjVJfnfAhWwHhcbDifN; after the final change, the five affected/content pages were checked again on this deployment. Both hosted builds passed. Only three navigation headings and the audit checker/documentation changed between deployments."
+}

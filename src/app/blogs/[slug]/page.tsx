@@ -1,3 +1,6 @@
+import { notFound } from "next/navigation";
+import { legacy } from "@/lib/legacy";
+import Link from "next/link";
 import Image from "next/image";
 import { blogsData } from "./blogsData";
 
@@ -10,15 +13,15 @@ export async function generateStaticParams() {
 
   return blog.map((blog) => ({
     slug: blog.slug,
-    fallback: false,
   }));
 }
 
 export async function generateMetadata(props: Params) {
   const blogs = await props.params;
   const blog = await blogsData.find((blog) => blog.slug === blogs.slug);
+  if (!blog) notFound();
   return {
-    title: blog?.meta.title,
+    title: blog.meta.title,
     description: blog?.meta.description,
     keywords: blog?.meta.keywords,
     alternates: {
@@ -32,7 +35,7 @@ export async function generateMetadata(props: Params) {
       description: blog?.meta.description,
       images: [
         {
-          url: `https://soulstorries.com/blogs/${blogs.slug}/images/soulstorries-og.webp`,
+          url: `https://soulstorries.com${blog.src}`,
           width: 1200,
           height: 630,
           alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -48,7 +51,7 @@ export async function generateMetadata(props: Params) {
       title: blog?.meta.title,
       description: blog?.meta.description,
       images: [
-        `https://soulstorries.com/blogs/${blogs.slug}/images/soulstorries-og.webp`,
+        `https://soulstorries.com${blog.src}`,
       ],
       site: "@soulstorries",
     },
@@ -72,15 +75,7 @@ const BlogPage = async (props: Params) => {
   const params = await props.params;
 
   const blog = await blogsData.find((blog) => blog.slug === params.slug);
-  if (!blog) {
-    return (
-      <main className="max_screen_width py-10">
-        <h1 className="text-2xl font-semibold md:text-4xl text-center">
-          Blog not found
-        </h1>
-      </main>
-    );
-  }
+  if (!blog) notFound();
   return (
     <main className="max_screen_width py-8">
       <div className="max_width space-y-4">
@@ -98,9 +93,10 @@ const BlogPage = async (props: Params) => {
           />
         </div>
         <div
-          className="blog_content"
-          dangerouslySetInnerHTML={{ __html: blog.content }}
+          className="blog_content soul-rich-text"
+          dangerouslySetInnerHTML={{ __html: legacy.blogs[blog.slug]?.content || blog.content }}
         ></div>
+        <nav aria-label="Article categories and tags" className="flex flex-wrap gap-3 pt-6">{[...(legacy.blogs[blog.slug]?.categories || []).map(slug => ({ slug, type: "category" })), ...(legacy.blogs[blog.slug]?.tags || []).map(slug => ({ slug, type: "tag" }))].map(item => <Link className="text-sm text-primary border border-primary/20 rounded-sm px-3 py-2" key={item.type + item.slug} href={`/${item.type}/${item.slug}/`}>{item.slug.replaceAll("-", " ")}</Link>)}</nav>
       </div>
     </main>
   );

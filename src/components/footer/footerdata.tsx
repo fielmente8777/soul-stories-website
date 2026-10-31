@@ -176,17 +176,18 @@ export const webSiteFooterData: WebSiteFooterData = {
     {
       title: "Policies",
       links: [
+        { label: "Cancellation Policy", href: "/cancellation-policy/" },
         {
-          label: "Check-in Policy",
-          href: "/check-in-policy",
+          label: "Guest Policies & FAQs",
+          href: "/guest-policies/",
         },
         {
           label: "Privacy Policy",
-          href: "/privacy-policy",
+          href: "/privacy-policy/",
         },
         {
           label: "Terms & Conditions",
-          href: "/terms-and-conditions",
+          href: "/guest-policies/",
         },
       ],
     },

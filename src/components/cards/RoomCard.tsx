@@ -12,6 +12,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
   title,
   noOfBadRooms,
   description,
+  price,
   images,
   link,
   listOfIcons,
@@ -30,7 +31,7 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           className="w-full "
           renderSlide={(src) => (
             <div className="w-full relative aspect-[4/3.5]">
-              <Image src={src} alt={title} fill className="object-cover" />
+              <Image src={src} alt={title} sizes="(min-width: 768px) 50vw, 100vw" fill className="object-cover" />
             </div>
           )}
         />
@@ -65,14 +66,12 @@ const RoomCard: FC<RoomsProps["cards"][0]> = ({
           {noOfBadRooms}
         </p>
         {description && <p className="text-white ">{description}</p>}
-        {/* {price && (
-          <p className="text-white md:text-lg font-semibold mt-4">{price}</p>
-        )} */}
+        {price && <p className={`md:text-lg font-semibold mt-4 ${textColor === "primary" ? "text-primary" : "text-white"}`}>{price}</p>}
         {link && (
           <LinkButton
             href={link.url}
             label={link.label}
-            className="mt-4 text-white"
+            className={`mt-4 ${textColor === "primary" ? "text-primary" : "text-white"}`}
           />
           // <OnlyButton
           //   label={link.label}

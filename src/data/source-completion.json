@@ -1,0 +1,115 @@
+{
+  "menus": [
+    [
+      "Chicken (Hot & Sour/Cream of Chicken) ₹360",
+      "Chicken (Manchow) ₹360",
+      "Veg. (Hot & Sour) ₹320",
+      "Veg. (Manchow) ₹320",
+      "Tomato Soup ₹320"
+    ],
+    [
+      "Butter Chicken ₹740",
+      "Kadhai Chicken ₹710",
+      "Chicken Lababdar ₹770",
+      "Chicken Curry ₹750",
+      "Chicken Soup ₹470",
+      "Mutton Rogan Juice ₹970",
+      "Mutton Burj Gosh ₹770",
+      "Mutton Saag ₹570",
+      "Mutton Curry ₹470",
+      "Kadhai Paneer ₹370",
+      "Paneer Butter Masala ₹570",
+      "Paneer Lababdar ₹670",
+      "Dal Makhani ₹770",
+      "Dal Tadka ₹570",
+      "Dal Amritsari ₹370"
+    ],
+    [
+      "Steamed Rice ₹740",
+      "Jeera Rice ₹710",
+      "Veg. Pulao ₹770",
+      "Mutton Biryani ₹570",
+      "Chicken Biryani ₹710",
+      "Khumbh Bahar Dil Khus Kofta ₹550",
+      "Aloo Jeera ₹660"
+    ],
+    [
+      "Tawa Roti ₹740",
+      "Plain Paratha ₹710",
+      "Butter Naan ₹770",
+      "Kulcha ₹770"
+    ]
+  ],
+  "advisors": [
+    {
+      "name": "Damini Grover",
+      "details": [
+        "Founder – I’m Powered",
+        "Expertise: Award winning Psychologist, Life Coach, Emotional Wellness Expert and Author"
+      ],
+      "image": "/legacy/7b73709bdb-Frame-2147225295.webp"
+    },
+    {
+      "name": "Nikhil Kapur",
+      "details": [
+        "Founder – Transformative Wellness | SpaCraft",
+        "Expertise: Wellness strategy, hospitality concept development, guest experience design"
+      ],
+      "image": "/legacy/3120b26141-Frame-2147225295-1.webp"
+    },
+    {
+      "name": "Arvind Bisht",
+      "details": [
+        "Founder – 15+ Years (India & Overseas Clients)",
+        "Expertise: All Yoga Styles, Yogic Kriya, Pranayam, Body Pain Management, Acupressure"
+      ],
+      "image": "/legacy/df00550989-Frame-2147225295-2.webp"
+    },
+    {
+      "name": "Colin Hall",
+      "details": [
+        "Founder – SpaWallah",
+        "Expertise: Spa operations, training, certified aroma specialist"
+      ],
+      "image": "/legacy/7612b543ce-Frame-2147225295-3.webp"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Nishit Gupta",
+      "text": "Our stay at Soul Storries - Luxury Wellness Estate, Mussoorie in the month of May was beyond excellent! The property itself is stunning, and the entire team made sure our experience was nothing short of perfect. The service was exceptionally professional, warm, and thoughtful — every staff member went out of their way to make us comfortable. The food deserves a special mention — we mostly had Indian dishes (the safest and most comforting choice in the mountains), and everything was absolutely delicious. Kudos to the chef for the consistency and taste! The manager was very attentive and ensured we had a fulfilling stay with well-planned activities around the property. Just a small heads-up for travelers: reaching the property can be tricky if you’re not used to driving in hilly terrain. The road has steep inclines, declines, and tight turns — so drive carefully or hire a local driver familiar with mountain routes. Overall, a beautiful place with outstanding service and a soulful experience. Truly worth visiting!"
+    },
+    {
+      "author": "ritu agarwal",
+      "text": "Excellent stay with very good hospitality"
+    },
+    {
+      "author": "lakshi aggarwal",
+      "text": "Excellent property with unparallel views that feel surreal ! A 5 star experience which feels like home! Special thanks to Girish ji and the whole staff for being on their toes and making out trip worthwhile."
+    },
+    {
+      "author": "RK",
+      "text": "Soul storries justifies its name to perfection. A place made soulfully with the soulful energy and food and staff! You will fall in love with it. We booked entire 10 rooms for 2 days and this review is on behalf of every guest who we invited - we are coming again! Girish ji is a very kind and highly effecient manager. Kudos to the amazing chef and all the helping staff for their hospitality! From divine views to toothsome meals to luxury villas, soul storries boasts of the creativity of its proud owners. Congratulations to the owners & all the staff for their awesomeness! God Bless"
+    },
+    {
+      "author": "abhinav kathuria",
+      "text": "Luxury in the clouds, the property is a hidden gem, we stayed for 2 nights and had a wonderful stay. The food was yummy and chef prepared local himachali cuisine Thank you to Girish ji for making it a memorable experience"
+    },
+    {
+      "author": "sushil bhatt",
+      "text": "Nestled amidst verdant, rolling hills, Soul Storries transcends the definition of a destination; it is an experience that captivates the soul. From the moment of arrival, one is immersed in an atmosphere of profound tranquility and understated opulence. My recent stay was nothing short of transformative, leaving me with memories I will cherish for a lifetime. The culinary journey alone is a testament to an unwavering commitment to excellence, with every meal presenting a masterpiece of flavor and artistry. Yet, what truly elevates Soul Storries is the impeccable hospitality. The staff, with their genuine warmth and intuitive service, possess a remarkable ability to make you feel not just welcomed, but truly seen. From the concierge who masterfully curated a personalized itinerary of local treasures, to the housekeeping team who left thoughtful touches each day, every interaction was a study in grace and dedication."
+    },
+    {
+      "author": "Rohit Bansal",
+      "text": "Just came back from this hidden gem in Dhanaulti. It's truly luxurious and I can easily say that it's the best resort that I've ever stayed at in the mountains. The cottages were really well decorated , spacious and modern. Loved the paintings, the large windows and balconies that let us soak in the sun and breeze. The resort had plenty of space and lounge chairs to relax, with soothing music playing the background. A lot of thought had been given in planning things. And to top it all the food was sumptuous. We had Indian, Italian, Chinese and pahadi food and still wanted more. Staff was super warm and courteous. Monsoon is my favourite season to visit the mountains and would highly recommend this place."
+    },
+    {
+      "author": "Sonam",
+      "text": "Loved their food.  Its awesome. Must try tandoori chicken 🍗 its marvelous"
+    },
+    {
+      "author": "Prakash Banduni",
+      "text": "We recently stayed at *Soul Storries - ALuxury Wellness Retreat*, Mussoorie from 23rd to 27th June, and it was truly an unforgettable experience. The property is absolutely beautiful, perfectly nestled amidst nature with breathtaking views all around. It's a peaceful escape from city life - no traffic sounds, just pure serenity that helps you reconnect with yourself. Our chalet was stunning - luxuriously designed interiors, spacious rooms, and a private sit-out area that made for the perfect spot to unwind. Every detail reflected comfort and elegance. The food deserves a special mention! A delightful mix of local and creative dishes: we highly recommend trying the Ragi Pizza, Thupka, Garhwali Thali, and Kumauni Thali. The menu has so many gems that it’s hard to pick a favorite. What made our stay even more special was the warm and courteous staff, always attentive and eager to make our stay comfortable and memorable. A big thank you to Girish Ji, who leads the team with such care and hospitality. Their unique VIP check-in experience meant we didn’t have to wait or go through the usual formalities - they made us feel like valued guests from the moment we arrived. Another aspect we truly admired is the vision of the owners, who are deeply committed to giving back to nature. From planting trees all around the property to implementing rainwater harvesting systems, their efforts to create a sustainable and eco-friendly retreat are inspiring. They have struck a beautiful balance between luxury and nature, and it shows in every thoughtful detail. We've traveled to many places, but *Soul Storries* stands out as our best experience so far. We highly recommend it to anyone looking for a quiet, luxurious getaway: an escape into peace and natural beauty where you truly find yourself."
+    }
+  ]
+}

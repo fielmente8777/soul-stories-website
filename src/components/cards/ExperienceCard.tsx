@@ -8,7 +8,7 @@ const ExperienceCard: React.FC<ExperiencesProps["cards"][0]> = ({
 }) => {
   return (
     <div className="relative w-full aspect-[4/5]">
-      <Image src={src} alt={alt || title || "image"} fill className="object-cover" />
+      <Image src={src} alt={alt || title || "image"} sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" fill className="object-cover" />
       <div className="absolute inset-2 border border-white z-10 flex items-end justify-center">
         <h3 className="text-2xl text-white font-aboreto text-center bg-black/40 w-full py-2">
           {title || alt}

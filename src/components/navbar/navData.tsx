@@ -63,5 +63,10 @@ export const BottomNav = {
       label: "nearby places",
       href: "/nearby-places/",
     },
+    { label: "Destination Wedding", href: "/destination-wedding/" },
+    { label: "Corporate Events", href: "/corporate-events/" },
+    { label: "Together and Celebrations", href: "/together-and-celebrations/" },
+    { label: "Press", href: "/press/" },
+    { label: "Experiences", href: "/experience/" },
   ],
 };

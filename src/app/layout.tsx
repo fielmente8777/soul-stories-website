@@ -26,10 +26,11 @@ const aboreto = Aboreto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://soulstorries.com"),
   title:
     "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
   description:
-    "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
+    "Discover private luxury villas, Kafuli Café and wellness experiences at Soul Storries, a peaceful estate in the Garhwal hills near Mussoorie.",
   keywords: [
     "luxury villas Mussoorie",
     "Soul Storries Mussoorie",
@@ -55,10 +56,10 @@ export const metadata: Metadata = {
     title:
       "Soul Storries Mussoorie: Luxury Villas with Spa and Wellness Retreat in Nature",
     description:
-      "Enjoy this Luxury Villas resort in Mussoorie at the Soul Storries Mussoorie Walnut Grove Resort and Spa, boasting luxury rooms and suites with deluxe amenities in Uttarakhand.",
+      "Discover private luxury villas, Kafuli Café and wellness experiences at Soul Storries, a peaceful estate in the Garhwal hills near Mussoorie.",
     images: [
       {
-        url: "https://soulstorries.com/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/Screens2025.png",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -74,7 +75,7 @@ export const metadata: Metadata = {
     title: "Soul Storries | Luxury Villas & Wellness Estate in Mussoorie",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://soulstorries.com/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/Screens2025.png"],
     site: "@soulstorries",
   },
   robots: {

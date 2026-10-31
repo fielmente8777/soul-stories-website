@@ -1,16 +1,3 @@
-"use client";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-
-const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
-  loading: () => (
-    <Image
-      src="/bnr.png"
-      alt="banner"
-      fill
-      className="object-cover"
-    />
-  ),
-});
-
-export default LazyLoadedVideo;
+// The shared player renders the correct optimized poster on the server.
+// Avoid a dynamic placeholder that downloads an unrelated/missing image.
+export { default } from "./SEOVideo";

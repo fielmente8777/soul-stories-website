@@ -1,3 +1,5 @@
+import { AdvisoryBoard } from "@/components/content/SourceCompletion";
+import { WellnessOverview } from "@/components/content/HomeContent";
 import Banner2 from "@/components/Banner/Banner2";
 import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
 import AboutSoulCare from "../soul-care/components/AboutSoulCare";
@@ -14,9 +16,9 @@ export const metadata: Metadata = {
   description:
     "Rejuvenate your mind and body at Soul Storries Mussoorie, a luxury yoga retreat in the Himalayas offering guided wellness programs, serene spa therapies, and nature-immersed villa stays.",
   alternates: {
-    canonical: "https://soulstorries.com/kafuli-cafe/",
+    canonical: "https://soulstorries.com/wellness/",
     languages: {
-      "en-US": "https://soulstorries.com/kafuli-cafe/",
+      "en-US": "https://soulstorries.com/wellness/",
     },
   },
   openGraph: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
       "Rejuvenate your mind and body at Soul Storries Mussoorie, a luxury yoga retreat in the Himalayas offering guided wellness programs, serene spa therapies, and nature-immersed villa stays.",
     images: [
       {
-        url: "https://soulstorries.com/kafuli-cafe/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/Screens2025.png",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     ],
     siteName: "Soul Storries",
     type: "website",
-    url: "https://soulstorries.com/kafuli-cafe/",
+    url: "https://soulstorries.com/wellness/",
     locale: "en_US",
   },
   twitter: {
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     title: "Yoga Retreat in Mussoorie | Soul Storries Wellness & Spa Villas",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://soulstorries.com/kafuli-cafe/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/Screens2025.png"],
     site: "@soulstorries",
   },
   robots: {
@@ -69,6 +71,7 @@ const page = () => {
       <WellnessServices {...wellnessPageData.wellnessServices} />
       <AddSection {...wellnessPageData.addCard} card={false} isBorder={true} />
       <OurPackages {...wellnessPageData.ourPackages} />
+      <WellnessOverview /><AdvisoryBoard />
       <TestimonialsSection />
     </div>
   );

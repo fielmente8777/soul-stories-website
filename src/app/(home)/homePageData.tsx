@@ -5,7 +5,8 @@ import { soulCarePageData } from "../soul-care/soulCarePageData";
 
 export const homePageData = {
   bannerData: {
-    src: "/Screens2025.png",
+    title: "A wholesome luxury wellness estate in Mussoorie",
+    src: "/images/Flora/Flora-outside1.webp",
     videoSrc:
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
   },
@@ -15,7 +16,7 @@ export const homePageData = {
     description:
       "Step into a world of mountain magic at Soul Storries, nestled in the serene heart of Garhwal’s picturesque village. Our exclusive Mussoorie retreat seamlessly combines modern luxury with the untouched beauty of nature, offering a one-of-a-kind sanctuary that promises an unforgettable escape.",
     src: "/home-about.jpg",
-    poster: "video/mp4",
+    poster: "/home-about.jpg",
     videoSrc:
       "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
 
@@ -24,9 +25,9 @@ export const homePageData = {
       url: "/about-us",
     },
   },
-  title: "AN-award WINING EXPERIENCE",
+  title: "A Soulful Himalayan Experience",
   roomsData: {
-    title: "VILLA ACCOMMODATIONS",
+    title: "Choose Your Luxury Villa",
     subTitle: "AT SOUL STORRIES",
     description:
       "Our villas offer a peaceful retreat surrounded by pristine Uttarakhand landscapes. Experience calm, clarity, and comfort in every corner.",
@@ -34,12 +35,14 @@ export const homePageData = {
       textColor: "primary",
       title: card.title,
       noOfBadRooms: card.noOfBadRooms,
+      price: card.price,
+      link: card.title ? { label: "Explore Villa", url: `/villas/${card.title.toLowerCase()}/` } : undefined,
       listOfIcons: card.listOfIcons,
       images: card.images ? [card.images[0]] : [],
     })),
     link: {
       label: "KNOW MORE",
-      url: "",
+      url: "/villas/",
     },
   },
   addPosterData: {

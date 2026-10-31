@@ -50,7 +50,7 @@ const ContactData = ({
                   <h2 className="md:text-2xl font-aboreto">{card.title}</h2>
                 </div>
 
-                <p>{card?.label}</p>
+                <p><a href={card.href} className="underline underline-offset-4">{card.label}</a>{card.label2 && card.href2 && <><br /><a href={card.href2} className="underline underline-offset-4">{card.label2}</a></>}</p>
               </div>
             ))}
           </div>

@@ -1,0 +1,126 @@
+original_url,http_status,original_final_url,test_path,migration_action,section
+https://soulstorries.com/,200,https://soulstorries.com/,/,Original URL retained,Main page or alias
+https://soulstorries.com/a-complete-guide-to-booking-soul-storries-luxury-villas/,200,https://soulstorries.com/a-complete-guide-to-booking-soul-storries-luxury-villas/,/blogs/a-complete-guide-to-booking-soul-storries-luxury-villas/,Preserved at equivalent URL,Blog
+https://soulstorries.com/a-food-lovers-guide-to-kafuli-cafe-at-soul-storries/,200,https://soulstorries.com/a-food-lovers-guide-to-kafuli-cafe-at-soul-storries/,/blogs/a-food-lovers-guide-to-kafuli-cafe-at-soul-storries/,Preserved at equivalent URL,Blog
+https://soulstorries.com/about-us/,200,https://soulstorries.com/about-us/,/about-us/,Original URL retained,Main page or alias
+https://soulstorries.com/best-villas-in-mussoorie-for-stay-things-to-do-in-september/,200,https://soulstorries.com/best-villas-in-mussoorie-for-stay-things-to-do-in-september/,/blogs/best-villas-in-mussoorie-for-stay-things-to-do-in-september/,Preserved at equivalent URL,Blog
+https://soulstorries.com/blogs/,200,https://soulstorries.com/blogs/,/blogs/,Original URL retained,Main page or alias
+https://soulstorries.com/book-now/,200,https://soulstorries.com/book-now/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/booking/,200,https://soulstorries.com/booking/,/booking/,Original URL retained,Main page or alias
+https://soulstorries.com/cart/,200,https://soulstorries.com/cart/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/category/adventure/,200,https://soulstorries.com/category/adventure/,/category/adventure/,Original URL retained,Category archive
+https://soulstorries.com/category/discovery/,200,https://soulstorries.com/category/discovery/,/category/discovery/,Original URL retained,Category archive
+https://soulstorries.com/category/family/,200,https://soulstorries.com/category/family/,/category/family/,Original URL retained,Category archive
+https://soulstorries.com/category/food-lover/,200,https://soulstorries.com/category/food-lover/,/category/food-lover/,Original URL retained,Category archive
+https://soulstorries.com/category/luxury-villas/,200,https://soulstorries.com/category/luxury-villas/,/category/luxury-villas/,Original URL retained,Category archive
+https://soulstorries.com/category/luxury-wellness-estate/,200,https://soulstorries.com/category/luxury-wellness-estate/,/category/luxury-wellness-estate/,Original URL retained,Category archive
+https://soulstorries.com/category/press/,200,https://soulstorries.com/category/press/,/category/press/,Original URL retained,Category archive
+https://soulstorries.com/category/spa-wellness/,200,https://soulstorries.com/category/spa-wellness/,/category/spa-wellness/,Original URL retained,Category archive
+https://soulstorries.com/category/travel-tourism/,200,https://soulstorries.com/category/travel-tourism/,/category/travel-tourism/,Original URL retained,Category archive
+https://soulstorries.com/category/uncategorized/,200,https://soulstorries.com/category/uncategorized/,/category/uncategorized/,Original URL retained,Category archive
+https://soulstorries.com/category/wellness/,200,https://soulstorries.com/category/wellness/,/category/wellness/,Original URL retained,Category archive
+https://soulstorries.com/checkout/,200,https://soulstorries.com/checkout/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/contact-us/,200,https://soulstorries.com/contact-us/,/contact-us/,Original URL retained,Main page or alias
+https://soulstorries.com/corporate-events/,200,https://soulstorries.com/corporate-events/,/corporate-events/,Original URL retained,Main page or alias
+https://soulstorries.com/corporate-retreats-at-soul-storries-work-unwind-and-connect/,200,https://soulstorries.com/corporate-retreats-at-soul-storries-work-unwind-and-connect/,/blogs/corporate-retreats-at-soul-storries-work-unwind-and-connect/,Preserved at equivalent URL,Blog
+https://soulstorries.com/demo/,200,https://soulstorries.com/demo/,/experience/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/destination-wedding/,200,https://soulstorries.com/destination-wedding/,/destination-wedding/,Original URL retained,Main page or alias
+https://soulstorries.com/experience/,200,https://soulstorries.com/experience/,/experience/,Original URL retained,Main page or alias
+https://soulstorries.com/experience-ultimate-relaxation-at-soul-storries-mussoorie/,200,https://soulstorries.com/experience-ultimate-relaxation-at-soul-storries-mussoorie/,/blogs/experience-ultimate-relaxation-at-soul-storries-mussoorie/,Preserved at equivalent URL,Blog
+https://soulstorries.com/exploring-the-natural-beauty-around-soul-storries-top-nearby-attractions/,200,https://soulstorries.com/exploring-the-natural-beauty-around-soul-storries-top-nearby-attractions/,/blogs/exploring-the-natural-beauty-around-soul-storries-top-nearby-attractions/,Preserved at equivalent URL,Blog
+https://soulstorries.com/friends-get-togethers-reconnect-relax-revel-in-the-hills/,200,https://soulstorries.com/friends-get-togethers-reconnect-relax-revel-in-the-hills/,/blogs/friends-get-togethers-reconnect-relax-revel-in-the-hills/,Preserved at equivalent URL,Blog
+https://soulstorries.com/kafuli-cafe/,200,https://soulstorries.com/kafuli-cafe/,/kafuli-cafe/,Original URL retained,Main page or alias
+https://soulstorries.com/kafuli-cafe-a-culinary-retreat-in-the-hills/,200,https://soulstorries.com/kafuli-cafe-a-culinary-retreat-in-the-hills/,/blogs/kafuli-cafe-a-culinary-retreat-in-the-hills/,Preserved at equivalent URL,Blog
+https://soulstorries.com/luxury-villa-haven-soul-storries-signature-at-7500-ft/,200,https://soulstorries.com/luxury-villa-haven-soul-storries-signature-at-7500-ft/,/blogs/luxury-villa-haven-soul-storries-signature-at-7500-ft/,Preserved at equivalent URL,Blog
+https://soulstorries.com/my-account/,200,https://soulstorries.com/my-account/,/contact-us/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/my-account/lost-password/,200,https://soulstorries.com/my-account/lost-password/,/contact-us/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/outdoor-attractions/benog-wildlife-sanctuary/,200,https://soulstorries.com/outdoor-attractions/benog-wildlife-sanctuary/,/outdoor-attractions/benog-wildlife-sanctuary/,Original URL retained,Attraction
+https://soulstorries.com/outdoor-attractions/bhatta-falls/,200,https://soulstorries.com/outdoor-attractions/bhatta-falls/,/outdoor-attractions/bhatta-falls/,Original URL retained,Attraction
+https://soulstorries.com/outdoor-attractions/dhanaulti/,200,https://soulstorries.com/outdoor-attractions/dhanaulti/,/outdoor-attractions/dhanaulti/,Original URL retained,Attraction
+https://soulstorries.com/outdoor-attractions/dhanaulti-eco-park/,200,https://soulstorries.com/outdoor-attractions/dhanaulti-eco-park/,/outdoor-attractions/dhanaulti-eco-park/,Original URL retained,Attraction
+https://soulstorries.com/outdoor-attractions/landour/,200,https://soulstorries.com/outdoor-attractions/landour/,/outdoor-attractions/landour/,Original URL retained,Attraction
+https://soulstorries.com/press/,200,https://soulstorries.com/press/,/press/,Original URL retained,Main page or alias
+https://soulstorries.com/press/hospitality-economic-times-from-the-economic-times-from-exhibitions-to-hospitality-madhavi-madaans-soul-stories-is-more-than-just-a-brick-and-mortar-story/,200,https://soulstorries.com/press/hospitality-economic-times-from-the-economic-times-from-exhibitions-to-hospitality-madhavi-madaans-soul-stories-is-more-than-just-a-brick-and-mortar-story/,/press/hospitality-economic-times-from-the-economic-times-from-exhibitions-to-hospitality-madhavi-madaans-soul-stories-is-more-than-just-a-brick-and-mortar-story/,Original URL retained,Press article
+https://soulstorries.com/press/sunday-pioneer-agenda-finding-soul-connections-at-soul-stories-gyaneshwar-dayal/,200,https://soulstorries.com/press/sunday-pioneer-agenda-finding-soul-connections-at-soul-stories-gyaneshwar-dayal/,/press/sunday-pioneer-agenda-finding-soul-connections-at-soul-stories-gyaneshwar-dayal/,Original URL retained,Press article
+https://soulstorries.com/press/tnhglobal-soul-storries-an-oasis-of-luxury-and-nature/,200,https://soulstorries.com/press/tnhglobal-soul-storries-an-oasis-of-luxury-and-nature/,/press/tnhglobal-soul-storries-an-oasis-of-luxury-and-nature/,Original URL retained,Press article
+https://soulstorries.com/press/travel-turtle-a-serendipitous-sojourn-at-soul-stories-sudipta-saha/,200,https://soulstorries.com/press/travel-turtle-a-serendipitous-sojourn-at-soul-stories-sudipta-saha/,/press/travel-turtle-a-serendipitous-sojourn-at-soul-stories-sudipta-saha/,Original URL retained,Press article
+https://soulstorries.com/product-category/booking/,200,https://soulstorries.com/product-category/booking/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/product-category/uncategorized/,200,https://soulstorries.com/product-category/uncategorized/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/product/booking/,200,https://soulstorries.com/product/booking/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/shop/,200,https://soulstorries.com/shop/,/booking/,Preserved at equivalent URL,Legacy utility or demo
+https://soulstorries.com/spa-menu/,200,https://soulstorries.com/spa-menu/,/wellness/spa-menu/,Preserved at equivalent URL,Main page or alias
+https://soulstorries.com/spa/heal-your-life-retreat/,200,https://soulstorries.com/spa/heal-your-life-retreat/,/wellness/heal-your-life-retreat/,Preserved at equivalent URL,Main page or alias
+https://soulstorries.com/tag/adventure-retreats/,200,https://soulstorries.com/tag/adventure-retreats/,/tag/adventure-retreats/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-cafe-in-mussoorie/,200,https://soulstorries.com/tag/best-cafe-in-mussoorie/,/tag/best-cafe-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-group-vacations/,200,https://soulstorries.com/tag/best-group-vacations/,/tag/best-group-vacations/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-spa-in-mussoorie/,200,https://soulstorries.com/tag/best-spa-in-mussoorie/,/tag/best-spa-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-villas-in-mussoorie/,200,https://soulstorries.com/tag/best-villas-in-mussoorie/,/tag/best-villas-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-winter-getaways/,200,https://soulstorries.com/tag/best-winter-getaways/,/tag/best-winter-getaways/,Original URL retained,Tag archive
+https://soulstorries.com/tag/best-workstation-destinations/,200,https://soulstorries.com/tag/best-workstation-destinations/,/tag/best-workstation-destinations/,Original URL retained,Tag archive
+https://soulstorries.com/tag/bonfire-nights/,200,https://soulstorries.com/tag/bonfire-nights/,/tag/bonfire-nights/,Original URL retained,Tag archive
+https://soulstorries.com/tag/boutique-stays/,200,https://soulstorries.com/tag/boutique-stays/,/tag/boutique-stays/,Original URL retained,Tag archive
+https://soulstorries.com/tag/christmas-in-the-hills/,200,https://soulstorries.com/tag/christmas-in-the-hills/,/tag/christmas-in-the-hills/,Original URL retained,Tag archive
+https://soulstorries.com/tag/corporate-retreats-mussoorie/,200,https://soulstorries.com/tag/corporate-retreats-mussoorie/,/tag/corporate-retreats-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/exclusive-villas-in-mussoorie/,200,https://soulstorries.com/tag/exclusive-villas-in-mussoorie/,/tag/exclusive-villas-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/friends-getaway-mussoorie/,200,https://soulstorries.com/tag/friends-getaway-mussoorie/,/tag/friends-getaway-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/himalayan-food/,200,https://soulstorries.com/tag/himalayan-food/,/tag/himalayan-food/,Original URL retained,Tag archive
+https://soulstorries.com/tag/kafuli-cafe/,200,https://soulstorries.com/tag/kafuli-cafe/,/tag/kafuli-cafe/,Original URL retained,Tag archive
+https://soulstorries.com/tag/luxury-and-wellness-package/,200,https://soulstorries.com/tag/luxury-and-wellness-package/,/tag/luxury-and-wellness-package/,Original URL retained,Tag archive
+https://soulstorries.com/tag/luxury-vacation-villa/,200,https://soulstorries.com/tag/luxury-vacation-villa/,/tag/luxury-vacation-villa/,Original URL retained,Tag archive
+https://soulstorries.com/tag/luxury-villa/,200,https://soulstorries.com/tag/luxury-villa/,/tag/luxury-villa/,Original URL retained,Tag archive
+https://soulstorries.com/tag/luxury-villas-mussoorie/,200,https://soulstorries.com/tag/luxury-villas-mussoorie/,/tag/luxury-villas-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/nature-spots-in-mussoorie/,200,https://soulstorries.com/tag/nature-spots-in-mussoorie/,/tag/nature-spots-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/new-year-celebrations-in-mussoorie/,200,https://soulstorries.com/tag/new-year-celebrations-in-mussoorie/,/tag/new-year-celebrations-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/pahadi-cuisine/,200,https://soulstorries.com/tag/pahadi-cuisine/,/tag/pahadi-cuisine/,Original URL retained,Tag archive
+https://soulstorries.com/tag/places-to-visit-near-mussoorie/,200,https://soulstorries.com/tag/places-to-visit-near-mussoorie/,/tag/places-to-visit-near-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/private-luxury-villa/,200,https://soulstorries.com/tag/private-luxury-villa/,/tag/private-luxury-villa/,Original URL retained,Tag archive
+https://soulstorries.com/tag/private-retreats/,200,https://soulstorries.com/tag/private-retreats/,/tag/private-retreats/,Original URL retained,Tag archive
+https://soulstorries.com/tag/private-villas-mussoorie/,200,https://soulstorries.com/tag/private-villas-mussoorie/,/tag/private-villas-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/scenic-spots-in-mussoorie/,200,https://soulstorries.com/tag/scenic-spots-in-mussoorie/,/tag/scenic-spots-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/snow-activities-mussoorie/,200,https://soulstorries.com/tag/snow-activities-mussoorie/,/tag/snow-activities-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/snowfall-in-mussoorie/,200,https://soulstorries.com/tag/snowfall-in-mussoorie/,/tag/snowfall-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/tag/spa-wellness/,200,https://soulstorries.com/tag/spa-wellness/,/tag/spa-wellness/,Original URL retained,Tag archive
+https://soulstorries.com/tag/spa-wellness-package/,200,https://soulstorries.com/tag/spa-wellness-package/,/tag/spa-wellness-package/,Original URL retained,Tag archive
+https://soulstorries.com/tag/wellness-escape/,200,https://soulstorries.com/tag/wellness-escape/,/tag/wellness-escape/,Original URL retained,Tag archive
+https://soulstorries.com/tag/wellness-retreat/,200,https://soulstorries.com/tag/wellness-retreat/,/tag/wellness-retreat/,Original URL retained,Tag archive
+https://soulstorries.com/tag/winter-in-mussoorie/,200,https://soulstorries.com/tag/winter-in-mussoorie/,/tag/winter-in-mussoorie/,Original URL retained,Tag archive
+https://soulstorries.com/thank-you/,200,https://soulstorries.com/thank-you/,/thank-you/,Original URL retained,Main page or alias
+https://soulstorries.com/the-benefits-of-a-wellness-retreat-in-the-himalayas/,200,https://soulstorries.com/the-benefits-of-a-wellness-retreat-in-the-himalayas/,/blogs/the-benefits-of-a-wellness-retreat-in-the-himalayas/,Preserved at equivalent URL,Blog
+https://soulstorries.com/the-signature-villas-of-soul-storries-a-luxurious-retreat/,200,https://soulstorries.com/the-signature-villas-of-soul-storries-a-luxurious-retreat/,/blogs/the-signature-villas-of-soul-storries-a-luxurious-retreat/,Preserved at equivalent URL,Blog
+https://soulstorries.com/together-and-celebrations/,200,https://soulstorries.com/together-and-celebrations/,/together-and-celebrations/,Original URL retained,Main page or alias
+https://soulstorries.com/top-5-wellness-packages-offered-at-soul-storries-which-one-is-right-for-you/,200,https://soulstorries.com/top-5-wellness-packages-offered-at-soul-storries-which-one-is-right-for-you/,/blogs/top-5-wellness-packages-offered-at-soul-storries-which-one-is-right-for-you/,Preserved at equivalent URL,Blog
+https://soulstorries.com/top-experiences/clouds-end/,200,https://soulstorries.com/top-experiences/clouds-end/,/top-experiences/clouds-end/,Original URL retained,Attraction
+https://soulstorries.com/top-experiences/george-everests-house/,200,https://soulstorries.com/top-experiences/george-everests-house/,/top-experiences/george-everests-house/,Original URL retained,Attraction
+https://soulstorries.com/top-experiences/jharipani-falls/,200,https://soulstorries.com/top-experiences/jharipani-falls/,/top-experiences/jharipani-falls/,Original URL retained,Attraction
+https://soulstorries.com/top-experiences/mussoorie-lake/,200,https://soulstorries.com/top-experiences/mussoorie-lake/,/top-experiences/mussoorie-lake/,Original URL retained,Attraction
+https://soulstorries.com/top-experiences/tibetan-culture-mussoorie/,200,https://soulstorries.com/top-experiences/tibetan-culture-mussoorie/,/top-experiences/tibetan-culture-mussoorie/,Original URL retained,Attraction
+https://soulstorries.com/top-sights-in-mussoo/camels-back-road/,200,https://soulstorries.com/top-sights-in-mussoo/camels-back-road/,/top-sights-in-mussoo/camels-back-road/,Original URL retained,Attraction
+https://soulstorries.com/top-sights-in-mussoo/company-garden-bhatta-falls/,200,https://soulstorries.com/top-sights-in-mussoo/company-garden-bhatta-falls/,/top-sights-in-mussoo/company-garden-bhatta-falls/,Original URL retained,Attraction
+https://soulstorries.com/top-sights-in-mussoo/gun-hill/,200,https://soulstorries.com/top-sights-in-mussoo/gun-hill/,/top-sights-in-mussoo/gun-hill/,Original URL retained,Attraction
+https://soulstorries.com/top-sights-in-mussoo/kempty-falls/,200,https://soulstorries.com/top-sights-in-mussoo/kempty-falls/,/top-sights-in-mussoo/kempty-falls/,Original URL retained,Attraction
+https://soulstorries.com/top-sights-in-mussoo/lal-tibba-scenic-point/,200,https://soulstorries.com/top-sights-in-mussoo/lal-tibba-scenic-point/,/top-sights-in-mussoo/lal-tibba-scenic-point/,Original URL retained,Attraction
+https://soulstorries.com/tranquility/cafekafuli-video/,200,https://soulstorries.com/tranquility/cafekafuli-video/,/tranquility/cafekafuli-video/,Original URL retained,Film
+https://soulstorries.com/tranquility/escape-the-ordinary-and-bring-your-team/,200,https://soulstorries.com/tranquility/escape-the-ordinary-and-bring-your-team/,/tranquility/escape-the-ordinary-and-bring-your-team/,Original URL retained,Film
+https://soulstorries.com/tranquility/escape-to-soulstorries_luxuryestat/,200,https://soulstorries.com/tranquility/escape-to-soulstorries_luxuryestat/,/tranquility/escape-to-soulstorries_luxuryestat/,Original URL retained,Film
+https://soulstorries.com/tranquility/step-into-a-world-of-warmth/,200,https://soulstorries.com/tranquility/step-into-a-world-of-warmth/,/tranquility/step-into-a-world-of-warmth/,Original URL retained,Film
+https://soulstorries.com/unique-storie/bonfire/,200,https://soulstorries.com/unique-storie/bonfire/,/unique-storie/bonfire/,Original URL retained,Experience
+https://soulstorries.com/unique-storie/diy-barbeque/,200,https://soulstorries.com/unique-storie/diy-barbeque/,/unique-storie/diy-barbeque/,Original URL retained,Experience
+https://soulstorries.com/unique-storie/spa-and-wellness/,200,https://soulstorries.com/unique-storie/spa-and-wellness/,/unique-storie/spa-and-wellness/,Original URL retained,Experience
+https://soulstorries.com/unique-storie/terrace-bar-and-grills/,200,https://soulstorries.com/unique-storie/terrace-bar-and-grills/,/unique-storie/terrace-bar-and-grills/,Original URL retained,Experience
+https://soulstorries.com/villa/amaraa/,200,https://soulstorries.com/villa/amaraa/,/villas/amaraa/,Preserved at equivalent URL,Villa
+https://soulstorries.com/villa/athena/,200,https://soulstorries.com/villa/athena/,/villas/athena/,Preserved at equivalent URL,Villa
+https://soulstorries.com/villa/aura/,200,https://soulstorries.com/villa/aura/,/villas/aura/,Preserved at equivalent URL,Villa
+https://soulstorries.com/villa/aurora/,200,https://soulstorries.com/villa/aurora/,/villas/aurora/,Preserved at equivalent URL,Villa
+https://soulstorries.com/villa/flora/,200,https://soulstorries.com/villa/flora/,/villas/flora/,Preserved at equivalent URL,Villa
+https://soulstorries.com/wellness/,200,https://soulstorries.com/wellness/,/wellness/,Original URL retained,Main page or alias
+https://soulstorries.com/wellness-journeys-stress-to-stillness/,200,https://soulstorries.com/wellness-journeys-stress-to-stillness/,/wellness/wellness-journeys-stress-to-stillness/,Preserved at equivalent URL,Main page or alias
+https://soulstorries.com/wellness/heal-your-life-retreat/,200,https://soulstorries.com/wellness/heal-your-life-retreat/,/wellness/heal-your-life-retreat/,Original URL retained,Wellness detail
+https://soulstorries.com/wellness/spa-menu/,200,https://soulstorries.com/wellness/spa-menu/,/wellness/spa-menu/,Original URL retained,Wellness detail
+https://soulstorries.com/wellness/wellness-journeys-sleep-reboot/,200,https://soulstorries.com/wellness/wellness-journeys-sleep-reboot/,/wellness/wellness-journeys-sleep-reboot/,Original URL retained,Wellness detail
+https://soulstorries.com/wellness/wellness-journeys-stress-to-stillness/,200,https://soulstorries.com/wellness/wellness-journeys-stress-to-stillness/,/wellness/wellness-journeys-stress-to-stillness/,Original URL retained,Wellness detail
+https://soulstorries.com/wellness/yoga-retreat/,200,https://soulstorries.com/wellness/yoga-retreat/,/wellness/yoga-retreat/,Original URL retained,Wellness detail
+https://soulstorries.com/winter-wonderland-experience-the-snowy-charm-of-mussoorie/,200,https://soulstorries.com/winter-wonderland-experience-the-snowy-charm-of-mussoorie/,/blogs/winter-wonderland-experience-the-snowy-charm-of-mussoorie/,Preserved at equivalent URL,Blog
+https://soulstorries.com/yoga-retreat/,200,https://soulstorries.com/yoga-retreat/,/wellness/yoga-retreat/,Preserved at equivalent URL,Main page or alias
+https://soulstorries.com/you-may-also-like/bachelor-family-parties/,200,https://soulstorries.com/you-may-also-like/bachelor-family-parties/,/together-and-celebrations/,Preserved at equivalent URL,Duplicate event detail
+https://soulstorries.com/you-may-also-like/corporate-events/,200,https://soulstorries.com/you-may-also-like/corporate-events/,/corporate-events/,Preserved at equivalent URL,Duplicate event detail
+https://soulstorries.com/you-may-also-like/destination-wedding/,200,https://soulstorries.com/you-may-also-like/destination-wedding/,/destination-wedding/,Preserved at equivalent URL,Duplicate event detail

@@ -1,3 +1,5 @@
+import { CafeMenu } from "@/components/content/SourceCompletion";
+import { OriginalDetails } from "@/components/content/ContentBlocks";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import CafeBanner from "./components/CafeBanner";
 import { kafuliPageData } from "./kafuliPageData";
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
       "Kafuli Café at Soul Storries Mussoorie offers a farm-to-table experience with a thoughtfully crafted café menu featuring local flavors, seasonal ingredients, and wellness-inspired cuisine in a serene hillside setting.",
     images: [
       {
-        url: "https://soulstorries.com/kafuli-cafe/images/soulstorries-og.webp",
+        url: "https://soulstorries.com/Screens2025.png",
         width: 1200,
         height: 630,
         alt: "Soul Storries — Luxury Villas & Wellness Estate in Mussoorie",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
     title: "Kafuli Cafe Mussoorie | Farm-to-Table Dining & Curated Café Menu",
     description:
       "Escape to Soul Storries — a luxury wellness estate featuring private villas, Kafuli Café, and spa experiences in the heart of Mussoorie.",
-    images: ["https://soulstorries.com/kafuli-cafe/images/soulstorries-og.webp"],
+    images: ["https://soulstorries.com/Screens2025.png"],
     site: "@soulstorries",
   },
   robots: {
@@ -69,6 +71,7 @@ export default function KafuliCafePage() {
         </div>
       </SectionWithContainer>
       <OpenToAll {...kafuliPageData?.openToAll} />
+      <OriginalDetails path="/kafuli-cafe" /><CafeMenu />
     </main>
   );
 }

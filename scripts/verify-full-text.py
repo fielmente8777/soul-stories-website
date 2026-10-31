@@ -14,7 +14,7 @@ class VisibleText(HTMLParser):
     def handle_data(self, text):
         if not self.hidden: self.parts.append(text)
 def norm(text): return re.sub('[^a-z0-9]+', '', html.unescape(text).lower())
-files = list((ROOT / '.next/server/app').rglob('*.html'))
+files = [f for f in (ROOT / '.next/server/app').rglob('*.html') if not f.name.startswith('_')]
 assert files, 'Build the site first'
 texts = []
 for file in files:

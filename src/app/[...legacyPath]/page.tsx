@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { NearbyServices } from "@/components/content/SourceCompletion";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -37,7 +39,7 @@ export default async function RestoredPage({ params }: Props) {
     {page && <article className="max_width py-10 md:py-16"><div className="max-w-5xl mx-auto"><ContentBlocks blocks={page.blocks} skipTitle={page.blocks[0]?.html?.toLowerCase() === `<h2>${page.title.toLowerCase()}</h2>`} /></div></article>}
     {archive && <>{archive.description && <p className="max_width pt-10 text-light">{archive.description}</p>}<LinkCards title={`Stories: ${archive.title}`} cards={archiveCards || []} /></>}
     {page?.enquiry && <section id="enquire" className="bg-bg1 py-12"><div className="max_width"><h2 className="font-aboreto text-primary text-3xl mb-4">Enquire about {title}</h2><p className="text-light mb-8">Share your preferred dates and group size. Our reservations team will confirm availability and your personalised package.</p><div className="bg-white p-5 rounded-sm"><Form1 /></div></div></section>}
-    {attraction && <LinkCards title="Explore Nearby" cards={attractionCards} />}
+    {(path === "/together-and-celebrations" || path === "/nearby-places") && <NearbyServices />}{path.startsWith("/wellness/") && <p className="max_width pb-8 text-light">Guests reviews 4.8 (70+ Reviews)</p>}{path === "/experience" && <section className="max_width py-10"><h2 className="font-aboreto text-primary text-3xl mb-4">1500 YEARS OLD TEMPLE</h2><Image src="/legacy/temple-original.webp" alt="Temple visit near Soul Storries" width={625} height={422} className="w-full max-w-xl h-auto mb-6" /><Link href="/contact-us/" className="text-primary border-b border-secondary">Ask us about a temple visit</Link></section>}{path.startsWith("/press/") && <LinkCards title="Related Article" cards={Object.entries(legacy.pages).filter(([key]) => key.startsWith("/press/") && key !== path).map(([key,item]) => ({label:item.title,href:key+"/"}))} />}{attraction && <LinkCards title={path.startsWith("/top-sights-in-mussoo/") ? "Related Top sights in Mussoorie" : "Explore Nearby"} cards={attractionCards} />}
     {related.length > 0 && <LinkCards title="You May Also Like" cards={related} />}
   </main>;
 }

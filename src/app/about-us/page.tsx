@@ -1,3 +1,4 @@
+import { AboutMilestones } from "@/components/content/SourceCompletion";
 import { OriginalDetails } from "@/components/content/ContentBlocks";
 import { Metadata } from "next";
 import { aboutPageData } from "./aboutPageData";
@@ -61,7 +62,7 @@ export default function AboutUs() {
   return (
     <main>
       <AboutBanner {...aboutPageData.bannerData} />
-      <OriginalDetails path="/about-us" title="A Profound Awakening" />
+      <AboutMilestones /><OriginalDetails path="/about-us" title="A Profound Awakening" />
       <ConnectWithUs {...aboutPageData.contactWithYourSoul} />
     </main>
   );

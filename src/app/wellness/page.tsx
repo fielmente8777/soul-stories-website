@@ -1,3 +1,4 @@
+import { AdvisoryBoard } from "@/components/content/SourceCompletion";
 import { WellnessOverview } from "@/components/content/HomeContent";
 import Banner2 from "@/components/Banner/Banner2";
 import TestimonialsSection from "@/components/sectionComponants/TestimonialsSection";
@@ -70,7 +71,7 @@ const page = () => {
       <WellnessServices {...wellnessPageData.wellnessServices} />
       <AddSection {...wellnessPageData.addCard} card={false} isBorder={true} />
       <OurPackages {...wellnessPageData.ourPackages} />
-      <WellnessOverview />
+      <WellnessOverview /><AdvisoryBoard />
       <TestimonialsSection />
     </div>
   );

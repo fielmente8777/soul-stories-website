@@ -58,6 +58,7 @@ export default function Blogs() {
   return (
     <main>
       <SectionWithContainer sectionClassName="bg-[#F9FFEB]">
+        <div className="max-w-4xl mx-auto text-center mb-8 space-y-4"><h2 className="font-aboreto text-primary text-3xl">Latest news, inspiring stories</h2><p>Wake up to misty Himalayan sunrises, gather around starlit bonfires, and savour the flavours of Uttarakhand at Kafuli Café. Whether you seek adventure, serenity, or soulful connections, Soul Storries is where unforgettable moments come to life.</p></div>
         <SectionHeading
           title={blogPageData.bannerData.title}
           subTitle={blogPageData.bannerData.subTitle}

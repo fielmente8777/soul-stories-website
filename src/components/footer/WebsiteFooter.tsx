@@ -8,6 +8,7 @@ const WebsiteFooter = () => {
   return (
     <footer className="max_screen_width bg-primary">
       <Container>
+        <div className="py-12 max-w-3xl space-y-5 text-white"><h2 className="font-aboreto text-3xl md:text-4xl">Do you believe in magic?</h2><p className="leading-relaxed">Be enchanted by the misty mountains with a cozy stay at Soul Storries, nestled in the peaceful countryside of Garhwal. Our thoughtfully designed holiday homes blend modern sophistication with nature’s pristine beauty, offering a unique sanctuary in the heart of Mussoorie.</p><Link href="/booking/" className="inline-block border-b border-secondary">Book Your Stay</Link></div>
         <div className="flex max-md:flex-col gap-6 items-center justify-between py-6 md:py-12 border-b border-white">
           {/* social media links */}
           <ul className="flex items-center gap-4 max-md:order-2">

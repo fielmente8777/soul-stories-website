@@ -27,7 +27,7 @@ export const homePageData = {
   },
   title: "A Soulful Himalayan Experience",
   roomsData: {
-    title: "VILLA ACCOMMODATIONS",
+    title: "Choose Your Luxury Villa",
     subTitle: "AT SOUL STORRIES",
     description:
       "Our villas offer a peaceful retreat surrounded by pristine Uttarakhand landscapes. Experience calm, clarity, and comfort in every corner.",

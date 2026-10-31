@@ -1,0 +1,47 @@
+[
+  {
+    "path": "/wellness",
+    "text": "Guests reviews 4.5 (10 Reviews)",
+    "reason": "Sample review rating from template"
+  },
+  {
+    "path": "/wellness",
+    "text": "Reviews 7.5",
+    "reason": "Sample review score from template"
+  },
+  {
+    "path": "/wellness",
+    "text": "Value for Money",
+    "reason": "Sample review criterion from template"
+  },
+  {
+    "path": "/wellness",
+    "text": "Location of Property",
+    "reason": "Sample review criterion from template"
+  },
+  {
+    "path": "/wellness",
+    "text": "John Doe",
+    "reason": "Placeholder testimonial author"
+  },
+  {
+    "path": "/blogs",
+    "text": "SEO Team",
+    "reason": "Development author label"
+  },
+  {
+    "path": "/",
+    "text": "Frequently Ask Questions",
+    "reason": "Corrected grammar: Frequently Asked Questions"
+  },
+  {
+    "path": "/__shared_footer",
+    "text": "CONTACT INFO",
+    "reason": "Equivalent heading: Contact Us"
+  },
+  {
+    "path": "/__shared_footer",
+    "text": "Email: [email protected]",
+    "reason": "Cloudflare obfuscation replaced by actual email address"
+  }
+]

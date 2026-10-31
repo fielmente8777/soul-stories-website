@@ -92,7 +92,7 @@ export default async function Villa(props: Params) {
   );
 }
 
-export const TickIcon = () => (
+const TickIcon = () => (
   <svg
     width={24}
     height={24}

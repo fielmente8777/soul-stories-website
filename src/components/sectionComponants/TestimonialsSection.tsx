@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import Section from "./Section";
 import { testimonialData } from "./commanData";
@@ -28,7 +29,7 @@ const TestimonialsSection: React.FC = () => {
               className="object-contain"
             />
           </div>
-          <TestimonialsSlider cards={testimonialData.cards} />
+          <TestimonialsSlider cards={testimonialData.cards} /><Link href="/guest-reviews/" className="inline-block text-primary border-b border-secondary">Hear it from our guests — read full reviews</Link>
         </div>
       </div>
     </Section>

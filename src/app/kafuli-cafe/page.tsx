@@ -1,3 +1,4 @@
+import { CafeMenu } from "@/components/content/SourceCompletion";
 import { OriginalDetails } from "@/components/content/ContentBlocks";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import CafeBanner from "./components/CafeBanner";
@@ -70,7 +71,7 @@ export default function KafuliCafePage() {
         </div>
       </SectionWithContainer>
       <OpenToAll {...kafuliPageData?.openToAll} />
-      <OriginalDetails path="/kafuli-cafe" />
+      <OriginalDetails path="/kafuli-cafe" /><CafeMenu />
     </main>
   );
 }

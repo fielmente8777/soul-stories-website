@@ -7,23 +7,23 @@ export const celebrationsData = {
     cards: [
       {
         videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video1.mp4",
+          "/videos/cafekafuli-Where-every-moment.mp4",
         thumbnails: "video/mp4",
       },
       {
         videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video2.mp4",
+          "/videos/Escape-the-ordinary-and-bring-your-team.mp4",
         thumbnails: "video/mp4",
       },
       {
         videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
+          "/videos/Step-into-a-world-of-warmth.mp4",
         thumbnails: "video/mp4",
       },
       {
         thumbnails: "/Screens2025.png",
         videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+          "/videos/Escape-to-soulstorries_luxuryestate.mp4",
       },
     ],
   },

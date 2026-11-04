@@ -11,8 +11,7 @@ import {
 export const hotelLandingPageData = {
   bannerData: {
     src: "/Screens2025.png",
-    videoSrc:
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+    videoSrc: "/videos/Step-into-a-world-of-warmth.mp4",
   },
   aboutHotel: {
     title: "WELCOME TO SOUL STORRIES",
@@ -166,8 +165,7 @@ export const hotelLandingPageData = {
         ],
       },
       {
-        videoSrc:
-          "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video2.mp4",
+        videoSrc: "/videos/Escape-the-ordinary-and-bring-your-team.mp4",
         poster: "video/mp4",
         link: { label: "BOOK NOW", url: contact.WhatsappCta },
       },

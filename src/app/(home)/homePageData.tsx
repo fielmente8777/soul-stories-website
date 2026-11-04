@@ -7,7 +7,8 @@ export const homePageData = {
   bannerData: {
     src: "/Screens2025.png",
     videoSrc:
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
+    "/videos/cafekafuli-Where-every-moment.mp4",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Soul+Stories+Luxury+Villa+and+Resorts%2C+Mussoorie+%EF%BD%9C+The+Ultimate+Luxury+Getaway.mp4",
   },
   aboutUsData: {
     title: "WELCOME TO SOUL STORRIES",
@@ -17,7 +18,8 @@ export const homePageData = {
     src: "/home-about.jpg",
     poster: "video/mp4",
     videoSrc:
-      "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
+    "/videos/Video1.mp4",
+      // "https://eazotel-clients-images.s3.ap-south-1.amazonaws.com/soul+stories/Video3.mp4",
 
     link: {
       label: "ABOUT US",

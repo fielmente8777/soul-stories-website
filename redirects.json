@@ -588,5 +588,10 @@
     "source": "/unique-storie/diy-barbeque",
     "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
     "permanent": true
+  },
+  {
+    "source": "/product/booking",
+    "destination": "https://www.amastaysandtrails.com/en-in/soul-storries-mussoorie",
+    "permanent": true
   }
 ]

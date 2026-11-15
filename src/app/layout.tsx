@@ -100,6 +100,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Load the original Soul Storries Eazbot configuration before its widget script. */}
+        <Script id="chatbot-config" strategy="beforeInteractive">
+          {`
+            window.eazbotConfig = {
+              ndid: "4f14df46-bcfa-43da-8d99-0c6c414445ba",
+              hid: "71711659",
+            };
+          `}
+        </Script>
         <Script
           type="text/javascript"
           id="clarity"
@@ -152,15 +161,6 @@ export default function RootLayout({
           <PrPopUp />
           <AmenitiesPopUp />
         </WebProvider>
-        {/* <!-- Eazbot Script (Next.js) --> */}
-        <Script id="chatbot-config" strategy="afterInteractive">
-          {`
-          window.eazbotConfig = {
-            ndid: "4f14df46-bcfa-43da-8d99-0c6c414445ba",
-            hid: "71711659",
-          };
-        `}
-        </Script>
         <Script
           src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
           strategy="afterInteractive"

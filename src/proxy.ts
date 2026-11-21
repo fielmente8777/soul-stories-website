@@ -1,32 +1,22 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import redirectsData from "../redirects.json";
 
-// Restores the original Soul Storries redirect mapping, including the booking URL.
-// Apply the same mappings to both Soul Storries domains and their www aliases.
-// Other Vercel preview/default domains are intentionally excluded.
-const destinations = new Map(
-  redirectsData.map(({ source, destination }) => [source, destination]),
-);
-
+// soulstorries.com is the primary public website. Redirect the alternate
+// domain to it while preserving the path and search parameters.
 export function proxy(request: NextRequest) {
   const hostname = request.nextUrl.hostname.toLowerCase();
-  if (!["soulstorries.com", "www.soulstorries.com", "soulstoriess.com", "www.soulstoriess.com"].includes(hostname)) {
-    return NextResponse.next();
+
+  if (hostname === "soulstoriess.com" || hostname === "www.soulstoriess.com") {
+    const target = request.nextUrl.clone();
+    target.protocol = "https:";
+    target.hostname = "soulstorries.com";
+    target.port = "";
+    return NextResponse.redirect(target, 301);
   }
 
-  const pathname = request.nextUrl.pathname;
-  const source = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
-  const destination = destinations.get(source);
-
-  if (!destination) {
-    return NextResponse.next();
-  }
-
-  // The supplied sheet requires HTTP 301 (not Next.js's default 308).
-  return NextResponse.redirect(destination, 301);
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/:path*"],
 };
